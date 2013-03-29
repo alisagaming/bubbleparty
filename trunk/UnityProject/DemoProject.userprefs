@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NGUI\Examples\Other\English.txt">
+    <Files>
+      <File FileName="Assets\Plugins\SocialNetworking\demoAndroid\FacebookUIManager.cs" Line="76" Column="1" />
+      <File FileName="Assets\Plugins\SocialNetworking\FacebookCommon\FacebookEventListener.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\Android\res\values\attrs.xml" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\SocialNetworking\Manifest.xml" Line="4" Column="13" />
+      <File FileName="Assets\Plugins\SocialNetworking\FacebookAndroid.cs" Line="45" Column="3" />
+      <File FileName="Assets\Plugins\Android\AndroidManifest.xml" Line="40" Column="78" />
+      <File FileName="Assets\NGUI\Examples\Other\English.txt" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Projects\Unity3D\BubbleIsland\DemoProject\Assets\Plugins\SocialNetworking\demoAndroid\FacebookUIManager.cs" line="77" />
+      <Breakpoint file="C:\Projects\Unity3D\BubbleIsland\DemoProject\Assets\Plugins\SocialNetworking\demoAndroid\FacebookUIManager.cs" line="76" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

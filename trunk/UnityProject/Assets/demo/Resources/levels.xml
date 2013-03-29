@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model>
+    <level id="1">
+                <row>x , x , 0 , 1 , 1 , 0 , 1 , 1 , 0 , x</row>
+                <row>x , 0 , 1 , 1 , 0 , 0 , 1 , 1 , 0 , x</row>
+                <row>x , 0 , x , x , 2 , 0 , 2 , x , x , 0</row>
+                <row>0 , 1 , 1 , 1 , 2 , 2 , 1 , 1 , 1 , 0</row>
+                <row>x , x , x , 0 , 1 , 2 , 1 , 0 , x , x</row>
+                <row>x , x , 0 , x , 0 , 0 , x , 0 , x , x</row>
+                <row>x , x , 0 , x , 2 , 0 , 2 , x , 0 , x</row>
+                <row>x , 0 , x , x , 2 , 2 , x , x , 0 , x</row>
+                <row>x , x , 0 , 0 , x , 2 , x , 2 , 0 , x</row>
+                <row>x , x , 1 , 0 , 1 , 1 , 2 , 1 , x , x</row>
+                <row>x , x , 1 , x , 0 , 1 , 2 , x , 1 , x</row>
+                <row>x , 1 , 0 , 0 , 0 , 2 , 2 , 2 , 1 , x</row>
+    </level>
+    <level id="2">
+                <row>x , x , 2 , 0 , x , x , x , 0 , 2 , x</row>
+                <row>x , x , 2 , 0 , x , x , 0 , 2 , x , x</row>
+                <row>x , x , 1 , x , 0 , x , 0 , x , 1 , x</row>
+                <row>x , 1 , x , 2 , x , x , 2 , x , 1 , x</row>
+                <row>x , 1 , x , 2 , x , x , x , 2 , x , 1</row>
+                <row>1 , x , 2 , x , x , x , x , 2 , x , 1</row>
+                <row>x , 1 , 2 , 1 , x , x , x , 1 , 2 , 1</row>
+                <row>x , 0 , 1 , 1 , x , x , 1 , 1 , 0 , x</row>
+                <row>x , x , 0 , 2 , x , x , x , 2 , 0 , x</row>
+                <row>x , 0 , 2 , x , x , x , x , 2 , 0 , x</row>
+                <row>x , x , 2 , 1 , x , x , x , 1 , 2 , x</row>
+                <row>x , 0 , 0 , 1 , x , x , 1 , 0 , 0 , x</row>
+    </level>
+    <level id="3">
+                <row>x , 1 , 1 , 0 , 0 , 1 , 1 , 0 , 2 , x</row>
+                <row>x , 1 , x , 0 , x , 1 , x , 0 , 2 , x</row>
+                <row>x , x , 1 , x , 0 , x , 1 , x , 0 , 2</row>
+                <row>x , x , 2 , x , 1 , x , 2 , x , 1 , 0</row>
+                <row>x , x , 2 , x , 1 , x , 2 , x , 1 , 0</row>
+                <row>x , 2 , x , 1 , x , 2 , x , 1 , 0 , x</row>
+                <row>x , 2 , x , 1 , x , 2 , x , 1 , 0 , x</row>
+                <row>0 , 0 , 0 , 0 , 0 , x , 2 , 2 , 2 , x</row>
+                <row>2 , 1 , x , 0 , 2 , 1 , 2 , 0 , 2 , x</row>
+                <row>2 , 1 , x , 0 , 2 , 1 , x , 0 , 2 , x</row>
+                <row>x , 2 , 1 , x , 0 , 2 , 1 , x , 0 , 2</row>
+                <row>x , 2 , 1 , x , 0 , 2 , 1 , 1 , 1 , x</row>
+    </level>
+    <level id="4">
+                <row>x , x , 2 , 2 , 0 , 0 , 2 , 2 , x , x</row>
+                <row>x , 1 , x , 0 , x , 0 , x , 1 , x , x</row>
+                <row>x , 1 , x , 2 , x , x , 2 , x , 1 , x</row>
+                <row>0 , 0 , 0 , 2 , x , 2 , 0 , 0 , 0 , 0</row>
+                <row>0 , x , x , 1 , 2 , 2 , 1 , x , x , 0</row>
+                <row>0 , x , 0 , 1 , 2 , 1 , 0 , x , 0 , x</row>
+                <row>x , 0 , 0 , x , 1 , 1 , x , 0 , 0 , x</row>
+                <row>0 , 0 , 2 , 2 , x , 2 , 2 , 0 , 0 , x</row>
+                <row>0 , 0 , 0 , 1 , 2 , 2 , 1 , 0 , 0 , x</row>
+                <row>0 , x , x , 1 , 2 , 1 , 0 , x , 0 , x</row>
+                <row>x , 0 , x , 2 , 1 , 1 , 2 , x , x , 0</row>
+                <row>x , 0 , 2 , x , 1 , x , 2 , 0 , 0 , x</row>
+    </level>
+    <level id="5">
+                <row>x , 1 , 1 , x , 0 , 0 , 0 , x , 1 , 1</row>
+                <row>x , 1 , 1 , 0 , x , x , 0 , 1 , 1 , x</row>
+                <row>x , x , 0 , 0 , x , x , x , 0 , 0 , x</row>
+                <row>x , x , 2 , 2 , x , x , 2 , 2 , x , x</row>
+                <row>x , x , x , 0 , 0 , x , 0 , 0 , x , x</row>
+                <row>x , x , 0 , 0 , x , x , 0 , 0 , x , x</row>
+                <row>x , 1 , 1 , 1 , 2 , 2 , 2 , 1 , 1 , 1</row>
+                <row>2 , 2 , 2 , x , x , x , x , 2 , 2 , 2</row>
+                <row>x , 1 , 1 , x , 0 , 0 , 0 , x , 1 , 1</row>
+                <row>x , 1 , 1 , 0 , x , x , 0 , 1 , 1 , x</row>
+                <row>x , x , 2 , 2 , 0 , x , 0 , 2 , 2 , x</row>
+                <row>x , x , 2 , 2 , 0 , 0 , 2 , 2 , x , x</row>
+    </level>
+    <level id="6">
+                <row>x , x , 2 , 2 , 2 , 0 , 2 , 2 , 2 , x</row>
+                <row>x , x , 1 , x , 0 , 0 , x , 1 , x , x</row>
+                <row>x , x , 0 , 0 , 0 , 0 , 0 , 0 , 0 , x</row>
+                <row>x , 2 , x , x , 1 , 1 , x , x , 2 , x</row>
+                <row>x , 2 , 1 , x , x , 1 , x , x , 1 , 2</row>
+                <row>2 , x , 1 , x , 1 , 1 , x , 1 , x , 2</row>
+                <row>x , 2 , x , 0 , x , 1 , x , 0 , x , 2</row>
+                <row>1 , 1 , 0 , x , 2 , 2 , x , 0 , 1 , 1</row>
+                <row>x , 1 , 1 , x , x , 2 , x , x , 1 , 1</row>
+                <row>x , 2 , 1 , x , 2 , 2 , x , 1 , 2 , x</row>
+                <row>x , 2 , x , 0 , x , 2 , x , 0 , x , 2</row>
+                <row>x , 1 , 0 , x , 2 , 2 , x , 0 , 1 , x</row>
+    </level>
+    <level id="7">
+        		<row>x , 1 , x , x , 2 , 2 , 2 , x , x , 1</row>
+                <row>0 , 1 , x , 2 , x , x , 2 , x , 1 , 0</row>
+                <row>x , 0 , 1 , 2 , 0 , x , 0 , 2 , 1 , 0</row>
+                <row>x , 2 , 1 , 0 , x , x , 0 , 1 , 2 , x</row>
+                <row>x , x , 2 , 0 , x , x , x , 0 , 2 , x</row>
+                <row>x , x , 0 , x , x , x , x , 0 , x , x</row>
+                <row>x , x , x , 0 , x , x , x , 0 , x , x</row>
+                <row>x , x , x , 2 , x , x , 2 , x , x , x</row>
+                <row>x , x , x , x , 2 , 2 , 2 , x , x , x</row>
+                <row>x , x , 2 , 2 , 2 , 1 , 1 , 2 , 2 , x</row>
+                <row>x , x , 1 , 1 , 1 , 0 , 0 , 1 , 2 , x</row>
+                <row>x , 1 , 2 , 2 , 2 , 0 , 0 , 1 , x , x</row>            
+    </level>
+    <level id="8">
+                <row>x , 0 , x , 2 , 2 , 2 , 2 , 2 , x , 0</row>
+                <row>x , 0 , 0 , x , x , x , x , 0 , 0 , x</row>
+                <row>x , x , 2 , 1 , 1 , 1 , 1 , 1 , 2 , x</row>
+                <row>x , 1 , 2 , x , x , x , x , 2 , 1 , x</row>
+                <row>x , x , 1 , 2 , x , x , x , 2 , 1 , x</row>
+                <row>x , 0 , 1 , 2 , 1 , 1 , 2 , 1 , 0 , x</row>
+                <row>x , 2 , 0 , 1 , 2 , x , 2 , 1 , 0 , 2</row>
+                <row>x , 2 , 1 , 2 , 0 , 0 , 2 , 1 , 2 , x</row>
+                <row>x , x , 2 , 2 , 0 , 0 , 0 , 2 , 2 , x</row>
+                <row>x , x , 0 , x , x , x , x , 0 , x , x</row>
+                <row>x , x , 2 , 1 , 1 , 1 , 1 , 1 , 2 , x</row>
+                <row>x , x , 2 , 1 , 1 , 1 , 1 , 2 , x , x</row>
+    </level>
+    <level id="9">
+                <row>x , 1 , 1 , 2 , 2 , x , 2 , 2 , 1 , 1</row>
+                <row>x , 0 , 2 , x , 0 , 0 , x , 2 , 0 , x</row>
+                <row>x , 0 , 2 , x , x , 0 , x , x , 2 , 0</row>
+                <row>x , 0 , 2 , x , 1 , 1 , x , 2 , 0 , x</row>
+                <row>x , 0 , 0 , 2 , 1 , x , 1 , 2 , 0 , 0</row>
+                <row>x , 0 , x , 1 , x , x , 1 , x , 0 , x</row>
+                <row>x , 2 , x , 1 , 2 , x , 2 , 1 , x , 2</row>
+                <row>x , 2 , 1 , x , 2 , 2 , x , 1 , 2 , x</row>
+                <row>x , x , 1 , 2 , 2 , x , 2 , 2 , 1 , x</row>
+                <row>x , 1 , x , 0 , x , x , 0 , x , 1 , x</row>
+                <row>x , x , 0 , 0 , 2 , x , 2 , 0 , 0 , x</row>
+                <row>x , x , 0 , 2 , 1 , 1 , 2 , 0 , x , x</row>
+    </level>
+    <level id="10">
+                <row>x , 1 , 0 , 1 , 1 , x , 2 , 2 , 0 , 2</row>
+                <row>x , 1 , 0 , 1 , x , x , 2 , 0 , 2 , x</row>
+                <row>x , x , 0 , 0 , 0 , 2 , 0 , 0 , 0 , x</row>
+                <row>x , x , x , 1 , 2 , 2 , 1 , x , x , x</row>
+                <row>x , x , x , 1 , x , x , x , 1 , x , x</row>
+                <row>0 , 2 , 2 , 2 , x , x , 2 , 2 , 2 , 0</row>
+                <row>x , 0 , 1 , 2 , x , x , x , 2 , 1 , 0</row>
+                <row>x , 1 , 2 , x , x , x , x , 2 , 1 , x</row>
+                <row>x , 1 , 0 , 1 , 1 , x , 2 , 2 , 0 , 1</row>
+                <row>x , 1 , 0 , 1 , x , x , 2 , 0 , 1 , x</row>
+                <row>x , x , 0 , 0 , 0 , 2 , 0 , 0 , 0 , x</row>
+                <row>x , x , 2 , 2 , 2 , 2 , 2 , 2 , x , x</row>
+    </level>
+    <level id="11">
+                <row>x , x , 2 , 2 , 2 , x , 1 , 1 , 2 , x</row>
+                <row>x , 2 , 1 , x , x , x , x , 0 , 2 , x</row>
+                <row>x , 2 , x , 1 , 0 , 0 , 0 , 0 , x , 2</row>
+                <row>2 , x , x , 1 , x , x , 0 , x , x , 2</row>
+                <row>0 , 0 , 0 , 0 , 1 , x , 0 , 1 , 1 , 1</row>
+                <row>x , x , x , x , 1 , 0 , x , x , x , x</row>
+                <row>0 , 0 , 0 , 0 , 1 , x , 0 , 1 , 1 , 1</row>
+                <row>x , x , x , x , 1 , 0 , x , x , x , x</row>
+                <row>0 , 0 , 0 , 0 , 1 , x , 0 , 1 , 1 , 1</row>
+                <row>x , 2 , 2 , x , 1 , 0 , x , 2 , 2 , x</row>
+                <row>x , x , 2 , 2 , 1 , x , 0 , 2 , 2 , x</row>
+                <row>x , 2 , x , 2 , 1 , 0 , 2 , x , 2 , x</row>
+    </level>
+    <level id="12">
+                <row>x , 2 , 0 , 0 , 0 , 1 , x , x , x , x</row>
+                <row>x , 2 , 1 , 1 , 0 , 1 , x , x , x , x</row>
+                <row>x , x , 2 , x , x , x , 1 , x , x , x</row>
+                <row>x , x , 2 , 1 , 1 , 0 , 1 , x , x , x</row>
+                <row>x , x , x , 2 , 0 , 0 , 0 , 1 , x , x</row>
+                <row>x , x , x , 2 , 1 , 1 , 0 , 1 , x , x</row>
+                <row>x , x , x , x , 2 , x , x , x , 1 , x</row>
+                <row>2 , 2 , 2 , 2 , 2 , 0 , 0 , 0 , 1 , x</row>
+                <row>1 , 1 , x , x , x , x , x , x , x , 1</row>
+                <row>1 , 1 , 2 , 2 , 2 , 2 , 2 , 2 , 1 , x</row>
+                <row>x , x , 1 , x , 1 , x , 0 , x , 1 , x</row>
+                <row>x , x , 0 , 0 , 1 , 0 , 0 , 0 , 1 , x</row>
+    </level>
+    <level id="13">
+                <row>x , x , x , x , x , x , x , x , x , 2</row>
+                <row>x , x , x , x , x , x , x , x , 2 , 1</row>
+                <row>x , x , x , x , x , x , x , x , 2 , 1</row>
+                <row>x , x , x , x , x , x , x , 2 , 1 , x</row>
+                <row>x , x , x , x , x , x , x , 2 , 1 , x</row>
+                <row>x , x , x , x , x , x , 2 , 0 , x , 0</row>
+                <row>x , x , x , x , x , x , 2 , 0 , x , 0</row>
+                <row>x , 1 , 1 , 1 , 1 , 2 , 0 , x , 0 , 2</row>
+                <row>x , 1 , 1 , x , 0 , 2 , 0 , x , 0 , 2</row>
+                <row>1 , 1 , x , 0 , 2 , 0 , 2 , 0 , 2 , 0</row>
+                <row>x , 1 , x , 0 , 2 , 0 , 2 , 0 , 2 , 0</row>
+                <row>x , 1 , 0 , 1 , 1 , 2 , 1 , 1 , 0 , x</row>
+    </level>
+    <level id="14">
+                <row>x , 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 1</row>
+                <row>2 , 1 , 2 , x , x , x , x , 2 , 1 , 2</row>
+                <row>x , 2 , 1 , 2 , x , x , x , 2 , 1 , 2</row>
+                <row>x , 2 , 0 , 0 , x , x , 0 , 0 , 2 , x</row>
+                <row>x , 0 , 1 , 2 , x , x , x , 2 , 1 , 0</row>
+                <row>0 , 1 , 2 , x , x , x , x , 2 , 1 , 0</row>
+                <row>x , 1 , 2 , x , x , x , x , x , 2 , 1</row>
+                <row>1 , 0 , x , x , x , x , x , x , 0 , 1</row>
+                <row>1 , 1 , 0 , x , x , x , x , x , 0 , 1</row>
+                <row>1 , 1 , 0 , x , x , x , x , 0 , 1 , x</row>
+                <row>x , 1 , 1 , 0 , 2 , 2 , 2 , 0 , 1 , x</row>
+                <row>x , x , 0 , 0 , 2 , 2 , 0 , 0 , x , x</row>
+    </level>
+    <level id="15">
+                <row>x , 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 1</row>
+                <row>2 , 1 , 2 , x , x , x , x , 2 , 1 , 2</row>
+                <row>x , 2 , 1 , 2 , x , x , x , 2 , 1 , 2</row>
+                <row>x , 2 , 0 , 0 , x , x , 0 , 0 , 2 , x</row>
+                <row>x , x , 1 , 2 , x , x , x , 2 , 1 , x</row>
+                <row>x , 1 , 2 , x , x , x , x , 2 , 1 , x</row>
+                <row>x , 1 , 2 , x , x , x , x , x , 2 , x</row>
+                <row>x , 0 , x , x , x , x , x , x , 0 , x</row>
+                <row>x , x , 0 , x , x , x , x , x , 0 , x</row>
+                <row>x , 1 , 0 , x , x , x , x , 0 , 1 , x</row>
+                <row>x , x , 1 , 0 , 2 , 2 , 2 , 0 , 1 , x</row>
+                <row>x , x , 0 , 0 , 2 , 2 , 0 , 0 , x , x</row>
+    </level>
+    <level id="16">
+                <row>x , x , 2 , x , 1 , x , 1 , x , 2 , x</row>
+                <row>2 , 1 , 2 , 1 , 0 , 0 , 1 , 2 , 1 , 2</row>
+                <row>x , 2 , 1 , 1 , x , 0 , x , 1 , 1 , 2</row>
+                <row>0 , 2 , 1 , x , 0 , 0 , x , 1 , 2 , 0</row>
+                <row>x , 0 , 2 , x , x , 1 , x , x , 2 , 0</row>
+                <row>x , 0 , 2 , x , 1 , 1 , x , 2 , 0 , x</row>
+                <row>x , x , x , 2 , x , 0 , x , 2 , x , x</row>
+                <row>x , x , 2 , x , 0 , 2 , x , 2 , x , x</row>
+                <row>x , x , 2 , x , 0 , x , 2 , x , 2 , x</row>
+                <row>x , 1 , 1 , 0 , 1 , 1 , 2 , 1 , 1 , x</row>
+                <row>x , x , x , 0 , 1 , x , 1 , 2 , x , x</row>
+                <row>x , x , 0 , 1 , 1 , 1 , 1 , 2 , x , x</row>
+    </level>
+    <level id="17">
+                <row>x , x , x , x , 2 , 0 , 0 , 1 , 1 , x</row>
+                <row>x , x , x , 2 , 0 , 1 , 1 , x , 1 , x</row>
+                <row>x , x , x , 2 , 0 , 1 , 1 , x , x , 1</row>
+                <row>x , x , 2 , 1 , 2 , x , 0 , x , x , 1</row>
+                <row>x , x , 2 , 1 , x , 2 , x , 0 , x , 1</row>
+                <row>x , 2 , 1 , x , x , 2 , x , 0 , 1 , x</row>
+                <row>x , 2 , 1 , x , x , x , 2 , x , 1 , x</row>
+                <row>2 , 2 , 1 , 0 , 0 , 0 , 2 , 1 , 1 , x</row>
+                <row>x , x , 2 , 1 , x , 2 , x , 0 , 0 , 1</row>
+                <row>x , 2 , 1 , x , x , 2 , x , 0 , 1 , x</row>
+                <row>x , 2 , 2 , x , x , x , 2 , x , 1 , x</row>
+                <row>x , 2 , 2 , 0 , 0 , 0 , 2 , 1 , x , x</row>
+    </level>
+    <level id="18">
+                <row>x , x , x , 0 , 0 , x , x , 0 , 0 , 0</row>
+                <row>x , x , x , 0 , 0 , x , 0 , 0 , 0 , x</row>
+                <row>x , x , x , x , x , 2 , 2 , 2 , 2 , 2</row>
+                <row>x , x , x , x , 2 , 2 , 1 , 1 , 1 , x</row>
+                <row>1 , 1 , 1 , 1 , 2 , 2 , 2 , 2 , 2 , x</row>
+                <row>1 , 1 , 1 , 1 , x , 0 , 0 , x , x , x</row>
+                <row>x , 1 , 1 , 1 , 1 , 0 , 0 , 2 , 2 , 2</row>
+                <row>x , 0 , x , 0 , 0 , 0 , x , 2 , 2 , 2</row>
+                <row>x , 0 , 1 , 1 , x , x , 1 , 1 , 1 , x</row>
+                <row>x , 0 , 2 , 2 , x , 0 , 0 , x , x , x</row>
+                <row>x , x , 0 , 1 , 1 , 0 , 0 , 2 , 2 , x</row>
+                <row>x , x , 0 , x , 0 , 0 , x , 2 , 2 , x</row>
+    </level>
+    <level id="19">
+                <row>x , x , x , 1 , 2 , 2 , 2 , 2 , 1 , 2</row>
+                <row>x , x , 1 , 2 , x , x , x , 1 , 2 , x</row>
+                <row>x , x , 1 , 0 , 1 , x , x , 1 , 2 , x</row>
+                <row>x , 1 , 0 , 0 , 1 , x , 1 , 2 , x , x</row>
+                <row>x , x , 0 , 2 , x , 2 , 1 , 0 , 2 , x</row>
+                <row>x , 0 , 2 , x , 2 , 1 , 0 , 0 , x , x</row>
+                <row>x , 0 , 2 , x , 2 , 2 , x , 0 , 0 , x</row>
+                <row>0 , 2 , x , 2 , 1 , 1 , 1 , 1 , 0 , x</row>
+                <row>x , x , 1 , 0 , x , 2 , 1 , 2 , x , x</row>
+                <row>x , 1 , 0 , x , 2 , 0 , 0 , 2 , x , x</row>
+                <row>x , 1 , 0 , x , 2 , 0 , 1 , 0 , 2 , x</row>
+                <row>1 , 0 , x , 2 , 0 , 1 , 1 , 0 , 2 , x</row>
+    </level>
+    <level id="20">
+                <row>x , x , x , x , 1 , 0 , 2 , 0 , 1 , 0</row>
+                <row>x , x , x , 1 , 0 , 2 , 0 , 1 , 0 , 2</row>
+                <row>x , x , x , 1 , 0 , 2 , 0 , 1 , 0 , 2</row>
+                <row>x , x , 1 , x , 2 , x , 1 , x , 2 , x</row>
+                <row>x , x , 1 , x , 2 , x , 1 , x , 2 , x</row>
+                <row>x , 1 , x , 2 , x , 1 , x , 2 , x , x</row>
+                <row>x , 1 , x , 0 , x , 2 , x , 1 , x , x</row>
+                <row>x , x , 0 , x , 2 , x , 1 , 2 , 2 , x</row>
+                <row>x , x , 1 , x , 2 , x , 1 , x , 2 , x</row>
+                <row>x , 1 , x , 2 , x , 1 , 2 , 2 , x , x</row>
+                <row>x , 1 , x , 0 , x , 2 , 2 , 0 , 0 , x</row>
+                <row>x , 0 , 0 , 2 , 2 , 0 , 0 , 2 , x , x</row>
+    </level>
+    <level id="21">
+                <row>x , 0 , 0 , x , x , x , 2 , 1 , x , x</row>
+                <row>x , 1 , 0 , x , x , x , 2 , 0 , x , x</row>
+                <row>x , x , 1 , 2 , x , x , x , 2 , 0 , x</row>
+                <row>x , x , 1 , 2 , 0 , 0 , 0 , 1 , 0 , x</row>
+                <row>x , x , x , 1 , 2 , x , x , x , 2 , 0</row>
+                <row>x , x , x , 1 , 0 , x , x , 1 , 2 , 1</row>
+                <row>x , x , x , 2 , 0 , 2 , x , 1 , 2 , 1</row>
+                <row>x , x , 2 , 0 , 2 , x , 1 , 2 , 1 , x</row>
+                <row>x , x , 2 , 0 , 2 , x , 1 , 2 , 1 , x</row>
+                <row>x , 2 , 1 , 2 , x , 1 , 2 , 0 , x , x</row>
+                <row>x , 2 , 1 , 2 , x , 1 , 2 , 0 , x , x</row>
+                <row>x , 1 , 2 , x , 1 , 2 , 0 , x , x , x</row>
+    </level>
+    <level id="22">
+                <row>x , x , x , 0 , 2 , 1 , 2 , 0 , x , x</row>
+                <row>x , x , 0 , 2 , 1 , 1 , 2 , 0 , x , x</row>
+                <row>x , x , 0 , 2 , x , 1 , x , 2 , 0 , x</row>
+                <row>x , x , 1 , 1 , x , x , 1 , 1 , x , x</row>
+                <row>x , x , x , 1 , 2 , 2 , 2 , 1 , x , x</row>
+                <row>x , x , x , 0 , x , x , 0 , x , x , x</row>
+                <row>x , x , x , 0 , 1 , 1 , 1 , 0 , x , x</row>
+                <row>x , x , 0 , 1 , 0 , 0 , 1 , 0 , x , x</row>
+                <row>x , x , x , 1 , 2 , 2 , 2 , 1 , x , x</row>
+                <row>x , x , x , 0 , x , x , 0 , x , x , x</row>
+                <row>x , x , x , 0 , 1 , 1 , 1 , 0 , x , x</row>
+                <row>x , x , 0 , 1 , 1 , 1 , 1 , 0 , x , x</row>
+    </level>
+    <level id="23">
+                <row>x , 0 , 0 , 2 , 0 , 0 , 0 , 2 , 0 , 0</row>
+                <row>0 , x , 2 , 1 , x , x , 1 , 2 , x , 0</row>
+                <row>x , 0 , 2 , 1 , x , x , x , 1 , 2 , 0</row>
+                <row>x , 2 , 1 , 0 , 0 , 0 , 0 , 1 , 2 , x</row>
+                <row>x , 2 , 1 , 2 , x , x , x , 2 , 1 , 2</row>
+                <row>x , x , 1 , 2 , x , x , 2 , 1 , x , x</row>
+                <row>x , x , 0 , 1 , 2 , x , 2 , 1 , 0 , x</row>
+                <row>x , 0 , 0 , 1 , 2 , 2 , 1 , 0 , 0 , x</row>
+                <row>x , 2 , 1 , 2 , x , x , x , 2 , 1 , 2</row>
+                <row>x , 2 , 1 , 2 , x , x , 2 , 1 , 2 , x</row>
+                <row>x , x , 0 , 1 , 2 , x , 2 , 1 , 0 , x</row>
+                <row>x , x , 0 , 0 , 2 , 2 , 0 , 0 , x , x</row>
+    </level>
+    <level id="24">
+                <row>x , x , 1 , x , 0 , x , 0 , x , 1 , x</row>
+                <row>x , 1 , x , 0 , x , x , 0 , x , 1 , x</row>
+                <row>x , 1 , x , 2 , 2 , 2 , 2 , 2 , x , 1</row>
+                <row>1 , x , x , x , x , x , x , x , x , 1</row>
+                <row>x , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2</row>
+                <row>x , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , x</row>
+                <row>x , x , 1 , x , x , x , x , x , 1 , x</row>
+                <row>x , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , x</row>
+                <row>x , x , 1 , 2 , 2 , 2 , 2 , 2 , 1 , x</row>
+                <row>x , x , 1 , 0 , 0 , 0 , 0 , 1 , x , x</row>
+                <row>x , x , x , 1 , x , x , x , 1 , x , x</row>
+                <row>x , x , x , 1 , 1 , 1 , 1 , x , x , x</row>
+    </level>
+    <level id="25">
+                <row>x , 1 , 2 , 0 , 0 , 0 , 0 , 0 , 2 , 0</row>
+                <row>x , 1 , 2 , x , x , x , x , 2 , 0 , x</row>
+                <row>x , x , 1 , 2 , 1 , 1 , 1 , 2 , 0 , x</row>
+                <row>x , x , 1 , x , 2 , 2 , x , 0 , x , x</row>
+                <row>x , x , 2 , 2 , x , 0 , x , 1 , 1 , x</row>
+                <row>x , 2 , x , 2 , 0 , 0 , 1 , x , 1 , x</row>
+                <row>x , x , 2 , 2 , 0 , x , 0 , 1 , 1 , x</row>
+                <row>x , x , 0 , 0 , 2 , 2 , 0 , 0 , x , x</row>
+                <row>x , x , 2 , 2 , x , 0 , x , 1 , 1 , x</row>
+                <row>x , 2 , x , 2 , 0 , 0 , 1 , x , 1 , x</row>
+                <row>x , x , 2 , 2 , 0 , x , 0 , 1 , 1 , x</row>
+                <row>x , x , 0 , 0 , 0 , 0 , 0 , 0 , x , x</row>
+    </level>
+    <level id="26">
+                <row>x , 2 , 2 , 0 , 2 , 2 , 2 , 0 , 2 , 2</row>
+                <row>x , 2 , 0 , 0 , x , x , 0 , 0 , 2 , x</row>
+                <row>x , 1 , 1 , 1 , 0 , 0 , 0 , 1 , 1 , x</row>
+                <row>x , 1 , 1 , x , x , x , x , 1 , 1 , x</row>
+                <row>x , x , 1 , 1 , 0 , 0 , 0 , 1 , 1 , x</row>
+                <row>x , 1 , 1 , 1 , x , x , 1 , 1 , 1 , x</row>
+                <row>x , x , x , 0 , x , x , x , 0 , x , x</row>
+                <row>x , x , 0 , 0 , x , x , 0 , 0 , x , x</row>
+                <row>x , x , 1 , 1 , 0 , 0 , 0 , 1 , 1 , x</row>
+                <row>x , x , 1 , 0 , x , x , 0 , 1 , x , x</row>
+                <row>x , x , 1 , 0 , 2 , 2 , 2 , 0 , 1 , x</row>
+                <row>x , x , 0 , 0 , 2 , 2 , 0 , 0 , x , x</row>
+    </level>
+    <level id="27">
+                <row>x , 2 , x , 2 , 0 , 0 , 0 , 2 , x , 2</row>
+                <row>x , 2 , 2 , x , 0 , 0 , x , 2 , 2 , x</row>
+                <row>x , x , 1 , 1 , 1 , 0 , 1 , 1 , 1 , x</row>
+                <row>x , x , x , x , 2 , 1 , x , x , x , x</row>
+                <row>x , x , x , x , 2 , x , 1 , x , x , x</row>
+                <row>1 , 1 , 1 , 2 , x , x , 1 , 2 , 2 , 2</row>
+                <row>x , x , x , 2 , 0 , 1 , 0 , 1 , x , x</row>
+                <row>0 , 0 , 2 , 0 , 1 , 1 , 0 , 1 , 0 , 0</row>
+                <row>x , x , x , 1 , 2 , x , 1 , 2 , x , x</row>
+                <row>x , x , 1 , 2 , x , x , 1 , 2 , x , x</row>
+                <row>x , 1 , 1 , 2 , 0 , 0 , 0 , 1 , 2 , 2</row>
+                <row>1 , 1 , 2 , 0 , 1 , 1 , 0 , 1 , 2 , 2</row>
+    </level>
+    <level id="28">
+                <row>x , x , x , 2 , 1 , 1 , 1 , 2 , x , x</row>
+                <row>x , x , x , 2 , x , x , 2 , x , x , x</row>
+                <row>x , x , x , x , 2 , x , 2 , x , x , x</row>
+                <row>x , x , 2 , 2 , 0 , 0 , 2 , 2 , x , x</row>
+                <row>x , x , x , 2 , 2 , 2 , 2 , 2 , x , x</row>
+                <row>x , x , 1 , 0 , x , x , 1 , 0 , x , x</row>
+                <row>x , x , 2 , 1 , 0 , x , 1 , 0 , 2 , x</row>
+                <row>x , 2 , 0 , 1 , x , x , 0 , 1 , 2 , x</row>
+                <row>x , x , x , 0 , 2 , 2 , 2 , 1 , x , x</row>
+                <row>x , x , 1 , 0 , x , x , 1 , 0 , x , x</row>
+                <row>x , x , 2 , 1 , 0 , 2 , 1 , 0 , 1 , x</row>
+                <row>x , x , 2 , 1 , 2 , 2 , 0 , 1 , x , x</row>
+    </level>
+    <level id="29">
+                <row>x , x , x , x , x , 0 , x , x , x , x</row>
+                <row>x , x , 2 , 2 , 0 , 0 , 1 , 1 , x , x</row>
+                <row>x , x , x , 2 , 2 , 0 , 1 , 1 , x , x</row>
+                <row>x , x , x , 2 , 0 , 0 , 1 , x , x , x</row>
+                <row>x , x , 1 , 1 , 0 , 2 , 0 , 2 , 2 , x</row>
+                <row>x , x , x , 2 , 0 , 0 , 2 , x , x , x</row>
+                <row>x , x , x , 2 , 1 , x , 1 , 2 , x , x</row>
+                <row>x , x , 2 , 1 , x , x , 1 , 2 , x , x</row>
+                <row>x , x , 1 , 1 , 2 , 2 , 2 , 1 , 1 , x</row>
+                <row>x , x , x , 2 , 1 , 1 , 2 , x , x , x</row>
+                <row>x , x , x , 2 , 1 , 0 , 1 , 2 , x , x</row>
+                <row>x , x , 2 , 1 , 0 , 0 , 1 , 2 , x , x</row>
+    </level>
+    <level id="30">
+                <row>x , 2 , 2 , 0 , 0 , 1 , 2 , 2 , 1 , x</row>
+                <row>x , 2 , 2 , 0 , 1 , 0 , 2 , 1 , x , x</row>
+                <row>x , x , 2 , 2 , 1 , x , 0 , 1 , x , x</row>
+                <row>x , x , 0 , 1 , x , x , 0 , 2 , x , x</row>
+                <row>x , 0 , 0 , 1 , x , x , x , 0 , 2 , 2</row>
+                <row>0 , 1 , 2 , x , x , x , x , 1 , 0 , 2</row>
+                <row>x , 0 , 1 , 2 , x , x , x , 1 , 0 , 2</row>
+                <row>x , 0 , 1 , 2 , x , x , 1 , 0 , 2 , x</row>
+                <row>x , x , 2 , 0 , 0 , 1 , 2 , 2 , 1 , x</row>
+                <row>x , x , 2 , 0 , 1 , 0 , 2 , 1 , x , x</row>
+                <row>x , x , x , 2 , 1 , 2 , 0 , 1 , x , x</row>
+                <row>x , x , 1 , 1 , 2 , 2 , 0 , 0 , x , x</row>
+    </level>
+</model>
