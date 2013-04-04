@@ -12,11 +12,19 @@ public class PlayingObjectManager : MonoBehaviour
 	
 	void Start () 
     {
-        brustCounter = 0;
+        /*brustCounter = 0;
         currentObjectName = "";
         playingObjectList = new ArrayList();        
-        RefreshPlayingObjectList();
+        RefreshPlayingObjectList();*/
+		Restart();
+	}
 	
+	public void Restart(){
+		
+		brustCounter = 0;
+        currentObjectName = "";
+        playingObjectList = new ArrayList();        
+        RefreshPlayingObjectList();	
 	}
 
     public void RefreshPlayingObjectList()

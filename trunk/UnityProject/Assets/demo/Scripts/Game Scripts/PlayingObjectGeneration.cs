@@ -3,6 +3,7 @@ using System.Collections;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
+using System.Collections.Generic;
 
 public class PlayingObjectGeneration : MonoBehaviour
 {
@@ -28,21 +29,22 @@ public class PlayingObjectGeneration : MonoBehaviour
     int rowCounter = 0;
     int numberOfRowsGenerated = 0;
 	LevelsPak levelsPak;
-
+	
     public GameVariables gameVariables;
 	public GameObject burnPrefab;
-
+	
+	
     void FalsenIsStarting()
     {
         isStarting = false;
-    }
+	}
 
     void Start()
     {
-		LoadLevels("levels");
+    	LoadLevels("levels");
         objectGenerationheight = transform.position.y;
-		
-		currentXPos = transform.position.x;
+		Restart();
+		/*currentXPos = transform.position.x;
 		currentZPos = transform.position.z;
 		
         rowStartingPos = maxX;
@@ -50,9 +52,43 @@ public class PlayingObjectGeneration : MonoBehaviour
         thresoldLineTransform = GameObject.Find("Thresold Line").transform;
         rowGap = objectGap * .9f;
         Invoke("InitiateRowAdd", .1f);
-        Invoke("FalsenIsStarting", 2f);
+        Invoke("FalsenIsStarting", 2f);*/
 
     }
+	
+	public void Restart(){
+		gameVariables.totalNumberOfRowsLeft = 1000;
+		var children = new List<GameObject>();
+		foreach (Transform child in transform) children.Add(child.gameObject);
+		children.ForEach(child => Destroy(child));
+		
+		transform.localPosition = new Vector3(0,objectGenerationheight,0);
+		
+		currentYPos = 0;
+		currentXPos = 0;
+		currentZPos = 0;
+		
+		rowIndex = 0;
+		rowCounter = 0;
+    	numberOfRowsGenerated = 0;
+		rowStartingPos = 0;
+  
+		currentXPos = transform.position.x;
+		currentZPos = transform.position.z;
+		
+        rowStartingPos = maxX;
+        isBusy = false;
+        thresoldLineTransform = GameObject.Find("Thresold Line").transform;
+        rowGap = objectGap * .9f;
+		CancelInvoke("InitiateRowAdd");
+		CancelInvoke("FalsenIsStarting");
+		CancelInvoke("CheckForGameOver");
+		
+		iTween.Stop(gameObject, "mov");
+		
+        Invoke("InitiateRowAdd", .1f);
+        Invoke("FalsenIsStarting", 2f);
+	}
 	
 	void LoadLevels(string path)
  	{
@@ -107,7 +143,7 @@ public class PlayingObjectGeneration : MonoBehaviour
     {
         if (GameUIController.isgameFinish)
             return;
-
+		
         if (gameVariables.totalNumberOfRowsLeft == 0)
         {
             currentRowAddingInterval = gameVariables.rowAddingInterval;

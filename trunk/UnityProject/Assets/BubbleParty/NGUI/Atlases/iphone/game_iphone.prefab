@@ -42,14 +42,14 @@ MonoBehaviour:
   - name: scoreBubbles@2x
     outer:
       serializedVersion: 2
-      x: 0
-      y: 129
+      x: 371
+      y: 641
       width: 558
       height: 142
     inner:
       serializedVersion: 2
-      x: 0
-      y: 129
+      x: 371
+      y: 641
       width: 558
       height: 142
     rotated: 0
@@ -60,14 +60,14 @@ MonoBehaviour:
   - name: scoreRacoon2@2x
     outer:
       serializedVersion: 2
-      x: 625
-      y: 229
+      x: 0
+      y: 500
       width: 370
       height: 283
     inner:
       serializedVersion: 2
-      x: 625
-      y: 229
+      x: 0
+      y: 500
       width: 370
       height: 283
     rotated: 0
@@ -79,13 +79,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 0
-      y: 272
+      y: 784
       width: 624
       height: 240
     inner:
       serializedVersion: 2
       x: 200
-      y: 332
+      y: 844
       width: 224
       height: 120
     rotated: 0
@@ -96,16 +96,394 @@ MonoBehaviour:
   - name: bg_scrollContents1@2x
     outer:
       serializedVersion: 2
-      x: 0
-      y: 82
+      x: 371
+      y: 465
       width: 558
       height: 46
     inner:
       serializedVersion: 2
-      x: 0
-      y: 82
+      x: 371
+      y: 465
       width: 558
       height: 46
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btnLarge@2x
+    outer:
+      serializedVersion: 2
+      x: 625
+      y: 896
+      width: 380
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 625
+      y: 896
+      width: 380
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btnLargeDown@2x
+    outer:
+      serializedVersion: 2
+      x: 371
+      y: 512
+      width: 380
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 371
+      y: 512
+      width: 380
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: emptyAnchor
+    outer:
+      serializedVersion: 2
+      x: 1006
+      y: 1016
+      width: 8
+      height: 8
+    inner:
+      serializedVersion: 2
+      x: 1006
+      y: 1016
+      width: 8
+      height: 8
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btnPauseDown@2x
+    outer:
+      serializedVersion: 2
+      x: 283
+      y: 16
+      width: 74
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 283
+      y: 16
+      width: 74
+      height: 62
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btnPause@2x
+    outer:
+      serializedVersion: 2
+      x: 208
+      y: 16
+      width: 74
+      height: 62
+    inner:
+      serializedVersion: 2
+      x: 208
+      y: 16
+      width: 74
+      height: 62
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: timerBG_noFrame
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 168
+      width: 288
+      height: 49
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 168
+      width: 288
+      height: 49
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: timerFillGolden
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 328
+      width: 294
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 328
+      width: 294
+      height: 54
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: timerFillYellow
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 273
+      width: 294
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 273
+      width: 294
+      height: 54
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: scoreBG
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 106
+      width: 207
+      height: 61
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 106
+      width: 207
+      height: 61
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: .00483091781
+    paddingTop: 0
+    paddingBottom: 0
+  - name: timeBarFrameRed
+    outer:
+      serializedVersion: 2
+      x: 625
+      y: 829
+      width: 306
+      height: 66
+    inner:
+      serializedVersion: 2
+      x: 625
+      y: 829
+      width: 306
+      height: 66
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: timeBarFrame
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 438
+      width: 313
+      height: 61
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 438
+      width: 313
+      height: 61
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: timerFillRed
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 218
+      width: 294
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 218
+      width: 294
+      height: 54
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: timerFillGreen
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 383
+      width: 294
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 383
+      width: 294
+      height: 54
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostGoldStarActive@2x
+    outer:
+      serializedVersion: 2
+      x: 932
+      y: 807
+      width: 88
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 932
+      y: 807
+      width: 88
+      height: 88
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostFireballActive@2x
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 17
+      width: 88
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 17
+      width: 88
+      height: 88
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostTimeActive@2x
+    outer:
+      serializedVersion: 2
+      x: 297
+      y: 85
+      width: 70
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 297
+      y: 85
+      width: 70
+      height: 82
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostTimeInactive@2x
+    outer:
+      serializedVersion: 2
+      x: 841
+      y: 558
+      width: 69
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 841
+      y: 558
+      width: 69
+      height: 82
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: .0144927539
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostGoldStarInactive@2x
+    outer:
+      serializedVersion: 2
+      x: 89
+      y: 17
+      width: 88
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 89
+      y: 17
+      width: 88
+      height: 88
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostGoldTimeActive@2x
+    outer:
+      serializedVersion: 2
+      x: 208
+      y: 79
+      width: 88
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 208
+      y: 79
+      width: 88
+      height: 88
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostFireballInactive@2x
+    outer:
+      serializedVersion: 2
+      x: 930
+      y: 695
+      width: 88
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 930
+      y: 695
+      width: 88
+      height: 88
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostGoldTimeInactive@2x
+    outer:
+      serializedVersion: 2
+      x: 752
+      y: 552
+      width: 88
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 752
+      y: 552
+      width: 88
+      height: 88
     rotated: 0
     paddingLeft: 0
     paddingRight: 0

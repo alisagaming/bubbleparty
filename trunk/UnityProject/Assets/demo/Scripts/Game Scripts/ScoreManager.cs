@@ -15,17 +15,18 @@ public class ScoreManager : MonoBehaviour
     internal void DisplayScorePopup(int score,Transform go,bool makeChild)
     {
 
-        GameObject scoreItem = (GameObject)Instantiate(scoreItemPrefab, go.position + new Vector3(0, 0, -1), Quaternion.identity);
+        bonusPoint = score * numberOfItemPoppedInARow;
+        int points = score + bonusPoint;
+		
+		GameVariables.score += points;
+        numberOfItemPoppedInARow++;
+		
+		/*GameObject scoreItem = (GameObject)Instantiate(scoreItemPrefab, go.position + new Vector3(0, 0, -1), Quaternion.identity);
         scoreItem.transform.eulerAngles = new Vector3(0, 0, 0);
 
 
-        bonusPoint = score * numberOfItemPoppedInARow;
-        int points = score + bonusPoint;
-
         scoreItem.GetComponent<ScorePopupItem>().BringItForward(points);
-        GameVariables.score += points;
-        numberOfItemPoppedInARow++;
-
+        */
         CancelInvoke("ResetNumberOfItemPopped");
         Invoke("ResetNumberOfItemPopped",.5f);
     }
@@ -33,6 +34,6 @@ public class ScoreManager : MonoBehaviour
     private void ResetNumberOfItemPopped()
     {
         numberOfItemPoppedInARow = 0;
-        ScorePopupItem.ResetDelay();
+        //ScorePopupItem.ResetDelay();
     }
 }

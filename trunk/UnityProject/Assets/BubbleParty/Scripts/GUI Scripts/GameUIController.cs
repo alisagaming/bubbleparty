@@ -8,6 +8,7 @@ public class GameUIController : MonoBehaviour
 	public UILabel timerText;
 	public Transform timerBar;
     //public TextMesh gameStateText;
+	public GameObject panelInGameGo;
 
 	void Start () 
     {
@@ -42,7 +43,9 @@ public class GameUIController : MonoBehaviour
 	
 	void FixedUpdate()
     {
+		if(panelInGameGo.activeSelf) return;
 		GameVariables.time -= Time.fixedDeltaTime;
+		if(GameVariables.time<0) GameVariables.time = 0;
 	}
     
 }

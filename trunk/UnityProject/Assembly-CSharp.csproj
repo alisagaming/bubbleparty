@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\GameUIController.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelInGameGo.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -191,6 +192,7 @@
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoAnimController.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoButtonController.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
+     <Compile Include="Assets\demo\Scripts\Game Scripts\Game\GameManager.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Game\GameVariables.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Game\InGameScriptRefrences.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\InputScript.cs" />
@@ -244,11 +246,13 @@
      <None Include="Assets\Plugins\Android\res\layout\main.xml" />
      <None Include="Assets\Plugins\Android\res\layout\com_facebook_picker_search_box.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
-     <None Include="Assets\BubbleParty\Font\BMGrilledBrown.txt" />
+     <None Include="Assets\BubbleParty\Font\FontSRC\BMGrilledBrown.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
      <None Include="Assets\Plugins\Android\res\drawable\com_facebook_top_background.xml" />
      <None Include="Assets\Plugins\Android\res\drawable\com_facebook_loginbutton_blue.xml" />
+     <None Include="Assets\BubbleParty\Font\FontSRC\GC_BTNcn.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\BubbleParty\Font\FontSRC\BMGrilledCheese-hd.txt" />
      <None Include="Assets\Plugins\Android\res\values-iw\strings.xml" />
      <None Include="Assets\Plugins\Android\res\layout\com_facebook_placepickerfragment_list_row.xml" />
      <None Include="Assets\Plugins\Android\res\drawable\com_facebook_picker_top_button.xml" />

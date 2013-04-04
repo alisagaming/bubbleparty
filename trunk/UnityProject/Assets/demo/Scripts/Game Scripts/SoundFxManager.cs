@@ -9,14 +9,12 @@ public class SoundFxManager : MonoBehaviour
     public AudioSource collisionSoundPoker;
 
     public AudioSource wallCollisionSoundPoker;
-
     
     public AudioSource themeMusic;
 
     AudioSource collisionSound;
     AudioSource wallCollisionSound;
-
-    
+	
 
     void Start()
     {
@@ -41,4 +39,5 @@ public class SoundFxManager : MonoBehaviour
     {
         collisionSound.Play();
     }
+	
 }
