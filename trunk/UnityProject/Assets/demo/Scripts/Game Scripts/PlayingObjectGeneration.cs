@@ -43,7 +43,7 @@ public class PlayingObjectGeneration : MonoBehaviour
     {
     	LoadLevels("levels");
         objectGenerationheight = transform.position.y;
-		Restart();
+		//Restart();
 		/*currentXPos = transform.position.x;
 		currentZPos = transform.position.z;
 		

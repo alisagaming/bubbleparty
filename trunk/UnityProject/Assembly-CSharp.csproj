@@ -46,6 +46,11 @@
   <ItemGroup>
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\GameUIController.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelInGameGo.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelManager2D.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelTop.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Game\GameVariables.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Game\InGameScriptRefrences.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Game\MainGameManager.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -192,9 +197,6 @@
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoAnimController.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoButtonController.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
-     <Compile Include="Assets\demo\Scripts\Game Scripts\Game\GameManager.cs" />
-     <Compile Include="Assets\demo\Scripts\Game Scripts\Game\GameVariables.cs" />
-     <Compile Include="Assets\demo\Scripts\Game Scripts\Game\InGameScriptRefrences.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\InputScript.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Model\Level.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Model\LevelsPak.cs" />

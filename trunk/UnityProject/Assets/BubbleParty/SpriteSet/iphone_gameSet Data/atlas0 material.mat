@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: atlas0 material
-  m_Shader: {fileID: 4800000, guid: 88907f689cb94014980290b8ee139c22, type: 3}
+  m_Shader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -18,5 +18,16 @@ Material:
           m_Texture: {fileID: 2800000, guid: 8c0cb31770d68b1408cf0ecd371db51e, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _GradientTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats: {}
-    m_Colors: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
