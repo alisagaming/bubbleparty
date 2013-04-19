@@ -60,7 +60,7 @@ MonoBehaviour:
   atlasWidth: 512
   atlasHeight: 1024
   forceSquareAtlas: 0
-  atlasWastage: 33.0043793
+  atlasWastage: 57.3383331
   allowMultipleAtlases: 0
   textureParams:
   - name: bubble_black
@@ -215,15 +215,15 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
-  - name: bubble_iron
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: be880f3f54a04454090d80af4fe2c47c, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 28
-    anchorY: 28
+    anchorX: 1
+    anchorY: 1
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -716,8 +716,8 @@ MonoBehaviour:
     texture: {fileID: 2800000, guid: 720ceb834611a58479c2ac2835674f34, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 36
-    anchorY: 52
+    anchorX: 29
+    anchorY: 29
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -754,8 +754,8 @@ MonoBehaviour:
     texture: {fileID: 2800000, guid: cddc33dc1a428fb419236f0aa6013cde, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 35
-    anchorY: 38
+    anchorX: 29
+    anchorY: 29
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -792,8 +792,8 @@ MonoBehaviour:
     texture: {fileID: 2800000, guid: c05d3add259850847bdc7e5b9f6e0ca6, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 36
-    anchorY: 44
+    anchorX: 29
+    anchorY: 29
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -830,8 +830,8 @@ MonoBehaviour:
     texture: {fileID: 2800000, guid: 982144aff7b8c9140954975620df826d, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 36
-    anchorY: 58
+    anchorX: 29
+    anchorY: 29
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -868,8 +868,8 @@ MonoBehaviour:
     texture: {fileID: 2800000, guid: 1ced88079813e14409f3c1e5410fbbda, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 35
-    anchorY: 50
+    anchorX: 29
+    anchorY: 29
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -899,15 +899,15 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
-  - name: fireballflying1
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 3cdf1e20c8638aa4f831ac1f2e2538f8, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 35
-    anchorY: 133
+    anchorX: 1
+    anchorY: 1
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -937,15 +937,15 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
-  - name: fireballflying2
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: fc39912015eddea40ab00ce635f933e1, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 39
-    anchorY: 144
+    anchorX: 1
+    anchorY: 1
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -975,15 +975,15 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
-  - name: fireballflying5
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 9763d547d8b6b044888ec02f9592cd05, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 39
-    anchorY: 109
+    anchorX: 1
+    anchorY: 1
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -1013,15 +1013,15 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
-  - name: fireballflying6
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: 0cb017b4c40b4c7499ac80aab368298a, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 40
-    anchorY: 117
+    anchorX: 1
+    anchorY: 1
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0
@@ -1051,15 +1051,15 @@ MonoBehaviour:
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
-  - name: fireballflying7
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
     texture: {fileID: 2800000, guid: de5e8b91eb5051641b13243a0ff07df3, type: 3}
     materialId: 0
     anchor: 4
-    anchorX: 38
-    anchorY: 133
+    anchorX: 1
+    anchorY: 1
     overrideMesh: {fileID: 0}
     doubleSidedSprite: 0
     customSpriteGeometry: 0

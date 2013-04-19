@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model>
+	<boostScore>7500</boostScore>
+	<droppedScore>
+		<item amount="10" score="1000"/>
+		<item amount="15" score="2000"/>
+		<item amount="20" score="3000"/>
+		<item amount="25" score="4000"/>
+		<item amount="30" score="5000"/>		
+	</droppedScore>
+	<droppedScorePerBubble>240</droppedScorePerBubble>
+	<explodedScorePerBubble>160</explodedScorePerBubble>
+	<explodedScores>
+		<item amount="5" score="1000"/>
+		<item amount="8" score="1300"/>
+		<item amount="10" score="1600"/>
+		<item amount="15" score="2000"/>		
+	</explodedScores>
+	<fireballScoreMultiplier>0</fireballScoreMultiplier>
+	<fixedFireballScore>15000</fixedFireballScore>
+	<fixedPlasmaScore>15000</fixedPlasmaScore>
+	<plasmaScoreMultiplier>0</plasmaScoreMultiplier>
+	<rowScores>
+		<item amount="2" score="1000"/>
+		<item amount="3" score="1100"/>
+		<item amount="4" score="1200"/>
+		<item amount="5" score="1300"/>
+		<item amount="6" score="1400"/>
+		<item amount="7" score="1600"/>
+		<item amount="8" score="1800"/>
+		<item amount="9" score="2000"/>
+		<item amount="10" score="2250"/>
+		<item amount="11" score="2500"/>		
+	</rowScores>
+	<soundsByScore>
+		<item amount="12" score="COOL"/>
+		<item amount="18" score="GREAT"/>
+		<item amount="22" score="EXCELLENT"/>	
+	</soundsByScore>
+	<speedModeScore>1500</speedModeScore>
+</model>

@@ -8,21 +8,23 @@ public class StrikerManager : MonoBehaviour
     //public GameObject[] specialStrikerPrefabs;
 	
 	public GameObject prefabFireball;
+	public Tracer tracer;
+	public tk2dAnimatedSprite character;
 
     Transform currentStrikerPosition;
     Transform nextStrikerPosition;
 
     GameObject currentStrikerObject;
     GameObject nextStrikerObject;
-    Transform thresoldLineTransform;
+    //Transform thresoldLineTransform;
 	
 	PowerType nextStrikerType = PowerType.None;
 	PowerType currentStrikerType = PowerType.None;
-
+	
 	void Start () 
     {
        // return;
-        thresoldLineTransform = GameObject.Find("Thresold Line").transform;
+        //thresoldLineTransform = GameObject.Find("Thresold Line").transform;
         striker = GameObject.Find("Striker");
         strikerScript = striker.GetComponent<Striker>();
 
@@ -31,8 +33,8 @@ public class StrikerManager : MonoBehaviour
 
         GenerateNextStriker();
 
-        Invoke("UpdateThresoldPosition", .2f);
-        Invoke("GenerateStriker", .2f);
+        //Invoke("GenerateNextStriker", .1f);
+		Invoke("GenerateStriker", 1f);
 	
 	}
 	
@@ -40,20 +42,22 @@ public class StrikerManager : MonoBehaviour
 		nextStrikerType = type;
 	}
 	
-    void UpdateThresoldPosition()
+    /*void UpdateThresoldPosition()
     {
-        thresoldLineTransform.position = new Vector3(thresoldLineTransform.position.x, currentStrikerPosition.position.y + .6f, thresoldLineTransform.position.z);
-    }
+        //thresoldLineTransform.position = new Vector3(thresoldLineTransform.position.x, currentStrikerPosition.position.y + .6f, thresoldLineTransform.position.z);
+    }*/
 
     internal bool isFirstObject = true;
-
+	bool inGenerate;
 
     internal void GenerateStriker()
-    {        
-        striker.transform.position = currentStrikerPosition.position;
+    {      
+		if(inGenerate) return;
+		inGenerate = true;
+		striker.transform.position = currentStrikerPosition.position;
 		
 		currentStrikerObject = nextStrikerObject;
-		iTween.MoveTo(nextStrikerObject.gameObject, currentStrikerPosition.position, .1f);
+		iTween.MoveTo(nextStrikerObject.gameObject, currentStrikerPosition.position, 0.1f);
         
 		currentStrikerObject.transform.parent = striker.transform;
         if (isFirstObject)
@@ -64,14 +68,19 @@ public class StrikerManager : MonoBehaviour
         strikerScript.currentStrikerObject = currentStrikerObject;
 		strikerScript.PrepareStriker(currentStrikerType);
 		currentStrikerType = nextStrikerType;
-		GenerateNextStriker();
-        nextStrikerType = PowerType.None;
-        //Invoke("GenerateNextStriker", .1f);       
-
+		//GenerateNextStriker();
+		character.Play("get_bubble");	
+		CancelInvoke("GenerateNextStriker");        
+        Invoke("GenerateNextStriker", .3f);    
     }
+	
 
     void GenerateNextStriker()
     {
+		inGenerate = false;
+		//yield return new WaitForSeconds(0.3f);
+		//yield return new WaitForSeconds(0);
+		
         ArrayList remainingObjects =  InGameScriptRefrences.playingObjectManager.GetRemainingObjectsNames();
         if (remainingObjects != null)
         {
@@ -94,23 +103,28 @@ public class StrikerManager : MonoBehaviour
         nextStrikerObject.GetComponent<SphereCollider>().enabled = false;
         nextStrikerObject.GetComponent<SphereCollider>().radius *= .8f;
         iTween.PunchScale(nextStrikerObject, new Vector3(.2f, .2f, .2f), 1f);
+		nextStrikerType = PowerType.None;        
     }
 	
 	internal void ResetStriker(){
-		//striker.transform.position = currentStrikerPosition.position;
-		iTween.MoveTo(striker.gameObject, currentStrikerPosition.position, .01f);
+		striker.transform.position = currentStrikerPosition.position;
+		//iTween.MoveTo(striker.gameObject, currentStrikerPosition.position, .1f);
 	}
 	
+	Vector3 up = new Vector3(0,1,0);
+
     internal void Shoot(Vector3 touchedPosition)
     {
+		//if(currentStrikerPosition.position != currentStrikerObject.transform.position) return;
+		if(inGenerate) return;
         if (GameUIController.isgameFinish == true)
             return;
 
         if (strikerScript.isBusy)
             return;
 
-        if (touchedPosition.y < thresoldLineTransform.position.y)
-            return;
+        //if (touchedPosition.y < thresoldLineTransform.position.y)
+        //    return;
 
         //iTween.Stop(nextStrikerObject);
 
@@ -118,10 +132,42 @@ public class StrikerManager : MonoBehaviour
 
         Vector3 dir = touchedPosition - currentStrikerPosition.position;
 		dir.z = 0;
+		
+		//Vector3 relativeUp = currentStrikerPosition.TransformDirection (Vector3.forward);
+		//currentStrikerPosition.up = up;
+		//currentStrikerPosition.rotation = Quaternion.LookRotation(dir,currentStrikerPosition.up);
+		//currentStrikerPosition.LookAt(touchedPosition);
+		//currentStrikerPosition.up = up;
+		
+		
 		dir.Normalize();		
         strikerScript.Shoot(dir);
         
-
+		
+		float rotZ = Mathf.Atan2(-dir.x,dir.y) * Mathf.Rad2Deg;
+		currentStrikerPosition.rotation = Quaternion.Euler(0f,0f,rotZ);
+		
+		
         //iTween.MoveTo(nextStrikerObject.gameObject, currentStrikerPosition.position, .4f);
     }
+	
+	internal void OnMouseDrag(Vector3 touchedPosition)
+    {
+        if (GameUIController.isgameFinish == true)
+            return;
+
+        if (strikerScript.isBusy)
+            return;
+		
+		Vector3 dir = touchedPosition - currentStrikerPosition.position;
+		dir.z = 0;
+		dir.Normalize();	
+		
+		float rotZ = Mathf.Atan2(-dir.x,dir.y) * Mathf.Rad2Deg;
+		currentStrikerPosition.rotation = Quaternion.Euler(0f,0f,rotZ);
+		//tracer.gameObject.SetActive(true);
+		tracer.SetVisible();
+	}
+	
+	
 }

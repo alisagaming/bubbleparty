@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MainGameManager : MonoBehaviour {
 	public GameObject panelInGameGo;
+	public OnFireManager onFireManager;
 	
 	// Use this for initialization
 	void Start () {
@@ -27,6 +28,8 @@ public class MainGameManager : MonoBehaviour {
 		GameVariables.levelBonus = 0;
 		GameVariables.time = 60;
 		
+		onFireManager.Restart();
+		InGameScriptRefrences.scoreManager.Restart();
 		InGameScriptRefrences.playingObjectGeneration.Restart();
 		InGameScriptRefrences.playingObjectManager.Restart();
 		PauseOff();

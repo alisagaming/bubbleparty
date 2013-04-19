@@ -5,7 +5,9 @@ public class PanelManager2D : MonoBehaviour {
 	enum State{
 		STATE_LOGIN,
 		STATE_GAME,
-		STATE_INVITE_FREND
+		STATE_GAME_BEGIN,
+		STATE_INVITE_FREND,
+		STATE_SEND_FREND
 		
 	};
 	
@@ -14,13 +16,15 @@ public class PanelManager2D : MonoBehaviour {
 	public static float TIME_SWITCH = 0.25f;
 	
 	public PanelTop panelTop;
+	public PanelDown panelDown;
 	//public GameObject anchorTopPanel;
 	
 	public GameObject anchorStartGame;
-	public GameObject anchorDownPanel;
 	public GameObject anchorGamePanel;
 	public GameObject anchorInviteFriend;
+	public GameObject anchorSendFriend;
 	public GameObject anchorLogin;
+	public GameObject anchorPause;
 	
 	public GameObject panelAllBG;
 	public MainGameManager gameManager;
@@ -30,18 +34,14 @@ public class PanelManager2D : MonoBehaviour {
 	
 	int isInit = 0;
 	
-	TweenAlpha tweenAlpha;
-	
 	// Use this for initialization
 	void Start () {
 		gameCamera.SetActive(false);
-		tweenAlpha = new TweenAlpha();
-		tweenAlpha.from = 1;
-		tweenAlpha.to = 0;
-		tweenAlpha.duration = 1;
 		
 		AddAnimations(anchorLogin);
 		AddAnimations(anchorInviteFriend);
+		AddAnimations(anchorSendFriend);
+		AddAnimations(anchorStartGame);
 		
 		StartLogin();		
 	}
@@ -63,30 +63,66 @@ public class PanelManager2D : MonoBehaviour {
 	}
 	
 	IEnumerator SetNewState(State state){
-		if(state == State.STATE_GAME){
+		switch(state){
+		case State.STATE_GAME_BEGIN:
+			panelTop.RemoveAll();	
+			panelDown.RemoveAll();
+			yield return new WaitForSeconds(TIME_SWITCH);
 			anchorStartGame.SetActive(false);
 			panelTop.gameObject.SetActive(false);
-			anchorDownPanel.SetActive(false);
+			panelDown.gameObject.SetActive(false);
 			panelAllBG.SetActive(false);
 			
 			anchorGamePanel.SetActive(true);
 			gameCamera.SetActive(true);
 			gameManager.Restart();
-		}
-		
-		if(state == State.STATE_INVITE_FREND){
-			panelTop.RemoveAll();			
+		break;
+		case State.STATE_GAME:
+			panelTop.StartCoinsDiamond();
+			panelDown.StartGame();
+			yield return new WaitForSeconds(AnimOut(currentObject));
+			if(currentObject != null) currentObject.SetActive(false);
+			AnimIn(anchorStartGame);	
+		break;
+		case State.STATE_INVITE_FREND:
+			panelTop.RemoveAll();	
+			panelDown.RemoveAll();
 			yield return new WaitForSeconds(AnimOut(currentObject));
 			if(currentObject != null) currentObject.SetActive(false);
 			AnimIn(anchorInviteFriend);	
+		break;
+		case State.STATE_SEND_FREND:
+			panelTop.RemoveAll();	
+			panelDown.RemoveAll();
+			yield return new WaitForSeconds(AnimOut(currentObject));
+			if(currentObject != null) currentObject.SetActive(false);
+			AnimIn(anchorSendFriend);	
+		break;		
+		case State.STATE_LOGIN:	
+			if(currentState == State.STATE_GAME_BEGIN){
+				Time.timeScale = 1;
+				panelTop.gameObject.SetActive(true);
+				panelDown.gameObject.SetActive(true);
+				panelAllBG.SetActive(true);
+				
+				anchorGamePanel.SetActive(false);
+				gameCamera.SetActive(false);
+				anchorPause.SetActive(false);
+				
+				panelTop.StartLivesLevel();
+				panelDown.StartLogin();
+				AnimIn(anchorLogin);
+			}else{			
+				yield return new WaitForSeconds(AnimOut(currentObject));
+				panelTop.StartLivesLevel();
+				panelDown.StartLogin();
+				if(currentObject != null) currentObject.SetActive(false);
+				AnimIn(anchorLogin);	
+			}
+		break;
 		}
 		
-		if(state == State.STATE_LOGIN){			
-			yield return new WaitForSeconds(AnimOut(currentObject));
-			panelTop.StartLivesLevel();
-			if(currentObject != null) currentObject.SetActive(false);
-			AnimIn(anchorLogin);	
-		}
+		currentState = state;
 		yield return new WaitForSeconds(0);
 	}
 	
@@ -115,8 +151,11 @@ public class PanelManager2D : MonoBehaviour {
 		StartCoroutine(SetNewState(State.STATE_LOGIN));
 	}
 	
-	public void StartGame(){
-		StartCoroutine(SetNewState(State.STATE_GAME));
+	public void OnDownButton(){
+		if(currentState == State.STATE_GAME)
+			StartCoroutine(SetNewState(State.STATE_GAME_BEGIN));
+		else
+			StartCoroutine(SetNewState(State.STATE_GAME));
 	}
 	
 	public void StartAchiev(){
@@ -128,6 +167,7 @@ public class PanelManager2D : MonoBehaviour {
 	}
 	
 	public void StartSend(){
+		StartCoroutine(SetNewState(State.STATE_SEND_FREND));
 	}
 	
 	public void StartSettings(){

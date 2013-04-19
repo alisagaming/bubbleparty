@@ -14,6 +14,7 @@ public class InGameScriptRefrences : MonoBehaviour
     internal static ParticleAudioManager poppingParticleAudioManager;
     internal static ParticleAudioManager scoreParticleAudioManager;
     internal static SoundFxManager soundFxManager;
+	internal static OnFireManager onFireManager;
 
 
     internal static Transform coinCollectionPosition;
@@ -22,6 +23,7 @@ public class InGameScriptRefrences : MonoBehaviour
 
     void Awake()
     {
+		onFireManager = GameObject.Find("panel_frame").GetComponent<OnFireManager>();
         gameUIController = GameObject.Find("GUI Stuffs").GetComponent<GameUIController>();
         gameVariables = GameObject.Find("Game Variables").GetComponent<GameVariables>();
         playingObjectManager = GameObject.Find("Playing Object Manager").GetComponent<PlayingObjectManager>();

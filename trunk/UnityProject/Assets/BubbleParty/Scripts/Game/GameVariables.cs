@@ -8,9 +8,9 @@ public class GameVariables : MonoBehaviour
     //internal static int timePassed = 0;
 	internal static float time = 60;
 
-    public int totalNumberOfRowsLeft = 100;
+    //public int totalNumberOfRowsLeft = 100;
     public int minimumNumberOfRows = 3;
-    public float rowAddingInterval = 5f;
+    //public float rowAddingInterval = 5f;
 
     
 }

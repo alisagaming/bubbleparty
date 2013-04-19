@@ -45,12 +45,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\GameUIController.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\ItemBoost.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelDown.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelInGameGo.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelManager2D.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelTop.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\GameVariables.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\InGameScriptRefrences.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\MainGameManager.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Game\OnFireManager.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Game\ScoreGUI.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Game\Tracer.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Utils\Utils.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -198,9 +204,11 @@
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoButtonController.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\InputScript.cs" />
+     <Compile Include="Assets\demo\Scripts\Game Scripts\Model\ConfigLine.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Model\Level.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Model\LevelsPak.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Model\Row.cs" />
+     <Compile Include="Assets\demo\Scripts\Game Scripts\Model\ScoreConfig.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\ParticleAudioManager.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\PlayingObject.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\PlayingObjectGeneration.cs" />
@@ -228,6 +236,7 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
      <None Include="Assets\Plugins\Android\res\drawable\com_facebook_button_check.xml" />
      <None Include="Assets\Plugins\Android\res\values\styles.xml" />
+     <None Include="Assets\demo\Resources\config_score.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\Plugins\Android\res\drawable\com_facebook_usersettingsfragment_background_gradient.xml" />

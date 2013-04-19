@@ -143,6 +143,7 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
      <None Include="Assets\Plugins\Android\res\drawable\com_facebook_button_check.xml" />
      <None Include="Assets\Plugins\Android\res\values\styles.xml" />
+     <None Include="Assets\demo\Resources\config_score.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\Plugins\Android\res\drawable\com_facebook_usersettingsfragment_background_gradient.xml" />

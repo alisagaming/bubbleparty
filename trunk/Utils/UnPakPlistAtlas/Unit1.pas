@@ -28,8 +28,9 @@ uses StrUtils;
 const
 //  fileName : string = 'BISpriteSheetGameplay1-ipadhd';
 //  filesOutDir : string = 'out2';
-//  fileName : string = 'gameHudAssets-hd';
-  fileName : string = 'bubbleAssets-hd';
+  fileName : string = 'gameHudAssets-hd';
+  rotate:boolean = false;
+//  fileName : string = 'bubbleAssets-hd';
 
 procedure TForm1.FormCreate(Sender: TObject);
 var
@@ -69,6 +70,7 @@ begin
     if p > 0 then
     begin
       str := Copy(mmo1.Lines[x], p+10, Length(mmo1.Lines[x])-p-9-11);
+      str := StringReplace(str,' ','',[rfReplaceAll]);
       p := PosEx(',',str);
       str2 := Copy(str,0,p-1);
       str := Copy(str,p+1,Length(str)-p);
@@ -76,7 +78,7 @@ begin
 
       p := PosEx('}',str);
       str2 := Copy(str,0,p-1);
-      str := Copy(str,p+4,Length(str)-p-3);
+      str := Copy(str,p+3,Length(str)-p-2);
       py := StrToint(str2);
 
       p := PosEx(',',str);
@@ -87,7 +89,9 @@ begin
       dy := StrToint(str);
     end;
 
-    p := PosEx('<key>textureRotated</key>',mmo1.Lines[x]);
+    //p := PosEx('<key>textureRotated</key>',mmo1.Lines[x]);
+    p := PosEx('<key>rotated</key>',mmo1.Lines[x]);
+    if p = 0 then p :=  PosEx('<key>textureRotated</key>',mmo1.Lines[x]);
     if p>0 then textureRotatedFlag := True;
 
     p := PosEx('/>',mmo1.Lines[x]);
@@ -97,12 +101,25 @@ begin
       bitmapOut.Width := dx;
       bitmapOut.Height := dy;
 
-      bitmapOut.Draw(-px, -py, bitmap);
-      PngOut.Assign(bitmapOut);
       if(mmo1.Lines[x] = '			<false/>') then
-        PngOut.SaveToFile(fileName+'\'+fname)
+      begin
+        bitmapOut.Draw(-px, -py, bitmap);
+        PngOut.Assign(bitmapOut);
+
+        PngOut.SaveToFile(fileName+'\'+fname);
+      end
       else
+      begin
+        if rotate then
+        begin
+          bitmapOut.Width := dy;
+          bitmapOut.Height := dx;
+        end;
+        bitmapOut.Draw(-px, -py, bitmap);
+        PngOut.Assign(bitmapOut);
+      
         PngOut.SaveToFile(fileName+'\_'+fname);
+      end;
     end;
   end;
 end;

@@ -3,15 +3,18 @@ using System.Collections;
 
 public class PlayingObjectManager : MonoBehaviour 
 {
-    internal static int brustCounter = 0;
+    static int brustCounter = 0;
 	internal static int burnCounter = 0;
     public static string currentObjectName = "";
     ArrayList playingObjectList;
     public PlayingObject []topRowObjects;
+	public OnFireManager onFireManager;
+	static OnFireManager staticOnFireManager;
     
 	
 	void Start () 
     {
+		staticOnFireManager = onFireManager; 
         /*brustCounter = 0;
         currentObjectName = "";
         playingObjectList = new ArrayList();        
@@ -39,16 +42,21 @@ public class PlayingObjectManager : MonoBehaviour
 
     internal PlayingObject[] allPlayingObjectScripts;
 
-    
+    internal static void AddBrustCounter(){
+		brustCounter++;
+		if(brustCounter == 3) staticOnFireManager.Shot(true);
+	}
 
     internal void CheckForObjectsFall()
     {
         if ((PlayingObjectManager.brustCounter < 3) && (PlayingObjectManager.burnCounter == 0))
         {
+			onFireManager.Shot(false);
             ResetAllObjects();
             return;
         }
-
+		
+		//onFireManager.Shot(true);
         BrustObjects();
         FallDisconnectedObjects();
     }
@@ -133,8 +141,8 @@ public class PlayingObjectManager : MonoBehaviour
             allPlayingObjectScripts[i].Reset();
         }
 
-        if (allPlayingObjectScripts.Length == 0 && InGameScriptRefrences.gameVariables.totalNumberOfRowsLeft == 0)
-            InGameScriptRefrences.gameUIController.GameIsFinish();
+        //if (allPlayingObjectScripts.Length == 0 && InGameScriptRefrences.gameVariables.totalNumberOfRowsLeft == 0)
+        //    InGameScriptRefrences.gameUIController.GameIsFinish();
     }
 
     internal void FallAllPlayingObjects()

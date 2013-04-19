@@ -10,7 +10,10 @@ public class PlayingObject : MonoBehaviour
 		Bomb
     };
 
-    public GameObject brustParticle;
+    public tk2dAnimatedSprite explosion;
+	public GameObject bubble;
+	
+	
 
     internal BrustBy brustBy = BrustBy.None;
 
@@ -25,7 +28,7 @@ public class PlayingObject : MonoBehaviour
     internal bool isConnected = true;
     internal bool isTracedForConnection = false;
 	internal bool isBurn = false;
-	static Transform thresoldLineTransform;
+	//static Transform thresoldLineTransform;
 	float objectGap;
 	float sqrBombRadius;
 	
@@ -61,8 +64,12 @@ public class PlayingObject : MonoBehaviour
 	
     void Start()
     {
-        if(thresoldLineTransform == null)
-            thresoldLineTransform = GameObject.Find("Thresold Line").transform;
+		explosion.gameObject.SetActive(false);
+		Color color = explosion.color;
+		color.a = 0.5f;
+		explosion.color = color;
+        //if(thresoldLineTransform == null)
+        //    thresoldLineTransform = GameObject.Find("Thresold Line").transform;
     }
 	
 	void ReadLevels()
@@ -179,25 +186,34 @@ public class PlayingObject : MonoBehaviour
         {
             if (brust == false)
             {
-                InGameScriptRefrences.scoreManager.DisplayScorePopup(100, transform, true);
+				InGameScriptRefrences.scoreManager.AddScore(transform,true);
+                //InGameScriptRefrences.scoreManager.DisplayScorePopup(100, transform, true);
                 // iTween.RotateTo(gameObject, new Vector3(0, 0, 180), .5f);
                 rigidbody.useGravity = true;
                 rigidbody.isKinematic = false;
                 rigidbody.AddForce(new Vector3(0, Random.Range(150f, 250f), 0), ForceMode.VelocityChange);
-                GetComponent<RotationScript>().enabled = true;
                 Destroy(gameObject, 3f);
             }
         }
         else
         {
-            InGameScriptRefrences.scoreManager.DisplayScorePopup(100, transform, false);
+            //InGameScriptRefrences.scoreManager.DisplayScorePopup(100, transform, false);
+            InGameScriptRefrences.scoreManager.AddScore(transform,false);
             
-           
+			explosion.gameObject.SetActive(true);
+			if(InGameScriptRefrences.onFireManager.IsOnFire()){
+				explosion.clipId = explosion.anim.GetClipIdByName("bubble_exp_onfire");
+			}
+			explosion.Play();
+			iTween.ScaleTo(bubble, new Vector3(0,0,0),0.2f);
+			Destroy(gameObject, 0.3f);
+			
+            
                // InGameScriptRefrences.poppingParticleAudioManager.PlayParticleSound();
                // iTween.ScaleTo(gameObject, Vector3.zero, 1f);
               //  GetComponent<RotationScript>().enabled = true;                
-                Instantiate(brustParticle, transform.position, Quaternion.identity);
-                Destroy(gameObject);
+                //Instantiate(brustParticle, transform.position, Quaternion.identity);
+            //    Destroy(gameObject);
            
         }
         
@@ -241,7 +257,7 @@ public class PlayingObject : MonoBehaviour
             isTraced = true;
             AssignBrust(BrustBy.PlayingObject);
 
-            PlayingObjectManager.brustCounter++;
+            PlayingObjectManager.AddBrustCounter();//brustCounter++;
             // print(PlayingObjectManager.brustCounter);
             iTween.PunchScale(gameObject, new Vector3(.2f, .2f, .2f), 1f);
 			
@@ -364,15 +380,15 @@ public class PlayingObject : MonoBehaviour
 
         GetComponent<SphereCollider>().radius /= .8f;
 
-        if (transform.position.y < thresoldLineTransform.position.y)
+        /*if (transform.position.y < thresoldLineTransform.position.y)
         {
             InGameScriptRefrences.gameUIController.GameIsOver();
             return;
-        }
+        }*/
 
         RefreshAdjacentObjectList();
 
-		InGameScriptRefrences.soundFxManager.PlayCollisionSound();
+		//InGameScriptRefrences.soundFxManager.PlayCollisionSound();
         Invoke("Trace", .02f);
 
         Invoke("CheckForObjectFall", .2f);

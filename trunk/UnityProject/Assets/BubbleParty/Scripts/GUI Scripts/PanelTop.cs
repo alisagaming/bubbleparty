@@ -28,10 +28,10 @@ public class PanelTop : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		//AddAnimations(panel_coins_diamond);
-		//AddAnimations(panel_heart);
+		AddAnimations(panel_coins_diamond);
+		AddAnimations(panel_heart);
 		AddAnimations(panel_lives_level);
-		currentPanel = panel_lives_level;
+		//currentPanel = panel_lives_level;
 	}
 	
 	void AddAnimations(GameObject obj){
@@ -47,10 +47,14 @@ public class PanelTop : MonoBehaviour {
 	IEnumerator SetNewState(State state){
 		switch(state){
 		case State.STATE_NONE:
-			AnimOut(currentPanel);
+			yield return new WaitForSeconds(AnimOut(currentPanel));
+			currentPanel.SetActive(false);
 			currentPanel = null;
 			break;
 		case State.STATE_COINS_DIAMOND:
+			yield return new WaitForSeconds(AnimOut(currentPanel));
+			if(currentPanel != null) currentPanel.SetActive(false);			
+			AnimIn(panel_coins_diamond);		
 			break;
 		case State.STATE_LIVES_LEVEL:
 			yield return new WaitForSeconds(AnimOut(currentPanel));
@@ -110,6 +114,10 @@ public class PanelTop : MonoBehaviour {
 	public void StartLivesLevel(){
 		StartCoroutine(SetNewState(State.STATE_LIVES_LEVEL));
 	}
+	public void StartCoinsDiamond(){
+		StartCoroutine(SetNewState(State.STATE_COINS_DIAMOND));
+	}
+	
 	
 	public void RemoveAll(){
 		StartCoroutine(SetNewState(State.STATE_NONE));

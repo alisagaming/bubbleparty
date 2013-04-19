@@ -11,7 +11,11 @@ public class SoundFxManager : MonoBehaviour
     public AudioSource wallCollisionSoundPoker;
     
     public AudioSource themeMusic;
-
+	
+	public AudioSource[] firemode;
+	public AudioSource onFire;
+	public AudioSource firemode_loop;
+	
     AudioSource collisionSound;
     AudioSource wallCollisionSound;
 	
@@ -35,7 +39,7 @@ public class SoundFxManager : MonoBehaviour
 
     }
 
-    internal void PlayCollisionSound()
+    internal void PlayCollisionSound2()
     {
         collisionSound.Play();
     }
