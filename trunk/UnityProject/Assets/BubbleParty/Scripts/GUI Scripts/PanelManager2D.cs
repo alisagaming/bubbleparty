@@ -36,7 +36,7 @@ public class PanelManager2D : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		gameCamera.SetActive(false);
+		//gameCamera.SetActive(false);
 		
 		AddAnimations(anchorLogin);
 		AddAnimations(anchorInviteFriend);

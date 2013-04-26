@@ -168,14 +168,14 @@ MonoBehaviour:
   - name: btnPauseDown@2x
     outer:
       serializedVersion: 2
-      x: 935
-      y: 267
+      x: 1808
+      y: 1219
       width: 74
       height: 62
     inner:
       serializedVersion: 2
-      x: 935
-      y: 267
+      x: 1808
+      y: 1219
       width: 74
       height: 62
     rotated: 0
@@ -186,14 +186,14 @@ MonoBehaviour:
   - name: btnPause@2x
     outer:
       serializedVersion: 2
-      x: 882
-      y: 383
+      x: 1123
+      y: 2
       width: 74
       height: 62
     inner:
       serializedVersion: 2
-      x: 882
-      y: 383
+      x: 1123
+      y: 2
       width: 74
       height: 62
     rotated: 0
@@ -204,14 +204,14 @@ MonoBehaviour:
   - name: timerBG_noFrame
     outer:
       serializedVersion: 2
-      x: 641
-      y: 330
+      x: 1748
+      y: 936
       width: 288
       height: 49
     inner:
       serializedVersion: 2
-      x: 641
-      y: 330
+      x: 1748
+      y: 936
       width: 288
       height: 49
     rotated: 0
@@ -223,13 +223,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 641
-      y: 446
+      y: 157
       width: 294
       height: 54
     inner:
       serializedVersion: 2
       x: 641
-      y: 446
+      y: 157
       width: 294
       height: 54
     rotated: 0
@@ -241,13 +241,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 641
-      y: 611
+      y: 47
       width: 294
       height: 54
     inner:
       serializedVersion: 2
       x: 641
-      y: 611
+      y: 47
       width: 294
       height: 54
     rotated: 0
@@ -258,14 +258,14 @@ MonoBehaviour:
   - name: scoreBG
     outer:
       serializedVersion: 2
-      x: 1808
-      y: 1353
+      x: 774
+      y: 338
       width: 207
       height: 61
     inner:
       serializedVersion: 2
-      x: 1808
-      y: 1353
+      x: 774
+      y: 338
       width: 207
       height: 61
     rotated: 0
@@ -313,13 +313,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 641
-      y: 556
+      y: 212
       width: 294
       height: 54
     inner:
       serializedVersion: 2
       x: 641
-      y: 556
+      y: 212
       width: 294
       height: 54
     rotated: 0
@@ -331,13 +331,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 641
-      y: 501
+      y: 102
       width: 294
       height: 54
     inner:
       serializedVersion: 2
       x: 641
-      y: 501
+      y: 102
       width: 294
       height: 54
     rotated: 0
@@ -348,14 +348,14 @@ MonoBehaviour:
   - name: boostGoldStarActive@2x
     outer:
       serializedVersion: 2
-      x: 732
-      y: 126
+      x: 1012
+      y: 95
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 732
-      y: 126
+      x: 1012
+      y: 95
       width: 88
       height: 88
     rotated: 0
@@ -366,14 +366,14 @@ MonoBehaviour:
   - name: boostFireballActive@2x
     outer:
       serializedVersion: 2
-      x: 821
-      y: 37
+      x: 1123
+      y: 649
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 821
-      y: 37
+      x: 1123
+      y: 649
       width: 88
       height: 88
     rotated: 0
@@ -384,14 +384,14 @@ MonoBehaviour:
   - name: boostTimeActive@2x
     outer:
       serializedVersion: 2
-      x: 1012
-      y: 667
+      x: 936
+      y: 19
       width: 70
       height: 82
     inner:
       serializedVersion: 2
-      x: 1012
-      y: 667
+      x: 936
+      y: 19
       width: 70
       height: 82
     rotated: 0
@@ -402,14 +402,14 @@ MonoBehaviour:
   - name: boostTimeInactive@2x
     outer:
       serializedVersion: 2
-      x: 1012
-      y: 584
+      x: 1212
+      y: 663
       width: 69
       height: 82
     inner:
       serializedVersion: 2
-      x: 1012
-      y: 584
+      x: 1212
+      y: 663
       width: 69
       height: 82
     rotated: 0
@@ -420,14 +420,14 @@ MonoBehaviour:
   - name: boostGoldStarInactive@2x
     outer:
       serializedVersion: 2
-      x: 821
-      y: 126
+      x: 1012
+      y: 273
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 821
-      y: 126
+      x: 1012
+      y: 273
       width: 88
       height: 88
     rotated: 0
@@ -438,14 +438,14 @@ MonoBehaviour:
   - name: boostGoldTimeActive@2x
     outer:
       serializedVersion: 2
-      x: 732
-      y: 37
+      x: 1012
+      y: 6
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 732
-      y: 37
+      x: 1012
+      y: 6
       width: 88
       height: 88
     rotated: 0
@@ -456,14 +456,14 @@ MonoBehaviour:
   - name: boostFireballInactive@2x
     outer:
       serializedVersion: 2
-      x: 910
-      y: 126
+      x: 1123
+      y: 738
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 910
-      y: 126
+      x: 1123
+      y: 738
       width: 88
       height: 88
     rotated: 0
@@ -474,14 +474,14 @@ MonoBehaviour:
   - name: boostGoldTimeInactive@2x
     outer:
       serializedVersion: 2
-      x: 910
-      y: 37
+      x: 1012
+      y: 184
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 910
-      y: 37
+      x: 1012
+      y: 184
       width: 88
       height: 88
     rotated: 0
@@ -510,14 +510,14 @@ MonoBehaviour:
   - name: btn_closeScroll@2x
     outer:
       serializedVersion: 2
-      x: 641
-      y: 124
+      x: 1012
+      y: 362
       width: 90
       height: 90
     inner:
       serializedVersion: 2
-      x: 641
-      y: 124
+      x: 1012
+      y: 362
       width: 90
       height: 90
     rotated: 0
@@ -528,14 +528,14 @@ MonoBehaviour:
   - name: btn_closeScrollDown@2x
     outer:
       serializedVersion: 2
-      x: 641
-      y: 33
+      x: 1012
+      y: 453
       width: 90
       height: 90
     inner:
       serializedVersion: 2
-      x: 641
-      y: 33
+      x: 1012
+      y: 453
       width: 90
       height: 90
     rotated: 0
@@ -546,14 +546,14 @@ MonoBehaviour:
   - name: btn_boostInactiveBG@2x
     outer:
       serializedVersion: 2
-      x: 1566
-      y: 1464
+      x: 1928
+      y: 1105
       width: 110
       height: 108
     inner:
       serializedVersion: 2
-      x: 1566
-      y: 1464
+      x: 1928
+      y: 1105
       width: 110
       height: 108
     rotated: 0
@@ -564,14 +564,14 @@ MonoBehaviour:
   - name: btn_boostActiveBG@2x
     outer:
       serializedVersion: 2
-      x: 1808
-      y: 1244
+      x: 1012
+      y: 718
       width: 110
       height: 108
     inner:
       serializedVersion: 2
-      x: 1808
-      y: 1244
+      x: 1012
+      y: 718
       width: 110
       height: 108
     rotated: 0
@@ -582,14 +582,14 @@ MonoBehaviour:
   - name: btn_boostFireballBG@2x
     outer:
       serializedVersion: 2
-      x: 1919
-      y: 1244
+      x: 1817
+      y: 1105
       width: 110
       height: 108
     inner:
       serializedVersion: 2
-      x: 1919
-      y: 1244
+      x: 1817
+      y: 1105
       width: 110
       height: 108
     rotated: 0
@@ -600,13 +600,13 @@ MonoBehaviour:
   - name: boostInactiveListBG@2x
     outer:
       serializedVersion: 2
-      x: 1012
+      x: 1436
       y: 986
       width: 423
       height: 98
     inner:
       serializedVersion: 2
-      x: 1012
+      x: 1436
       y: 986
       width: 423
       height: 98
@@ -618,14 +618,14 @@ MonoBehaviour:
   - name: boostActiveListBG@2x
     outer:
       serializedVersion: 2
-      x: 1436
-      y: 986
+      x: 1393
+      y: 1115
       width: 423
       height: 98
     inner:
       serializedVersion: 2
-      x: 1436
-      y: 986
+      x: 1393
+      y: 1115
       width: 423
       height: 98
     rotated: 0
@@ -636,14 +636,14 @@ MonoBehaviour:
   - name: boostFireballListBG@2x
     outer:
       serializedVersion: 2
-      x: 1393
-      y: 1115
+      x: 1012
+      y: 986
       width: 423
       height: 98
     inner:
       serializedVersion: 2
-      x: 1393
-      y: 1115
+      x: 1012
+      y: 986
       width: 423
       height: 98
     rotated: 0
@@ -655,13 +655,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 2004
-      y: 1963
+      y: 2006
       width: 42
       height: 42
     inner:
       serializedVersion: 2
       x: 2004
-      y: 1963
+      y: 2006
       width: 42
       height: 42
     rotated: 0
@@ -673,13 +673,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 2004
-      y: 2006
+      y: 1963
       width: 42
       height: 42
     inner:
       serializedVersion: 2
       x: 2004
-      y: 2006
+      y: 1963
       width: 42
       height: 42
     rotated: 0
@@ -726,14 +726,14 @@ MonoBehaviour:
   - name: btn_addBoost@2x
     outer:
       serializedVersion: 2
-      x: 1952
-      y: 836
+      x: 1123
+      y: 142
       width: 76
       height: 76
     inner:
       serializedVersion: 2
-      x: 1952
-      y: 836
+      x: 1123
+      y: 142
       width: 76
       height: 76
     rotated: 0
@@ -744,14 +744,14 @@ MonoBehaviour:
   - name: btn_addBoostDown@2x
     outer:
       serializedVersion: 2
-      x: 1012
-      y: 750
+      x: 1123
+      y: 65
       width: 76
       height: 76
     inner:
       serializedVersion: 2
-      x: 1012
-      y: 750
+      x: 1123
+      y: 65
       width: 76
       height: 76
     rotated: 0
@@ -798,14 +798,14 @@ MonoBehaviour:
   - name: HudBarDiamonds@2x
     outer:
       serializedVersion: 2
-      x: 1945
-      y: 1004
+      x: 1921
+      y: 832
       width: 92
       height: 80
     inner:
       serializedVersion: 2
-      x: 1945
-      y: 1004
+      x: 1921
+      y: 832
       width: 92
       height: 80
     rotated: 0
@@ -816,14 +816,14 @@ MonoBehaviour:
   - name: btn_addDown@2x
     outer:
       serializedVersion: 2
-      x: 957
-      y: 393
+      x: 1524
+      y: 774
       width: 52
       height: 52
     inner:
       serializedVersion: 2
-      x: 957
-      y: 393
+      x: 1524
+      y: 774
       width: 52
       height: 52
     rotated: 0
@@ -834,14 +834,14 @@ MonoBehaviour:
   - name: btn_add@2x
     outer:
       serializedVersion: 2
-      x: 1990
-      y: 1161
+      x: 1577
+      y: 774
       width: 52
       height: 52
     inner:
       serializedVersion: 2
-      x: 1990
-      y: 1161
+      x: 1577
+      y: 774
       width: 52
       height: 52
     rotated: 0
@@ -870,14 +870,14 @@ MonoBehaviour:
   - name: HudBarCoins@2x
     outer:
       serializedVersion: 2
-      x: 1867
-      y: 833
+      x: 1123
+      y: 219
       width: 84
       height: 79
     inner:
       serializedVersion: 2
-      x: 1867
-      y: 833
+      x: 1123
+      y: 219
       width: 84
       height: 79
     rotated: 0
@@ -888,14 +888,14 @@ MonoBehaviour:
   - name: LevelBar_XPstar@2x
     outer:
       serializedVersion: 2
-      x: 1904
-      y: 1125
+      x: 1123
+      y: 471
       width: 85
       height: 88
     inner:
       serializedVersion: 2
-      x: 1904
-      y: 1125
+      x: 1123
+      y: 471
       width: 85
       height: 88
     rotated: 0
@@ -924,14 +924,14 @@ MonoBehaviour:
   - name: HudBarDiamonds@2x 1
     outer:
       serializedVersion: 2
-      x: 1774
-      y: 832
+      x: 1212
+      y: 746
       width: 92
       height: 80
     inner:
       serializedVersion: 2
-      x: 1774
-      y: 832
+      x: 1212
+      y: 746
       width: 92
       height: 80
     rotated: 0
@@ -1014,14 +1014,14 @@ MonoBehaviour:
   - name: btn_fbSetting@2x
     outer:
       serializedVersion: 2
-      x: 1990
-      y: 1109
+      x: 1630
+      y: 775
       width: 51
       height: 51
     inner:
       serializedVersion: 2
-      x: 1990
-      y: 1109
+      x: 1630
+      y: 775
       width: 51
       height: 51
     rotated: 0
@@ -1050,14 +1050,14 @@ MonoBehaviour:
   - name: LoW_timer
     outer:
       serializedVersion: 2
-      x: 1566
-      y: 1415
+      x: 936
+      y: 108
       width: 68
       height: 48
     inner:
       serializedVersion: 2
-      x: 1566
-      y: 1415
+      x: 936
+      y: 108
       width: 68
       height: 48
     rotated: 0
@@ -1068,14 +1068,14 @@ MonoBehaviour:
   - name: LivesMeter_BG@2x
     outer:
       serializedVersion: 2
-      x: 641
-      y: 380
+      x: 1507
+      y: 920
       width: 240
       height: 65
     inner:
       serializedVersion: 2
-      x: 641
-      y: 380
+      x: 1507
+      y: 920
       width: 240
       height: 65
     rotated: 0
@@ -1086,14 +1086,14 @@ MonoBehaviour:
   - name: lifeFilled@2x
     outer:
       serializedVersion: 2
-      x: 1677
-      y: 1531
+      x: 753
+      y: 5
       width: 45
       height: 41
     inner:
       serializedVersion: 2
-      x: 1677
-      y: 1531
+      x: 753
+      y: 5
       width: 45
       height: 41
     rotated: 0
@@ -1104,14 +1104,14 @@ MonoBehaviour:
   - name: LivesMeter_Heart_Full@2x
     outer:
       serializedVersion: 2
-      x: 1585
-      y: 916
+      x: 1383
+      y: 757
       width: 77
       height: 69
     inner:
       serializedVersion: 2
-      x: 1585
-      y: 916
+      x: 1383
+      y: 757
       width: 77
       height: 69
     rotated: 0
@@ -1122,14 +1122,14 @@ MonoBehaviour:
   - name: LivesMeter_Heart_Empty@2x
     outer:
       serializedVersion: 2
-      x: 1507
-      y: 916
+      x: 1305
+      y: 757
       width: 77
       height: 69
     inner:
       serializedVersion: 2
-      x: 1507
-      y: 916
+      x: 1305
+      y: 757
       width: 77
       height: 69
     rotated: 0
@@ -1140,14 +1140,14 @@ MonoBehaviour:
   - name: LevelBar_FILL@2x
     outer:
       serializedVersion: 2
-      x: 641
-      y: 215
+      x: 774
+      y: 296
       width: 204
       height: 41
     inner:
       serializedVersion: 2
-      x: 641
-      y: 215
+      x: 774
+      y: 296
       width: 204
       height: 41
     rotated: 0
@@ -1164,10 +1164,10 @@ MonoBehaviour:
       height: 178
     inner:
       serializedVersion: 2
-      x: 991
+      x: 990
       y: 751
-      width: 1
-      height: 173
+      width: 3
+      height: 177
     rotated: 0
     paddingLeft: 0
     paddingRight: 0
@@ -1230,14 +1230,14 @@ MonoBehaviour:
   - name: btn_achievements@2x
     outer:
       serializedVersion: 2
-      x: 936
-      y: 448
+      x: 1883
+      y: 1229
       width: 56
       height: 52
     inner:
       serializedVersion: 2
-      x: 936
-      y: 448
+      x: 1883
+      y: 1229
       width: 56
       height: 52
     rotated: 0
@@ -1248,14 +1248,14 @@ MonoBehaviour:
   - name: btnSymbol-request@2x
     outer:
       serializedVersion: 2
-      x: 936
-      y: 507
+      x: 1461
+      y: 778
       width: 62
       height: 48
     inner:
       serializedVersion: 2
-      x: 936
-      y: 507
+      x: 1461
+      y: 778
       width: 62
       height: 48
     rotated: 0
@@ -1266,14 +1266,14 @@ MonoBehaviour:
   - name: btnUI-down@2x
     outer:
       serializedVersion: 2
-      x: 641
-      y: 257
+      x: 1774
+      y: 840
       width: 146
       height: 72
     inner:
       serializedVersion: 2
-      x: 641
-      y: 257
+      x: 1774
+      y: 840
       width: 146
       height: 72
     rotated: 0
@@ -1284,14 +1284,14 @@ MonoBehaviour:
   - name: btnUI@2x
     outer:
       serializedVersion: 2
-      x: 788
-      y: 257
+      x: 1860
+      y: 1012
       width: 146
       height: 72
     inner:
       serializedVersion: 2
-      x: 788
-      y: 257
+      x: 1860
+      y: 1012
       width: 146
       height: 72
     rotated: 0
@@ -1303,13 +1303,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 936
-      y: 611
+      y: 212
       width: 68
       height: 54
     inner:
       serializedVersion: 2
       x: 936
-      y: 611
+      y: 212
       width: 68
       height: 54
     rotated: 0
@@ -1321,13 +1321,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 936
-      y: 561
+      y: 162
       width: 68
       height: 49
     inner:
       serializedVersion: 2
       x: 936
-      y: 561
+      y: 162
       width: 68
       height: 49
     rotated: 0
@@ -1374,14 +1374,14 @@ MonoBehaviour:
   - name: boostPlasmaInactive@2x
     outer:
       serializedVersion: 2
-      x: 1860
-      y: 996
+      x: 1123
+      y: 382
       width: 84
       height: 88
     inner:
       serializedVersion: 2
-      x: 1860
-      y: 996
+      x: 1123
+      y: 382
       width: 84
       height: 88
     rotated: 0
@@ -1392,14 +1392,14 @@ MonoBehaviour:
   - name: boostPlasmaActive@2x
     outer:
       serializedVersion: 2
-      x: 1817
-      y: 1125
+      x: 1123
+      y: 560
       width: 86
       height: 88
     inner:
       serializedVersion: 2
-      x: 1817
-      y: 1125
+      x: 1123
+      y: 560
       width: 86
       height: 88
     rotated: 0
@@ -1410,14 +1410,14 @@ MonoBehaviour:
   - name: boostNumberRed@2x
     outer:
       serializedVersion: 2
-      x: 846
-      y: 216
+      x: 641
+      y: 6
       width: 55
       height: 40
     inner:
       serializedVersion: 2
-      x: 846
-      y: 216
+      x: 641
+      y: 6
       width: 55
       height: 40
     rotated: 0
@@ -1428,16 +1428,268 @@ MonoBehaviour:
   - name: boostNumberGreen@2x
     outer:
       serializedVersion: 2
-      x: 930
-      y: 339
+      x: 697
+      y: 6
       width: 55
       height: 40
     inner:
       serializedVersion: 2
-      x: 930
-      y: 339
+      x: 697
+      y: 6
       width: 55
       height: 40
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: frame_profile@2x
+    outer:
+      serializedVersion: 2
+      x: 1941
+      y: 1321
+      width: 93
+      height: 93
+    inner:
+      serializedVersion: 2
+      x: 1941
+      y: 1321
+      width: 93
+      height: 93
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: frame_gold@2x
+    outer:
+      serializedVersion: 2
+      x: 907
+      y: 439
+      width: 93
+      height: 93
+    inner:
+      serializedVersion: 2
+      x: 907
+      y: 439
+      width: 93
+      height: 93
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: frame_bronze@2x
+    outer:
+      serializedVersion: 2
+      x: 1941
+      y: 1227
+      width: 93
+      height: 93
+    inner:
+      serializedVersion: 2
+      x: 1941
+      y: 1227
+      width: 93
+      height: 93
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: frame_silver@2x
+    outer:
+      serializedVersion: 2
+      x: 907
+      y: 572
+      width: 93
+      height: 93
+    inner:
+      serializedVersion: 2
+      x: 907
+      y: 572
+      width: 93
+      height: 93
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: requestProfile@2x
+    outer:
+      serializedVersion: 2
+      x: 1123
+      y: 299
+      width: 82
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 1123
+      y: 299
+      width: 82
+      height: 82
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btnSmallDown@2x
+    outer:
+      serializedVersion: 2
+      x: 1012
+      y: 544
+      width: 100
+      height: 86
+    inner:
+      serializedVersion: 2
+      x: 1012
+      y: 544
+      width: 100
+      height: 86
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btnSmall@2x
+    outer:
+      serializedVersion: 2
+      x: 1012
+      y: 631
+      width: 100
+      height: 86
+    inner:
+      serializedVersion: 2
+      x: 1012
+      y: 631
+      width: 100
+      height: 86
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fakeFriend_04@2x
+    outer:
+      serializedVersion: 2
+      x: 641
+      y: 267
+      width: 132
+      height: 132
+    inner:
+      serializedVersion: 2
+      x: 641
+      y: 267
+      width: 132
+      height: 132
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fakeFriend_02@2x
+    outer:
+      serializedVersion: 2
+      x: 641
+      y: 533
+      width: 132
+      height: 132
+    inner:
+      serializedVersion: 2
+      x: 641
+      y: 533
+      width: 132
+      height: 132
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fakeFriend_05@2x
+    outer:
+      serializedVersion: 2
+      x: 774
+      y: 400
+      width: 132
+      height: 132
+    inner:
+      serializedVersion: 2
+      x: 774
+      y: 400
+      width: 132
+      height: 132
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fakeFriend_03@2x
+    outer:
+      serializedVersion: 2
+      x: 1566
+      y: 1440
+      width: 132
+      height: 132
+    inner:
+      serializedVersion: 2
+      x: 1566
+      y: 1440
+      width: 132
+      height: 132
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fakeFriend_07@2x
+    outer:
+      serializedVersion: 2
+      x: 641
+      y: 400
+      width: 132
+      height: 132
+    inner:
+      serializedVersion: 2
+      x: 641
+      y: 400
+      width: 132
+      height: 132
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fakeFriend_06@2x
+    outer:
+      serializedVersion: 2
+      x: 1808
+      y: 1282
+      width: 132
+      height: 132
+    inner:
+      serializedVersion: 2
+      x: 1808
+      y: 1282
+      width: 132
+      height: 132
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fakeFriend_01@2x
+    outer:
+      serializedVersion: 2
+      x: 774
+      y: 533
+      width: 132
+      height: 132
+    inner:
+      serializedVersion: 2
+      x: 774
+      y: 533
+      width: 132
+      height: 132
     rotated: 0
     paddingLeft: 0
     paddingRight: 0

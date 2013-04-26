@@ -6,6 +6,7 @@ using System.IO;
 public class ScoreManager : MonoBehaviour 
 {
 	public GameObject scoreGUI;
+	public GameObject popup_time;
 	public GameObject thresholdLine;
     //public GameObject scoreItemPrefab;
     //int bonusPoint;
@@ -30,6 +31,12 @@ public class ScoreManager : MonoBehaviour
 		explodedCount = 0;
 		Utils.DestroyAllChild(transform);		
 	}
+	
+	public void PopupTime(Vector3 pos, int timeValue){
+		GameObject score = (GameObject)Instantiate(popup_time, pos, Quaternion.identity);
+		score.transform.parent = transform;
+		score.GetComponent<PopupBonusGUI>().SetScore("+"+timeValue);		
+	}	
 	
 	void LoadScoreConfig(string path)
  	{

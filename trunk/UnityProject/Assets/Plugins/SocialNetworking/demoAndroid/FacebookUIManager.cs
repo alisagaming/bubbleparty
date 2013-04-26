@@ -27,15 +27,18 @@ public class FacebookUIManager : MonoBehaviourGUI
 	{
 		if( error != null )
 			Debug.LogError( error );
-		else
+		else{
+			string str = Prime31.Json.jsonEncode( result );
+			str = "";
 			Prime31.Utils.logObject( result );
+		}
 	}
 	
 	
 	void Start()
 	{
 		// grab a screenshot for later use
-		Application.CaptureScreenshot( screenshotFilename );
+		//Application.CaptureScreenshot( screenshotFilename );
 		
 		// optionally enable logging of all requests that go through the Facebook class
 		//Facebook.instance.debugRequests = true;
@@ -50,6 +53,7 @@ public class FacebookUIManager : MonoBehaviourGUI
 		if( GUILayout.Button( "Initialize Facebook" ) )
 		{
 			FacebookAndroid.init();
+			Facebook.instance.debugRequests = true;
 		}
 	
 	
@@ -140,6 +144,19 @@ public class FacebookUIManager : MonoBehaviourGUI
 		if( GUILayout.Button( "Get Friends" ) )
 		{
 			Facebook.instance.getFriends( completionHandler );
+		}
+		
+		
+		if( GUILayout.Button( "Get Friends from Game" ) )
+		{
+			FacebookAndroid.graphRequest("me", "GET", null);
+			/*FacebookAndroid.graphRequest("me", "GET", new Dictionary<string, string>() 
+			{
+			      {"fields", "email"}
+			});*/
+			//Facebook.instance.graphRequest( "123365184515949/scores", completionHandler );
+			//Facebook.instance.graphRequest( "me", null );
+			//FacebookAndroid.graphRequest()
 		}
 
 		

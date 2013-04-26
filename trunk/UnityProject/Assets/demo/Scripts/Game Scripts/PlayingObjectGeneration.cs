@@ -15,6 +15,8 @@ public class PlayingObjectGeneration : MonoBehaviour
     public GameVariables gameVariables;
 	public GameObject burnPrefab;
     
+	BoostRuleset boostRulesetTime;
+	
 	internal bool enableStar = true;	
 	internal bool enableTime = true;
 	internal bool enableFireball = false;
@@ -28,6 +30,7 @@ public class PlayingObjectGeneration : MonoBehaviour
 	Vector3 startPosition;
 	int rowIndex = 0;
 	int levelIndex = 0;
+	int levelCount = 0;
 	LevelsPak levelsPak;
 	
 	int rowCounter = 0;
@@ -35,29 +38,10 @@ public class PlayingObjectGeneration : MonoBehaviour
 	float rowStartingPos;
 	
 	float currentYPos = 0;
-//    float currentYPos = 0;
-//	float currentXPos = 0;
-//	float currentZPos = 0;
 
-/*    float rowStartingPos = 0;
-    float objectGenerationheight;
-    bool isStarting = true;
-
-    float fallDownTime;
-    float currentRowAddingInterval;
-    int rowCounter = 0;
-    int numberOfRowsGenerated = 0;
-	LevelsPak levelsPak;*/
-	
-	
-	
-    /*void FalsenIsStarting()
+	void Start()
     {
-        isStarting = false;
-	}*/
-
-    void Start()
-    {
+		boostRulesetTime = BoostRuleset.LoadFromFile("time_boost_ruleset");
 		startPosition = transform.localPosition;
 		maxX = rowGap/4;
 		if(true){
@@ -65,7 +49,6 @@ public class PlayingObjectGeneration : MonoBehaviour
     		LoadLevels("levels");
 		}else{
 		}
-        //objectGenerationheight = transform.position.y;		
     }
 	
 	void LoadLevels(string path)
@@ -75,21 +58,35 @@ public class PlayingObjectGeneration : MonoBehaviour
 		
 		var serializer = new XmlSerializer(typeof(LevelsPak));
 		levelsPak = serializer.Deserialize(tr) as LevelsPak;	
-		
-		
-		/*tAsset = Resources.Load("config_score")as TextAsset; 
-		tr = new StringReader(tAsset.text);
-		
-		serializer = new XmlSerializer(typeof(ScoreConfig));
-		ScoreConfig scoreConfig = serializer.Deserialize(tr) as ScoreConfig;
-		scoreConfig = null;*/
  	} 
+	
+	void ResetBoostCounts(){
+		if(levelCount > 0){
+			boostRulesetTime.GenerateForLevel(levelCount, rowIndex);
+		}
+	}
+	
+	void AddBoostToRow(int rowLenght){
+		PlayingObject[] row = InGameScriptRefrences.playingObjectManager.topRowObjects;
+		if(enableTime && boostRulesetTime.IsBoostStart(rowIndex)){
+			int pos = Random.Range(1,rowLenght);
+			int posX = 0;
+			while(pos>0){
+				if(row[posX]!=null) pos--; 
+				posX++;
+			}
+			row[posX-1].GetComponent<PlayingObject>().AddBonus(PlayingObject.BonusType.TIME, boostRulesetTime.bonusValueForLevel[levelCount-1]);
+		}
+	}
 	
 	public void Restart(){
 		
 		Utils.DestroyAllChild(transform);
 		transform.localPosition = startPosition;
 		
+		ResetBoostCounts();
+		
+		levelCount = 0;
 		rowIndex = 0;
 		levelIndex = 0;
 		rowCounter = 0;
@@ -253,9 +250,13 @@ public class PlayingObjectGeneration : MonoBehaviour
 		if(rowIndex<0){
 			levelIndex = Random.Range(0,levelsPak.levels.Length-1);
 			rowIndex = levelsPak.levels[levelIndex].rows.Length-1;
+			levelCount++;
+			ResetBoostCounts();
 		}
 		
 		int[] rowIndexs = levelsPak.levels[levelIndex].getRow(rowIndex);
+		
+		int bubbleCount = 0;
 		
         for (int i = 0; i < rowIndexs.Length ; i++)
         {
@@ -269,6 +270,7 @@ public class PlayingObjectGeneration : MonoBehaviour
 	
 	            tempObject.transform.parent = transform;
 	            tempObject.transform.localPosition = pos;
+				
 				//if( Random.Range(0,100)>90) tempObject.GetComponent<PlayingObject>().AddBonus(PlayingObject.BonusType.Score);
 	            //if( Random.Range(0,100)>90) tempObject.GetComponent<PlayingObject>().AddBonus(PlayingObject.BonusType.Bomb);
 				//if( Random.Range(0,100)>90) tempObject.GetComponent<PlayingObject>().AddBonus(PlayingObject.BonusType.FireBall);
@@ -278,11 +280,13 @@ public class PlayingObjectGeneration : MonoBehaviour
 				po.burnPrefab = burnPrefab;
 	            
 	            InGameScriptRefrences.playingObjectManager.topRowObjects[i] = tempObject.GetComponent<PlayingObject>();
+				bubbleCount++;
 	            //if (i % numberOfObjectsInARow == 0)
 	            //    yield return new WaitForSeconds(.01f);*/
 			}
 			x -= objectGap;	
         }
+		AddBoostToRow(bubbleCount);
 	}
 	
 	/*int rowIndex = 0;

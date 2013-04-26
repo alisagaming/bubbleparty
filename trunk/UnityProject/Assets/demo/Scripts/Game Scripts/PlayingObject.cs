@@ -32,26 +32,33 @@ public class PlayingObject : MonoBehaviour
 	float objectGap;
 	float sqrBombRadius;
 	
+	int bonusValue;
+	
 	public enum BonusType{
-		None,
-		Score,
-		Bomb,
-		FireBall
+		NONE,
+		TIME,
+		SCORE,
+		BOMB,
+		FIREBALL
 	}
 	
-	internal BonusType bonusType = BonusType.None;
+	internal BonusType bonusType = BonusType.NONE;
 	
-	internal void AddBonus(BonusType type){
+	internal void AddBonus(BonusType type,int bonusValue){
+		this.bonusValue = bonusValue;
 		Object bonusRes = null;
 		bonusType = type;
 		switch(type){
-		case BonusType.Score:
+		case BonusType.TIME:
+			bonusRes = Resources.Load("bonus_time"); 
+			break;
+		case BonusType.SCORE:
 			bonusRes = Resources.Load("bonus_score"); 
 			break;
-		case BonusType.Bomb:
+		case BonusType.BOMB:
 			bonusRes = Resources.Load("bonus_bomb"); 
 			break;
-		case BonusType.FireBall:
+		case BonusType.FIREBALL:
 			bonusRes = Resources.Load("bonus_fireball"); 
 			break;
 		}
@@ -176,12 +183,18 @@ public class PlayingObject : MonoBehaviour
 
     internal void BrustMe(bool fall)
     {
-		if (bonusType == BonusType.FireBall) InGameScriptRefrences.strikerManager.SetNextStrikerType(PowerType.Fireball);
+		if (bonusType == BonusType.FIREBALL) InGameScriptRefrences.strikerManager.SetNextStrikerType(PowerType.Fireball);
         Destroy(GetComponent<SphereCollider>());
 
         RefreshNeighbourAdjacentList();
         gameObject.tag = "Untagged";
-
+		
+		switch(bonusType){
+		case BonusType.TIME:
+			InGameScriptRefrences.scoreManager.PopupTime(transform.position, bonusValue);
+			break;
+		}
+		
         if (fall)
         {
             if (brust == false)
@@ -261,7 +274,7 @@ public class PlayingObject : MonoBehaviour
             // print(PlayingObjectManager.brustCounter);
             iTween.PunchScale(gameObject, new Vector3(.2f, .2f, .2f), 1f);
 			
-			if(bonusType == BonusType.Bomb){
+			if(bonusType == BonusType.BOMB){
 				BombMe(transform.position);
 			}
 			

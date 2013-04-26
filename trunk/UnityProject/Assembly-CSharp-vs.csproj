@@ -44,6 +44,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BubbleParty\Scripts\Facebook\FacebookManager.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Facebook\FacebookRedirectManager.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Facebook\UserData.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\GameUIController.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\ItemBoost.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelDown.cs" />
@@ -54,6 +57,7 @@
      <Compile Include="Assets\BubbleParty\Scripts\Game\InGameScriptRefrences.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\MainGameManager.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\OnFireManager.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Game\PopupBonusGUI.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\ScoreGUI.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\Tracer.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Utils\Utils.cs" />
@@ -204,6 +208,8 @@
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoButtonController.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\InputScript.cs" />
+     <Compile Include="Assets\demo\Scripts\Game Scripts\Model\BoostRule.cs" />
+     <Compile Include="Assets\demo\Scripts\Game Scripts\Model\BoostRuleset.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Model\ConfigLine.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Model\Level.cs" />
      <Compile Include="Assets\demo\Scripts\Game Scripts\Model\LevelsPak.cs" />
@@ -288,6 +294,7 @@
      <None Include="Assets\demo\Resources\levels.xml" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitBlendVertexColor.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\demo\Resources\time_boost_ruleset.xml" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth.shader" />

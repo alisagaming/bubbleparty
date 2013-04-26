@@ -1,0 +1,1 @@
+"c:\Program Files\Java\jre7\bin\keytool.exe" -exportcert -alias mykey -keystore C:/Projects/Unity3D/BubbleIsland/BubbleParty/trunk/UnityProject/Key/kk-release-key.keystore | c:\OpenSSL\bin\openssl.exe  sha1 -binary | c:\OpenSSL\bin\openssl.exe base64

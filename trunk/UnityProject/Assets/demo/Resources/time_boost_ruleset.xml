@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model>
+	<rule levelset_from="1" levelset_to="3" numBoosts="1" bonusValue="4"/>
+	<rule levelset_from="4" levelset_to="6" numBoosts="1" bonusValue="3"/>
+	<rule levelset_from="7" levelset_to="7" numBoosts="1" bonusValue="2"/>
+	<rule levelset_from="8" levelset_to="8" numBoosts="0" bonusValue="0"/>
+	<rule levelset_from="9" levelset_to="9" numBoosts="1" bonusValue="2"/>
+	<rule levelset_from="10" levelset_to="10" numBoosts="0" bonusValue="0"/>
+	<rule levelset_from="11" levelset_to="11" numBoosts="1" bonusValue="2"/>
+	<rule levelset_from="12" levelset_to="30" numBoosts="1" bonusValue="1"/>
+</model>
