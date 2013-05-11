@@ -6,10 +6,10 @@ public class PanelInGameGo : MonoBehaviour {
 	public UILabel txtReady;
 	public UILabel txtGo;
 	
-	public GameObject bonusScore;
-	public GameObject bonusTime;
-	public GameObject bonusFireball;
-	public GameObject bonusSplash;
+	//public GameObject bonusScore;
+	//public GameObject bonusTime;
+	//public GameObject bonusFireball;
+	//public GameObject bonusSplash;
 	
 	public AudioSource soundReady;
 	public AudioSource soundGo;
@@ -26,10 +26,10 @@ public class PanelInGameGo : MonoBehaviour {
 	}
 	
 	void OnEnable() {
-		bonusScore.SetActive(false);
-		bonusTime.SetActive(false);
-		bonusSplash.SetActive(false);
-        bonusFireball.SetActive(true);
+		//bonusScore.SetActive(false);
+		//bonusTime.SetActive(false);
+		//bonusSplash.SetActive(false);
+        //bonusFireball.SetActive(true);
 		
 		txtGo.gameObject.SetActive(false);
 		txtReady.gameObject.SetActive(true);

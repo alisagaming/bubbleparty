@@ -7,7 +7,9 @@ public class ScoreManager : MonoBehaviour
 {
 	public GameObject scoreGUI;
 	public GameObject popup_time;
+	public GameObject popup_star;
 	public GameObject thresholdLine;
+	
     //public GameObject scoreItemPrefab;
     //int bonusPoint;
     //int numberOfItemPoppedInARow = 0;
@@ -37,6 +39,13 @@ public class ScoreManager : MonoBehaviour
 		score.transform.parent = transform;
 		score.GetComponent<PopupBonusGUI>().SetScore("+"+timeValue);		
 	}	
+	
+	public void PopupStar(Vector3 pos){
+		GameObject score = (GameObject)Instantiate(popup_time, pos, Quaternion.identity);
+		score.transform.parent = transform;
+		score.GetComponent<PopupBonusGUI>().SetScore(scoreConfig.boostScore.ToString());
+		GameVariables.score += scoreConfig.boostScore;
+	}
 	
 	void LoadScoreConfig(string path)
  	{

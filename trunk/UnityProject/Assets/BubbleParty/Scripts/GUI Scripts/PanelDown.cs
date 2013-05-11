@@ -5,11 +5,13 @@ public class PanelDown : MonoBehaviour {
 	
 	public GameObject panel_btn;
 	public GameObject down_panel_menu;
+	public UILabel btn_text;
 	
 	enum State{
 		STATE_NONE,
 		STATE_LOGIN,
-		STATE_START_GAME
+		STATE_START_GAME,
+		STATE_BACK_TO_MAIN
 	};
 	
 	Vector3 pos1 = new Vector3(0,166,0);
@@ -21,6 +23,8 @@ public class PanelDown : MonoBehaviour {
 	
 	State currentState;
 	
+	bool panel1Visible = false;
+	bool panel2Visible = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -41,23 +45,36 @@ public class PanelDown : MonoBehaviour {
 	IEnumerator SetNewState(State state){
 		switch(state){
 		case State.STATE_NONE:
-			if(currentState == State.STATE_START_GAME){
+			//if(currentState == State.STATE_START_GAME){
+			if(!panel2Visible){
 				AnimStart(panel_btn,pos2,pos3);
 			}else{
 				AnimStart(panel_btn,pos1,pos3);
 				AnimStart(down_panel_menu,pos4,pos5);
 			}
+			panel1Visible = false;
+			panel2Visible = false;
 			break;	
 		case State.STATE_LOGIN:
-			if(currentState == State.STATE_START_GAME)
+			//if(currentState == State.STATE_START_GAME)
+			if(panel1Visible)
 				AnimStart(panel_btn,pos2,pos1);
 			else
 				AnimStart(panel_btn,pos3,pos1);
 			AnimStart(down_panel_menu,pos5,pos4);
+			
+			panel1Visible = true;
+			panel2Visible = true;
 			break;
 		case State.STATE_START_GAME:
-			AnimStart(panel_btn,pos1,pos2);
-			AnimStart(down_panel_menu,pos4,pos5);
+			if(panel2Visible){
+				AnimStart(panel_btn,pos1,pos2);
+				AnimStart(down_panel_menu,pos4,pos5);
+			}else if(!panel1Visible){
+				AnimStart(panel_btn,pos3,pos2);
+			}
+			panel1Visible = true;
+			panel2Visible = false;
 			break;
 		}
 		currentState = state;
@@ -75,10 +92,17 @@ public class PanelDown : MonoBehaviour {
 	}
 	
 	public void StartLogin(){
+		btn_text.text = "Start";		
 		StartCoroutine(SetNewState(State.STATE_LOGIN));
 	}
 	
 	public void StartGame(){
+		btn_text.text = "Start";		
+		StartCoroutine(SetNewState(State.STATE_START_GAME));
+	}
+	
+	public void StartBackToMain(string btnCaption){
+		btn_text.text = btnCaption;
 		StartCoroutine(SetNewState(State.STATE_START_GAME));
 	}
 	

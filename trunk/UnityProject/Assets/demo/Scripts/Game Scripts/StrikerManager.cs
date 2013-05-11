@@ -8,6 +8,7 @@ public class StrikerManager : MonoBehaviour
     //public GameObject[] specialStrikerPrefabs;
 	
 	public GameObject prefabFireball;
+	public GameObject prefabPlazma;
 	public Tracer tracer;
 	public tk2dAnimatedSprite character;
 
@@ -31,11 +32,20 @@ public class StrikerManager : MonoBehaviour
         currentStrikerPosition = GameObject.Find("Current Striker Position").transform;
         nextStrikerPosition = GameObject.Find("Next Striker Position").transform;
 
-        GenerateNextStriker();
+        
+		//nextStrikerType = PowerType.Plazma;		
 
         //Invoke("GenerateNextStriker", .1f);
-		Invoke("GenerateStriker", 1f);
+		//GenerateNextStriker();
+		//Invoke("GenerateStriker", 1f);
 	
+	}
+	
+	public void Restart(){
+		Utils.DestroyAllChild(transform);
+		strikerScript.Restart();
+		GenerateNextStriker();
+		Invoke("GenerateStriker", 0.1f);	
 	}
 	
 	internal void SetNextStrikerType(PowerType type){
@@ -65,9 +75,9 @@ public class StrikerManager : MonoBehaviour
             currentStrikerObject.transform.localPosition = Vector3.zero;
             isFirstObject = false;
         }
-        strikerScript.currentStrikerObject = currentStrikerObject;
-		strikerScript.PrepareStriker(currentStrikerType);
-		currentStrikerType = nextStrikerType;
+        //strikerScript.currentStrikerObject = currentStrikerObject;
+		//currentStrikerType = nextStrikerType;
+		strikerScript.PrepareStriker(currentStrikerType, currentStrikerObject);
 		//GenerateNextStriker();
 		character.Play("get_bubble");	
 		CancelInvoke("GenerateNextStriker");        
@@ -93,16 +103,21 @@ public class StrikerManager : MonoBehaviour
             
 			if(nextStrikerType == PowerType.Fireball){
 				nextStrikerObject = (GameObject)Instantiate(prefabFireball, nextStrikerPosition.position, Quaternion.identity);
+			}else if(nextStrikerType == PowerType.Plazma){
+				nextStrikerObject = (GameObject)Instantiate(prefabPlazma, nextStrikerPosition.position, Quaternion.identity);
 			}else{
 				int index = Random.Range(0, objectCount);
             	nextStrikerObject = (GameObject)Instantiate(InGameScriptRefrences.playingObjectGeneration.playingObjectsPrefabs[index], nextStrikerPosition.position, Quaternion.identity);
 			}
         }
+		
+		nextStrikerObject.transform.parent = transform;
 
         nextStrikerObject.tag = "Striker";
         nextStrikerObject.GetComponent<SphereCollider>().enabled = false;
         nextStrikerObject.GetComponent<SphereCollider>().radius *= .8f;
         iTween.PunchScale(nextStrikerObject, new Vector3(.2f, .2f, .2f), 1f);
+		currentStrikerType = nextStrikerType;
 		nextStrikerType = PowerType.None;        
     }
 	
@@ -111,7 +126,7 @@ public class StrikerManager : MonoBehaviour
 		//iTween.MoveTo(striker.gameObject, currentStrikerPosition.position, .1f);
 	}
 	
-	Vector3 up = new Vector3(0,1,0);
+	//Vector3 up = new Vector3(0,1,0);
 
     internal void Shoot(Vector3 touchedPosition)
     {

@@ -7,12 +7,14 @@ public class PanelTop : MonoBehaviour {
 		STATE_NONE,
 		STATE_COINS_DIAMOND,
 		STATE_HEART_START_GAME,
-		STATE_LIVES_LEVEL
+		STATE_LIVES_LEVEL,
+		STATE_COINS_LEVEL
 	};
 	
 	public GameObject panel_coins_diamond;
 	public GameObject panel_heart;
 	public GameObject panel_lives_level;
+	public GameObject panel_coins_level;
 	public GameObject game;
 	public GameObject panel_all_bg;
 	
@@ -31,6 +33,8 @@ public class PanelTop : MonoBehaviour {
 		AddAnimations(panel_coins_diamond);
 		AddAnimations(panel_heart);
 		AddAnimations(panel_lives_level);
+		AddAnimations(panel_coins_level);
+		
 		//currentPanel = panel_lives_level;
 	}
 	
@@ -60,6 +64,11 @@ public class PanelTop : MonoBehaviour {
 			yield return new WaitForSeconds(AnimOut(currentPanel));
 			if(currentPanel != null) currentPanel.SetActive(false);			
 			AnimIn(panel_lives_level);			
+			break;
+		case State.STATE_COINS_LEVEL:
+			yield return new WaitForSeconds(AnimOut(currentPanel));
+			if(currentPanel != null) currentPanel.SetActive(false);			
+			AnimIn(panel_coins_level);					
 			break;
 		}
 			
@@ -116,6 +125,9 @@ public class PanelTop : MonoBehaviour {
 	}
 	public void StartCoinsDiamond(){
 		StartCoroutine(SetNewState(State.STATE_COINS_DIAMOND));
+	}
+	public void StartCoinsLevel(){
+		StartCoroutine(SetNewState(State.STATE_COINS_LEVEL));
 	}
 	
 	

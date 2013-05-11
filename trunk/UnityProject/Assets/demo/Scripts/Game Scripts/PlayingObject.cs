@@ -39,7 +39,8 @@ public class PlayingObject : MonoBehaviour
 		TIME,
 		SCORE,
 		BOMB,
-		FIREBALL
+		FIREBALL,
+		PLAZMA
 	}
 	
 	internal BonusType bonusType = BonusType.NONE;
@@ -60,6 +61,9 @@ public class PlayingObject : MonoBehaviour
 			break;
 		case BonusType.FIREBALL:
 			bonusRes = Resources.Load("bonus_fireball"); 
+			break;
+		case BonusType.PLAZMA:
+			bonusRes = Resources.Load("striker_plazma"); 
 			break;
 		}
 		if(bonusRes!=null){
@@ -176,6 +180,20 @@ public class PlayingObject : MonoBehaviour
 		}
 	}
 	
+	internal void PlazmaMe(){
+		if(!isBurn){
+			isBurn = true;
+			GameObject tempObject = (GameObject)Instantiate(burnPrefab, Vector3.zero, Quaternion.identity);
+			tempObject.transform.parent = transform;
+			tempObject.transform.localPosition = new Vector3(0,0,-1);
+			tempObject.GetComponent<tk2dAnimatedSprite>().clipId = 
+				tempObject.GetComponent<tk2dAnimatedSprite>().anim.GetClipIdByName("plazma_bubble");
+			//Invoke("stopBurn", .1f);
+			PlayingObjectManager.burnCounter++;
+			brust = true;
+		}
+	}
+	
 	void stopBurn(){
 		isBurn = false;
 		brust = true;
@@ -184,6 +202,7 @@ public class PlayingObject : MonoBehaviour
     internal void BrustMe(bool fall)
     {
 		if (bonusType == BonusType.FIREBALL) InGameScriptRefrences.strikerManager.SetNextStrikerType(PowerType.Fireball);
+		if (bonusType == BonusType.PLAZMA) InGameScriptRefrences.strikerManager.SetNextStrikerType(PowerType.Plazma);
         Destroy(GetComponent<SphereCollider>());
 
         RefreshNeighbourAdjacentList();
@@ -192,6 +211,9 @@ public class PlayingObject : MonoBehaviour
 		switch(bonusType){
 		case BonusType.TIME:
 			InGameScriptRefrences.scoreManager.PopupTime(transform.position, bonusValue);
+			break;
+		case BonusType.SCORE:
+			InGameScriptRefrences.scoreManager.PopupStar(transform.position);
 			break;
 		}
 		

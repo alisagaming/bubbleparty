@@ -4,6 +4,7 @@ using System.Collections;
 public class MainGameManager : MonoBehaviour {
 	public GameObject panelInGameGo;
 	public OnFireManager onFireManager;
+	public GameObject input;
 	
 	// Use this for initialization
 	void Start () {
@@ -17,21 +18,26 @@ public class MainGameManager : MonoBehaviour {
 	
 	public void PauseOn(){
 		Time.timeScale = 0;
+		input.SetActive(false);
 	}
 	
 	public void PauseOff(){
 		Time.timeScale = 1;
+		input.SetActive(true);
 	}
 	
 	public void Restart(){
 		GameVariables.score = 0;
 		GameVariables.levelBonus = 0;
-		GameVariables.time = 60;
+		GameVariables.time = 3;//60;
+		
+		//input.SetActive(true);
 		
 		onFireManager.Restart();
 		InGameScriptRefrences.scoreManager.Restart();
 		InGameScriptRefrences.playingObjectGeneration.Restart();
 		InGameScriptRefrences.playingObjectManager.Restart();
+		InGameScriptRefrences.strikerManager.Restart();
 		PauseOff();
 		panelInGameGo.SetActive(true);
 	}

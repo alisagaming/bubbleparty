@@ -16,9 +16,12 @@ public class PlayingObjectGeneration : MonoBehaviour
 	public GameObject burnPrefab;
     
 	BoostRuleset boostRulesetTime;
+	BoostRuleset boostRulesetStar;
+	BoostRuleset boostRulesetFireball;
+	BoostRuleset boostRulesetPlazma;
 	
-	internal bool enableStar = true;	
-	internal bool enableTime = true;
+	internal bool enableStar = false;	
+	internal bool enableTime = false;
 	internal bool enableFireball = false;
 	internal bool enablePlazma = false;
 	
@@ -42,6 +45,9 @@ public class PlayingObjectGeneration : MonoBehaviour
 	void Start()
     {
 		boostRulesetTime = BoostRuleset.LoadFromFile("time_boost_ruleset");
+		boostRulesetStar = BoostRuleset.LoadFromFile("score_boost_ruleset");
+		boostRulesetFireball = BoostRuleset.LoadFromFile("fireball_ruleset");
+		boostRulesetPlazma = BoostRuleset.LoadFromFile("fireball_ruleset");
 		startPosition = transform.localPosition;
 		maxX = rowGap/4;
 		if(true){
@@ -63,6 +69,9 @@ public class PlayingObjectGeneration : MonoBehaviour
 	void ResetBoostCounts(){
 		if(levelCount > 0){
 			boostRulesetTime.GenerateForLevel(levelCount, rowIndex);
+			boostRulesetStar.GenerateForLevel(levelCount, rowIndex);
+			boostRulesetFireball.GenerateForLevel(levelCount, rowIndex);
+			boostRulesetPlazma.GenerateForLevel(levelCount, rowIndex);
 		}
 	}
 	
@@ -76,6 +85,33 @@ public class PlayingObjectGeneration : MonoBehaviour
 				posX++;
 			}
 			row[posX-1].GetComponent<PlayingObject>().AddBonus(PlayingObject.BonusType.TIME, boostRulesetTime.bonusValueForLevel[levelCount-1]);
+		}
+		if(enableStar && boostRulesetStar.IsBoostStart(rowIndex)){
+			int pos = Random.Range(1,rowLenght);
+			int posX = 0;
+			while(pos>0){
+				if(row[posX]!=null) pos--; 
+				posX++;
+			}
+			row[posX-1].GetComponent<PlayingObject>().AddBonus(PlayingObject.BonusType.SCORE, 0);
+		}
+		if(enableFireball && boostRulesetFireball.IsBoostStart(rowIndex)){
+			int pos = Random.Range(1,rowLenght);
+			int posX = 0;
+			while(pos>0){
+				if(row[posX]!=null) pos--; 
+				posX++;
+			}
+			row[posX-1].GetComponent<PlayingObject>().AddBonus(PlayingObject.BonusType.FIREBALL, 0);
+		}
+		if(enablePlazma && boostRulesetPlazma.IsBoostStart(rowIndex)){
+			int pos = Random.Range(1,rowLenght);
+			int posX = 0;
+			while(pos>0){
+				if(row[posX]!=null) pos--; 
+				posX++;
+			}
+			row[posX-1].GetComponent<PlayingObject>().AddBonus(PlayingObject.BonusType.PLAZMA, 0);
 		}
 	}
 	

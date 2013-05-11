@@ -9,6 +9,10 @@ public class GameUIController : MonoBehaviour
 	public Transform timerBar;
     //public TextMesh gameStateText;
 	public GameObject panelInGameGo;
+	
+	public PanelManager2D panelManager2D;
+	//public GameObject anchorStatistics;
+	public GameObject input;
 
 	void Start () 
     {
@@ -43,9 +47,25 @@ public class GameUIController : MonoBehaviour
 	
 	void FixedUpdate()
     {
-		if(panelInGameGo.activeSelf) return;
+		if((panelInGameGo.activeSelf) || (GameVariables.time == 0)) return;
 		GameVariables.time -= Time.fixedDeltaTime;
 		if(GameVariables.time<0) GameVariables.time = 0;
+		
+		if (GameVariables.time == 0) {
+			//StartCoroutine(StartStat());
+			input.SetActive(false);
+			panelManager2D.StartTimeUpStatistic();		
+		}
 	}
+	
+	/*IEnumerator StartStat(){
+		input.SetActive(false);
+		panelManager2D.StartTimeUpStatistic();
+		
+		anchorTimeLeft.gameObject.SetActive(true);
+		yield return new WaitForSeconds(1f);
+		anchorTimeLeft.gameObject.SetActive(false);
+		
+	}*/
     
 }

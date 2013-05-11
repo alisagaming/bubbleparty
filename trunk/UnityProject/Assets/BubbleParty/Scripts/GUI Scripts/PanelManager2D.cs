@@ -7,8 +7,8 @@ public class PanelManager2D : MonoBehaviour {
 		STATE_GAME,
 		STATE_GAME_BEGIN,
 		STATE_INVITE_FREND,
-		STATE_SEND_FREND
-		
+		STATE_SEND_FREND,
+		STATE_TIME_UP_STATICTICS
 	};
 	
 	State currentState;
@@ -26,6 +26,9 @@ public class PanelManager2D : MonoBehaviour {
 	public GameObject anchorLogin;
 	public GameObject anchorPause;
 	
+	public GameObject anchorStatistics;
+	public GameObject anchorTimeLeft;
+	
 	public GameObject panelAllBG;
 	public MainGameManager gameManager;
 	public GameObject gameCamera;
@@ -36,12 +39,13 @@ public class PanelManager2D : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		//gameCamera.SetActive(false);
+		gameCamera.SetActive(false);
 		
 		AddAnimations(anchorLogin);
 		AddAnimations(anchorInviteFriend);
 		AddAnimations(anchorSendFriend);
 		AddAnimations(anchorStartGame);
+		AddAnimations(anchorStatistics);
 		
 		StartLogin();		
 	}
@@ -120,6 +124,23 @@ public class PanelManager2D : MonoBehaviour {
 				AnimIn(anchorLogin);	
 			}
 		break;
+		case State.STATE_TIME_UP_STATICTICS:
+			anchorTimeLeft.SetActive(true);
+			yield return new WaitForSeconds(1f);
+			panelTop.gameObject.SetActive(true);
+			panelTop.StartCoinsLevel();
+			
+			panelDown.gameObject.SetActive(true);
+			panelDown.StartBackToMain("Okay");
+			
+			gameCamera.SetActive(false);
+			panelAllBG.SetActive(true);			
+			anchorTimeLeft.SetActive(false);
+			//anchorStatistics.SetActive(true);
+			AnimIn(anchorStatistics);	
+			
+			
+			break;
 		}
 		
 		currentState = state;
@@ -152,10 +173,21 @@ public class PanelManager2D : MonoBehaviour {
 	}
 	
 	public void OnDownButton(){
-		if(currentState == State.STATE_GAME)
+		switch(currentState){
+		case State.STATE_GAME:
+			StartCoroutine(SetNewState(State.STATE_GAME_BEGIN));
+			break;
+		case State.STATE_LOGIN:
+			StartCoroutine(SetNewState(State.STATE_GAME));
+			break;
+		case State.STATE_TIME_UP_STATICTICS:
+			StartCoroutine(SetNewState(State.STATE_LOGIN));
+			break;
+		}
+		/*if(currentState == State.STATE_GAME)
 			StartCoroutine(SetNewState(State.STATE_GAME_BEGIN));
 		else
-			StartCoroutine(SetNewState(State.STATE_GAME));
+			StartCoroutine(SetNewState(State.STATE_GAME));*/
 	}
 	
 	public void StartAchiev(){
@@ -171,5 +203,9 @@ public class PanelManager2D : MonoBehaviour {
 	}
 	
 	public void StartSettings(){
+	}
+	
+	public void StartTimeUpStatistic(){
+		StartCoroutine(SetNewState(State.STATE_TIME_UP_STATICTICS));
 	}
 }

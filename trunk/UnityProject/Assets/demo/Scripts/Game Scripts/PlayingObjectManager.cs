@@ -46,7 +46,7 @@ public class PlayingObjectManager : MonoBehaviour
 		brustCounter++;
 		if(brustCounter == 3) staticOnFireManager.Shot(true);
 	}
-
+	
     internal void CheckForObjectsFall()
     {
         if ((PlayingObjectManager.brustCounter < 3) && (PlayingObjectManager.burnCounter == 0))
@@ -59,6 +59,7 @@ public class PlayingObjectManager : MonoBehaviour
 		//onFireManager.Shot(true);
         BrustObjects();
         FallDisconnectedObjects();
+		PlayingObjectManager.burnCounter = 0;
     }
 
     void BrustObjects()

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model>
+	<bonusCoins>
+		<item amount="0" score="0"/>
+		<item amount="100" score="100000"/>
+		<item amount="120" score="200000"/>
+		<item amount="140" score="300000"/>
+		<item amount="160" score="400000"/>		
+		<item amount="180" score="500000"/>		
+		<item amount="200" score="10000000"/>		
+	</bonusCoins>	
+	<reducedCoins>
+		<item amount="0" score="0"/>
+		<item amount="10" score="100000"/>
+		<item amount="20" score="200000"/>
+		<item amount="30" score="300000"/>
+		<item amount="40" score="400000"/>		
+		<item amount="50" score="10000000"/>		
+	</reducedCoins>
+	<tutorialCoins>
+		<integer>40</integer>
+		<integer>60</integer>
+		<integer>100</integer>
+	</tutorialCoins>
+</model>	
+
