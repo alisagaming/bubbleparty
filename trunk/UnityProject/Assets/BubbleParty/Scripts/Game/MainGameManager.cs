@@ -29,16 +29,14 @@ public class MainGameManager : MonoBehaviour {
 	public void Restart(){
 		GameVariables.score = 0;
 		GameVariables.levelBonus = 0;
-		GameVariables.time = 3;//60;
-		
-		//input.SetActive(true);
+		GameVariables.time = 60;
 		
 		onFireManager.Restart();
+		panelInGameGo.SetActive(true);
 		InGameScriptRefrences.scoreManager.Restart();
 		InGameScriptRefrences.playingObjectGeneration.Restart();
 		InGameScriptRefrences.playingObjectManager.Restart();
 		InGameScriptRefrences.strikerManager.Restart();
-		PauseOff();
-		panelInGameGo.SetActive(true);
+		PauseOff();		
 	}
 }

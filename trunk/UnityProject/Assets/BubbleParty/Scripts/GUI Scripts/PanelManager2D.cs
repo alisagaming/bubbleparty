@@ -33,6 +33,10 @@ public class PanelManager2D : MonoBehaviour {
 	public MainGameManager gameManager;
 	public GameObject gameCamera;
 	
+	public SoundFxManager soundFxManager;
+	
+	public InputScript input;
+	
 	GameObject currentObject = null;
 	
 	int isInit = 0;
@@ -67,6 +71,7 @@ public class PanelManager2D : MonoBehaviour {
 	}
 	
 	IEnumerator SetNewState(State state){
+		input.gameObject.SetActive(false);
 		switch(state){
 		case State.STATE_GAME_BEGIN:
 			panelTop.RemoveAll();	
@@ -127,6 +132,7 @@ public class PanelManager2D : MonoBehaviour {
 		case State.STATE_TIME_UP_STATICTICS:
 			anchorTimeLeft.SetActive(true);
 			yield return new WaitForSeconds(1f);
+			soundFxManager.firemode_loop.Stop();
 			panelTop.gameObject.SetActive(true);
 			panelTop.StartCoinsLevel();
 			

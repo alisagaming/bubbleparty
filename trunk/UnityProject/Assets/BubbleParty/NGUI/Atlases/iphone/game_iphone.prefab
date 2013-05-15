@@ -114,14 +114,14 @@ MonoBehaviour:
   - name: btnLarge@2x
     outer:
       serializedVersion: 2
-      x: 1200
-      y: 1085
+      x: 1185
+      y: 1444
       width: 380
       height: 128
     inner:
       serializedVersion: 2
-      x: 1200
-      y: 1085
+      x: 1185
+      y: 1444
       width: 380
       height: 128
     rotated: 0
@@ -132,14 +132,14 @@ MonoBehaviour:
   - name: btnLargeDown@2x
     outer:
       serializedVersion: 2
-      x: 1185
-      y: 1444
+      x: 1200
+      y: 1085
       width: 380
       height: 128
     inner:
       serializedVersion: 2
-      x: 1185
-      y: 1444
+      x: 1200
+      y: 1085
       width: 380
       height: 128
     rotated: 0
@@ -222,13 +222,13 @@ MonoBehaviour:
   - name: timerFillGolden
     outer:
       serializedVersion: 2
-      x: 1012
+      x: 1602
       y: 763
       width: 294
       height: 54
     inner:
       serializedVersion: 2
-      x: 1012
+      x: 1602
       y: 763
       width: 294
       height: 54
@@ -240,14 +240,14 @@ MonoBehaviour:
   - name: timerFillYellow
     outer:
       serializedVersion: 2
-      x: 1200
-      y: 1030
+      x: 1012
+      y: 763
       width: 294
       height: 54
     inner:
       serializedVersion: 2
-      x: 1200
-      y: 1030
+      x: 1012
+      y: 763
       width: 294
       height: 54
     rotated: 0
@@ -312,14 +312,14 @@ MonoBehaviour:
   - name: timerFillRed
     outer:
       serializedVersion: 2
-      x: 1602
-      y: 763
+      x: 1200
+      y: 1030
       width: 294
       height: 54
     inner:
       serializedVersion: 2
-      x: 1602
-      y: 763
+      x: 1200
+      y: 1030
       width: 294
       height: 54
     rotated: 0
@@ -349,13 +349,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 1012
-      y: 222
+      y: 44
       width: 88
       height: 88
     inner:
       serializedVersion: 2
       x: 1012
-      y: 222
+      y: 44
       width: 88
       height: 88
     rotated: 0
@@ -366,14 +366,14 @@ MonoBehaviour:
   - name: boostFireballActive@2x
     outer:
       serializedVersion: 2
-      x: 1190
-      y: 222
+      x: 1194
+      y: 313
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 1190
-      y: 222
+      x: 1194
+      y: 313
       width: 88
       height: 88
     rotated: 0
@@ -420,14 +420,14 @@ MonoBehaviour:
   - name: boostGoldStarInactive@2x
     outer:
       serializedVersion: 2
-      x: 1012
-      y: 44
+      x: 1101
+      y: 222
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 1012
-      y: 44
+      x: 1101
+      y: 222
       width: 88
       height: 88
     rotated: 0
@@ -438,14 +438,14 @@ MonoBehaviour:
   - name: boostGoldTimeActive@2x
     outer:
       serializedVersion: 2
-      x: 1012
-      y: 133
+      x: 1190
+      y: 222
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 1012
-      y: 133
+      x: 1190
+      y: 222
       width: 88
       height: 88
     rotated: 0
@@ -456,14 +456,14 @@ MonoBehaviour:
   - name: boostFireballInactive@2x
     outer:
       serializedVersion: 2
-      x: 1194
-      y: 313
+      x: 1012
+      y: 222
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 1194
-      y: 313
+      x: 1012
+      y: 222
       width: 88
       height: 88
     rotated: 0
@@ -474,14 +474,14 @@ MonoBehaviour:
   - name: boostGoldTimeInactive@2x
     outer:
       serializedVersion: 2
-      x: 1101
-      y: 222
+      x: 1012
+      y: 133
       width: 88
       height: 88
     inner:
       serializedVersion: 2
-      x: 1101
-      y: 222
+      x: 1012
+      y: 133
       width: 88
       height: 88
     rotated: 0
@@ -726,13 +726,13 @@ MonoBehaviour:
   - name: btn_addBoost@2x
     outer:
       serializedVersion: 2
-      x: 1301
+      x: 1378
       y: 686
       width: 76
       height: 76
     inner:
       serializedVersion: 2
-      x: 1301
+      x: 1378
       y: 686
       width: 76
       height: 76
@@ -744,13 +744,13 @@ MonoBehaviour:
   - name: btn_addBoostDown@2x
     outer:
       serializedVersion: 2
-      x: 1378
+      x: 1301
       y: 686
       width: 76
       height: 76
     inner:
       serializedVersion: 2
-      x: 1378
+      x: 1301
       y: 686
       width: 76
       height: 76
@@ -816,14 +816,14 @@ MonoBehaviour:
   - name: btn_addDown@2x
     outer:
       serializedVersion: 2
-      x: 1237
-      y: 551
+      x: 1608
+      y: 710
       width: 52
       height: 52
     inner:
       serializedVersion: 2
-      x: 1237
-      y: 551
+      x: 1608
+      y: 710
       width: 52
       height: 52
     rotated: 0
@@ -834,14 +834,14 @@ MonoBehaviour:
   - name: btn_add@2x
     outer:
       serializedVersion: 2
-      x: 1608
-      y: 710
+      x: 1237
+      y: 551
       width: 52
       height: 52
     inner:
       serializedVersion: 2
-      x: 1608
-      y: 710
+      x: 1237
+      y: 551
       width: 52
       height: 52
     rotated: 0
@@ -1176,13 +1176,13 @@ MonoBehaviour:
   - name: btn_askFriendsDown@2x
     outer:
       serializedVersion: 2
-      x: 1393
+      x: 1012
       y: 818
       width: 380
       height: 85
     inner:
       serializedVersion: 2
-      x: 1393
+      x: 1012
       y: 818
       width: 380
       height: 85
@@ -1194,13 +1194,13 @@ MonoBehaviour:
   - name: btn_askFriends@2x
     outer:
       serializedVersion: 2
-      x: 1012
+      x: 1393
       y: 818
       width: 380
       height: 85
     inner:
       serializedVersion: 2
-      x: 1012
+      x: 1393
       y: 818
       width: 380
       height: 85
@@ -1266,14 +1266,14 @@ MonoBehaviour:
   - name: btnUI-down@2x
     outer:
       serializedVersion: 2
-      x: 1123
-      y: 640
+      x: 1012
+      y: 531
       width: 146
       height: 72
     inner:
       serializedVersion: 2
-      x: 1123
-      y: 640
+      x: 1012
+      y: 531
       width: 146
       height: 72
     rotated: 0
@@ -1284,14 +1284,14 @@ MonoBehaviour:
   - name: btnUI@2x
     outer:
       serializedVersion: 2
-      x: 1012
-      y: 531
+      x: 1123
+      y: 640
       width: 146
       height: 72
     inner:
       serializedVersion: 2
-      x: 1012
-      y: 531
+      x: 1123
+      y: 640
       width: 146
       height: 72
     rotated: 0
@@ -1447,13 +1447,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 1941
-      y: 1321
+      y: 1227
       width: 93
       height: 93
     inner:
       serializedVersion: 2
       x: 1941
-      y: 1321
+      y: 1227
       width: 93
       height: 93
     rotated: 0
@@ -1465,13 +1465,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 907
-      y: 228
+      y: 361
       width: 93
       height: 93
     inner:
       serializedVersion: 2
       x: 907
-      y: 228
+      y: 361
       width: 93
       height: 93
     rotated: 0
@@ -1482,14 +1482,14 @@ MonoBehaviour:
   - name: frame_bronze@2x
     outer:
       serializedVersion: 2
-      x: 1941
-      y: 1227
+      x: 907
+      y: 228
       width: 93
       height: 93
     inner:
       serializedVersion: 2
-      x: 1941
-      y: 1227
+      x: 907
+      y: 228
       width: 93
       height: 93
     rotated: 0
@@ -1500,14 +1500,14 @@ MonoBehaviour:
   - name: frame_silver@2x
     outer:
       serializedVersion: 2
-      x: 907
-      y: 361
+      x: 1941
+      y: 1321
       width: 93
       height: 93
     inner:
       serializedVersion: 2
-      x: 907
-      y: 361
+      x: 1941
+      y: 1321
       width: 93
       height: 93
     rotated: 0
@@ -1536,14 +1536,14 @@ MonoBehaviour:
   - name: btnSmallDown@2x
     outer:
       serializedVersion: 2
-      x: 1931
-      y: 916
+      x: 1012
+      y: 444
       width: 100
       height: 86
     inner:
       serializedVersion: 2
-      x: 1931
-      y: 916
+      x: 1012
+      y: 444
       width: 100
       height: 86
     rotated: 0
@@ -1554,14 +1554,14 @@ MonoBehaviour:
   - name: btnSmall@2x
     outer:
       serializedVersion: 2
-      x: 1012
-      y: 444
+      x: 1931
+      y: 916
       width: 100
       height: 86
     inner:
       serializedVersion: 2
-      x: 1012
-      y: 444
+      x: 1931
+      y: 916
       width: 100
       height: 86
     rotated: 0
@@ -1590,14 +1590,14 @@ MonoBehaviour:
   - name: fakeFriend_02@2x
     outer:
       serializedVersion: 2
-      x: 774
-      y: 322
+      x: 1808
+      y: 1282
       width: 132
       height: 132
     inner:
       serializedVersion: 2
-      x: 774
-      y: 322
+      x: 1808
+      y: 1282
       width: 132
       height: 132
     rotated: 0
@@ -1608,14 +1608,14 @@ MonoBehaviour:
   - name: fakeFriend_05@2x
     outer:
       serializedVersion: 2
-      x: 641
-      y: 56
+      x: 774
+      y: 322
       width: 132
       height: 132
     inner:
       serializedVersion: 2
-      x: 641
-      y: 56
+      x: 774
+      y: 322
       width: 132
       height: 132
     rotated: 0
@@ -1626,14 +1626,14 @@ MonoBehaviour:
   - name: fakeFriend_03@2x
     outer:
       serializedVersion: 2
-      x: 774
-      y: 189
+      x: 641
+      y: 322
       width: 132
       height: 132
     inner:
       serializedVersion: 2
-      x: 774
-      y: 189
+      x: 641
+      y: 322
       width: 132
       height: 132
     rotated: 0
@@ -1644,13 +1644,13 @@ MonoBehaviour:
   - name: fakeFriend_07@2x
     outer:
       serializedVersion: 2
-      x: 641
+      x: 774
       y: 189
       width: 132
       height: 132
     inner:
       serializedVersion: 2
-      x: 641
+      x: 774
       y: 189
       width: 132
       height: 132
@@ -1662,14 +1662,14 @@ MonoBehaviour:
   - name: fakeFriend_06@2x
     outer:
       serializedVersion: 2
-      x: 1808
-      y: 1282
+      x: 641
+      y: 56
       width: 132
       height: 132
     inner:
       serializedVersion: 2
-      x: 1808
-      y: 1282
+      x: 641
+      y: 56
       width: 132
       height: 132
     rotated: 0
@@ -1681,13 +1681,13 @@ MonoBehaviour:
     outer:
       serializedVersion: 2
       x: 641
-      y: 322
+      y: 189
       width: 132
       height: 132
     inner:
       serializedVersion: 2
       x: 641
-      y: 322
+      y: 189
       width: 132
       height: 132
     rotated: 0

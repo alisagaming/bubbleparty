@@ -7,18 +7,21 @@ public class GameVariables : MonoBehaviour
     internal static int levelBonus = 0;
     internal static float time = 60;
 
-    //public int totalNumberOfRowsLeft = 100;
-    public int minimumNumberOfRows = 3;
-    //public float rowAddingInterval = 5f;
-	
-	internal static int totalScore = 0;
+    internal static int totalScore = 0;
 	internal static int expiriens;
+	
+	internal static int coins  = 2000;
+	internal static int diamond= 100;
+	internal static int lives  = 5;
+	
 	
 	internal static int bonus_star = 0;
 	internal static int bonus_time = 0;
-	internal static int bonus_fireball = 1;
-	internal static int bonus_plazma = 1;
+	internal static int bonus_fireball = 0;
+	internal static int bonus_plazma = 0;
 	
+	public int minimumNumberOfRows = 10;
+    	
 	BonusCoins bonusCoins;
 	
 	void Start () {
@@ -41,7 +44,12 @@ public class GameVariables : MonoBehaviour
 	
 	public static int GetLevel(int exp)
 	{
-		return 1;
+		return 3;
+	}
+	
+	public static int GetLevelPersent(int exp)
+	{
+		return 56;
 	}
 	
 	public static bool IsBonusUnlock(ItemBoost.BoostType type){

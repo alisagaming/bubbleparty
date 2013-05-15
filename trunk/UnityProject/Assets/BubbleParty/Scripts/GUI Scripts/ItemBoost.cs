@@ -78,7 +78,7 @@ public class ItemBoost : MonoBehaviour {
 				//bonus_count_bg.spriteName = "boostNumberGreen@2x";
 				bonus_cost_type.spriteName = "coinBoost@2x";
 				//txt_boost_count.text = "12";
-				txt_cost.text = "250";
+				//txt_cost.text = "250";
 				//txt_description.text = "Score Boost";
 			}/*else{
 				
@@ -91,7 +91,7 @@ public class ItemBoost : MonoBehaviour {
 			//bonus_count_bg.spriteName = "boostNumberGreen@2x";
 			bonus_cost_type.spriteName = "coinBoost@2x";
 			//txt_boost_count.text = "3";
-			txt_cost.text = "150";
+			//txt_cost.text = "150";
 			//txt_description.text = "Time Boost";
 			break;
 		case BoostType.TYPE_FIREBALL:
@@ -101,7 +101,7 @@ public class ItemBoost : MonoBehaviour {
 			//bonus_count_bg.spriteName = "boostNumberGreen@2x";
 			bonus_cost_type.spriteName = "diamondBoostShop@2x";			
 			//txt_boost_count.text = "5";
-			txt_cost.text = "9";
+			//txt_cost.text = "9";
 			//txt_description.text = "Fireball Boost";
 			break;	
 		case BoostType.TYPE_PLAZMA:
@@ -111,10 +111,53 @@ public class ItemBoost : MonoBehaviour {
 			//bonus_count_bg.spriteName = "boostNumberGreen@2x";
 			bonus_cost_type.spriteName = "diamondBoostShop@2x";			
 			//txt_boost_count.text = "5";
-			txt_cost.text = "12";
+			//txt_cost.text = "12";
 			//txt_description.text = "Plasma Boost";
 			break;
 		}
+		txt_cost.text = GetBonusCost().ToString();
+	}
+	
+	int GetBonusCost(){
+		switch(boostType){
+		case BoostType.TYPE_STAR: return 250;
+		case BoostType.TYPE_TIME: return 150;
+		case BoostType.TYPE_FIREBALL: return 9;
+		case BoostType.TYPE_PLAZMA: return 12;
+		}
+		return 0;
+	}
+	
+	public void OnButtonAdd(){
+		int cost = GetBonusCost();
+		switch(boostType){
+		case BoostType.TYPE_STAR:
+		case BoostType.TYPE_TIME:
+			if(cost <= GameVariables.coins){
+				GameVariables.coins -= cost;
+				if(boostType == BoostType.TYPE_STAR)
+					GameVariables.bonus_star++;
+				else
+					GameVariables.bonus_time++;
+				Start();
+			}
+			break;
+		case BoostType.TYPE_FIREBALL:
+		case BoostType.TYPE_PLAZMA:
+			if(cost <= GameVariables.diamond){
+				GameVariables.diamond -= cost;
+				if(boostType == BoostType.TYPE_FIREBALL)
+					GameVariables.bonus_fireball++;
+				else
+					GameVariables.bonus_plazma++;
+				Start();
+			}
+			break;
+		}
+	}
+	
+	public void OnButtonInfo(){
+		
 	}
 	
 	// Update is called once per frame

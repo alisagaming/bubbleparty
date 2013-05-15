@@ -1,6 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\BubbleParty\Scripts\GUI Scripts\ItemBoost.cs">
+    <Files>
+      <File FileName="Assets\BubbleParty\Scripts\Game\GameVariables.cs" Line="1" Column="1" />
+      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\TopPanelLevel.cs" Line="11" Column="35" />
+      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\PanelInGameGo.cs" Line="1" Column="1" />
+      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\TopPanelResource.cs" Line="12" Column="2" />
+      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\PanelManager2D.cs" Line="4" Column="28" />
+      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\ItemBoost.cs" Line="133" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

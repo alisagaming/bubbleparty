@@ -361,188 +361,6 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
-  - name: GameSet
-    spriteCollectionGUID: 98d11d5d5aa0b43478960e22814ce56a
-    spriteCollectionDataGUID: e143ec96e7f34e74a85c7ab117fe73d4
-    spriteNames:
-    - bg_10
-    - bubble_1
-    - bubble_2
-    - bubble_3
-    - bubble_4
-    - bubble_5
-    - panel_rl
-    - panel_top
-    - framePlants2~ipad
-    - frameMainIpadRight@2x
-    - frameMainIpadBottom@2x
-    - frameMainIpadLeft@2x
-    - framePlants4~ipad
-    - frameMainIpadTop@2x
-    - framePlants3~ipad
-    spriteTextureGUIDs:
-    - 4bbb1109feb2e124bbebeee0a0bf9729
-    - 76cc414247b66f64da9823becc56c58e
-    - 7afce59d1cb81134ea15d76a1b14d8c7
-    - 044f1ec4763ecd840ac279ffecfc648e
-    - dfc7343fdf52c2e479b00ad63bde29ce
-    - d0bba6ba552c1e54ebe6aa92bde5907f
-    - 9667ad6d16f048c418ec47970f534013
-    - a92e8f234905d6843badb6267eaf64c7
-    - 44ba80b5a3d4f074db661adb36ca4192
-    - 9b87f0f2f3bfe06439e72fc83182f2e8
-    - b718aa85996ea5e4aa7b08d9ff63bb82
-    - e0d53bb16f45d3d4290431f3afe0dbb4
-    - e4052750075e02240998947d113159c2
-    - e4639345779ab0a4687ffd75f9879520
-    - f28f741dfade90f4684ad944bbc52cc5
-    spriteTextureTimeStamps:
-    - 1352982234
-    - 1360963174.95537
-    - 1360962189.07998
-    - 1360963187.7101
-    - 1360963229.43049
-    - 1360963244.34934
-    - 1361834044.48091
-    - 1361833921.11085
-    - 1352982234
-    - 1352982234
-    - 1352982234
-    - 1352982234
-    - 1352982234
-    - 1352982234
-    - 1352982234
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
-  - name: BubbleSet
-    spriteCollectionGUID: fd31b9efed30546459f5b741405ccc64
-    spriteCollectionDataGUID: d98ef214a3028684f93abaf0a75add63
-    spriteNames:
-    - bubble_black
-    - bubble_blue
-    - bubble_clock
-    - bubble_green
-    - 
-    - bubble_orange
-    - bubble_red
-    - bubble_star
-    - bubble_violet
-    - bubble_white
-    - bubble_yellow
-    - fireball1
-    - fireball2
-    - fireball3
-    - fireball4
-    - fireball5
-    - fireball6
-    - fireballbubble1
-    - fireballbubble3
-    - fireballbubble4
-    - fireballbubble6
-    - fireballbubble7
-    - 
-    - 
-    - 
-    - 
-    - 
-    - fireball_bubble2
-    - fireball_bubble5
-    - fireball_flying3
-    - fireball_flying4
-    - fireball_flying8
-    - redLine
-    - anigil
-    - bomb
-    - multi
-    - score
-    - time
-    - fireball
-    spriteTextureGUIDs:
-    - efade76b9d82e6b42ad06c54539e9fd1
-    - 35cfc99fc0524504e89a58db16167ee0
-    - edc81c4c9fedbdf4085227d4927effe3
-    - 9cc72da122b96b84a8301a85e5ae4e4d
-    - 
-    - 3cf228757874e1146bddc042bb3675a5
-    - 25b40e95e0fd5fd4e81ba461cb9e704a
-    - bb13ff6d2a2e07045883d70667d1b920
-    - 9dc1ddf98fd371143b151aa93b769b23
-    - 47fe095aaa8804a4f84f817e2121f3fc
-    - 4f291630e4dfaf4488b1a7cd04c0f1f8
-    - b778218359d2761498f49365434fa1ed
-    - 9ba2888e3907a79468b5eb0800873267
-    - b182422817a51074f860a55dc32e672e
-    - 94618521d1a1ce0438ababe681a77d64
-    - a4e1d6277a49fba47adbf6602e85d0a1
-    - 9421453c0a6e32a42bd2940d31022d08
-    - 720ceb834611a58479c2ac2835674f34
-    - cddc33dc1a428fb419236f0aa6013cde
-    - c05d3add259850847bdc7e5b9f6e0ca6
-    - 982144aff7b8c9140954975620df826d
-    - 1ced88079813e14409f3c1e5410fbbda
-    - 
-    - 
-    - 
-    - 
-    - 
-    - c565944f2fa16ab4ea3810fb9b7e6644
-    - 2018f9d66489dd74dafbd0e53f0df729
-    - 5e00c3ad0a62eb944bbc8406b28a236f
-    - 520afb8584400424cbdfe3c277a7e12f
-    - 6967cb16877374643842ec206e559342
-    - a52e40aaa2927164d8e9830265df7178
-    - 8f3258a2316128c4d97c5a49025d943e
-    - cd9150caba104bb4ca3908799b483bcb
-    - 25075b047ce9e6b4b821468891d35377
-    - 17ada0c4e69737845b88e74df5ba8a08
-    - 6ca0db779a44d9442941b540095ba673
-    - 4f4616476fc288446a070062b97d96a2
-    spriteTextureTimeStamps:
-    - 1366214710.73726
-    - 1366214710.74426
-    - 1366214710.75026
-    - 1366214710.76026
-    - 0
-    - 1366214710.76926
-    - 1366214710.77626
-    - 1366214710.78126
-    - 1366214710.79126
-    - 1366214710.79426
-    - 1366214710.80026
-    - 1366214710.82626
-    - 1366214710.85127
-    - 1366214710.87427
-    - 1366214710.90027
-    - 1366214710.92527
-    - 1366214710.94927
-    - 1366214711.00927
-    - 1366214711.03228
-    - 1366214711.04428
-    - 1366214711.06428
-    - 1366214711.07328
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 1366214711.13328
-    - 1366214711.18929
-    - 1366217576.67518
-    - 1366214711.4153
-    - 1366217582.50552
-    - 1366217631.72533
-    - 1363473166.47319
-    - 1363473099.39135
-    - 1363473311.7695
-    - 1363473017.62167
-    - 1363473258.35544
-    - 1363121688.25366
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
   - name: iphone_gameSet
     spriteCollectionGUID: 2efb21c6a170e824a904fa1cebaff1f7
     spriteCollectionDataGUID: 18c721689fbc1364e8914399d2232425
@@ -725,50 +543,50 @@ MonoBehaviour:
     - frameTop
     - redGlowSide
     - redGlowTop
-    - racoon_getBubble1
-    - racoon_getBubble2
-    - racoon_getBubble3
-    - racoon_getBubble4
-    - racoon_getBubble5
-    - racoon_getBubble6
-    - racoon_getBubble7
-    - racoon_getBubble8
-    - racoon_normal1
-    - racoon_normal2
-    - racoon_reload1
-    - racoon_reload2
-    - racoon_reload3
-    - racoon_sweatGetBubble1
-    - racoon_sweatGetBubble2
-    - racoon_sweatGetBubble3
-    - racoon_sweatGetBubble4
-    - racoon_sweatGetBubble5
-    - racoon_sweatGetBubble6
-    - racoon_sweatGetBubble7
-    - racoon_sweatGetBubble8
-    - racoon_sweatNormal1
-    - racoon_sweatNormal2
-    - racoon_sweatNormal3
-    - racoon_sweatNormal4
-    - racoon_sweatNormal5
-    - racoon_sweatNormal6
-    - racoon_sweatReload1
-    - racoon_sweatReload2
-    - racoon_sweatReload3
-    - racoon_win1
-    - racoon_win10
-    - racoon_win11
-    - racoon_win12
-    - racoon_win13
-    - racoon_win14
-    - racoon_win2
-    - racoon_win3
-    - racoon_win4
-    - racoon_win5
-    - racoon_win6
-    - racoon_win7
-    - racoon_win8
-    - racoon_win9
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
     - fireworkParticle2@2x
     - fireworkParticle2@2x 1
     spriteTextureGUIDs:
@@ -950,50 +768,50 @@ MonoBehaviour:
     - cf8df9d3936d7e947ab7c4f759d63fb0
     - 670c4791893e02642a14073c6767efb8
     - 8f4b23f8ffad0704caf6ecfd9d089386
-    - 3e997495a7edff749887717b4c9d401b
-    - d0cf68ef5c13334439514ba7b183ba44
-    - f98716f5da83e8c4ba5b74dd14ea6c0a
-    - 75429b90552809e4cabb1e0917e0d946
-    - 8b25fa96b1c41f2438d5136137606834
-    - 27f4a6b1e5f80784bb3eec721982d176
-    - 894bc883d126a914fbbf3acda1c77257
-    - c91018780badd32499e1495b014298be
-    - 166a7b135e5896f4d921156c5476e96a
-    - 35ec1440f4478cf4abc3bad9c07f755b
-    - 7c76c03694a909a4d884c61d466e0515
-    - d4c0fbb7201a0164a946fa490e3b2ca5
-    - 7e305e6c996cfe041b87bcb65b9bc477
-    - 1bf46ff48c114134682ba5ced04e6dcb
-    - 736a442dcfb48c543bd88bfba9ee9527
-    - 9dce106a57e7f03439fd31e06a2db7c3
-    - 37c5ca1b6dd5dd54d93b2bf96a52b423
-    - d9d3912b098106d42bc7eafad05cb66e
-    - d241657e537bf2b4798246dc0dabe486
-    - 82e68716269df2d418b58a645e6b011a
-    - 9f1364844fff1a948a5e689815e901d0
-    - d1662645383c6a04cb4b7ab0f07ca7a2
-    - 3ddf3bd8592b3d843bbddda65caad6e6
-    - 2bfdb2100903cfd4d9d6a56d8b65bf11
-    - 77ec1bbdf5a4b22488b6c7ab1e70f4e8
-    - a2a2e741e1161724c894aa5748634bc3
-    - 74929c4b37aa4c645b221d0067d3c2b5
-    - 9a1e6c513ceb5f543a85bff910006944
-    - 6abd48b494dab774db74851d1f386ec6
-    - 2cd8d73b4c603e744a85114b3c643f98
-    - a2b90329d0d94b640abfccf8adba60fe
-    - f01656bf42f692e46b8e0489b8c5754a
-    - 37b539a370f7d5c45b35ae3f99b26b9d
-    - 06feab9c504db3e46b44095bd38006c3
-    - 194212c242c75884c957e9919322daea
-    - b35f342813bd2a942b96ab72086b27f0
-    - 10dbdd5e9499ed34387873c1ef028820
-    - 313987054fd2233489156268b18d79a5
-    - 8915380bd1518754f8a119134472c03c
-    - 926427fa8edf2494aa50740897a2cf6b
-    - 584bbeb3a78ab084382edbe387725214
-    - 09bf949fdbf38bc4f9f5dd276982a9af
-    - ef9044406c3081748a769661ea905f7b
-    - f47703b20e6c42547a008dbceedb405a
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
     - 24f8a2dc19b06974b9c87f073b4e93de
     - 24f8a2dc19b06974b9c87f073b4e93de
     spriteTextureTimeStamps:
@@ -1175,6 +993,150 @@ MonoBehaviour:
     - 1364313082.82312
     - 1364313053.68145
     - 1364313084.96724
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1361195050
+    - 1361195050
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: iphone_gameSet
+    version: 3
+  - name: iphone_character
+    spriteCollectionGUID: ac99ab67476b44244a85681a6f4af5ac
+    spriteCollectionDataGUID: c036ae72e37ad5d45a14bbd59eb93087
+    spriteNames:
+    - racoon_getBubble1
+    - racoon_getBubble2
+    - racoon_getBubble3
+    - racoon_getBubble4
+    - racoon_getBubble5
+    - racoon_getBubble6
+    - racoon_getBubble7
+    - racoon_getBubble8
+    - racoon_normal1
+    - racoon_normal2
+    - racoon_reload1
+    - racoon_reload2
+    - racoon_reload3
+    - racoon_sweatGetBubble1
+    - racoon_sweatGetBubble2
+    - racoon_sweatGetBubble3
+    - racoon_sweatGetBubble4
+    - racoon_sweatGetBubble5
+    - racoon_sweatGetBubble6
+    - racoon_sweatGetBubble7
+    - racoon_sweatGetBubble8
+    - racoon_sweatNormal1
+    - racoon_sweatNormal2
+    - racoon_sweatNormal3
+    - racoon_sweatNormal4
+    - racoon_sweatNormal5
+    - racoon_sweatNormal6
+    - racoon_sweatReload1
+    - racoon_sweatReload2
+    - racoon_sweatReload3
+    - racoon_win1
+    - racoon_win10
+    - racoon_win11
+    - racoon_win12
+    - racoon_win13
+    - racoon_win14
+    - racoon_win2
+    - racoon_win3
+    - racoon_win4
+    - racoon_win5
+    - racoon_win6
+    - racoon_win7
+    - racoon_win8
+    - racoon_win9
+    spriteTextureGUIDs:
+    - 3e997495a7edff749887717b4c9d401b
+    - d0cf68ef5c13334439514ba7b183ba44
+    - f98716f5da83e8c4ba5b74dd14ea6c0a
+    - 75429b90552809e4cabb1e0917e0d946
+    - 8b25fa96b1c41f2438d5136137606834
+    - 27f4a6b1e5f80784bb3eec721982d176
+    - 894bc883d126a914fbbf3acda1c77257
+    - c91018780badd32499e1495b014298be
+    - 166a7b135e5896f4d921156c5476e96a
+    - 35ec1440f4478cf4abc3bad9c07f755b
+    - 7c76c03694a909a4d884c61d466e0515
+    - d4c0fbb7201a0164a946fa490e3b2ca5
+    - 7e305e6c996cfe041b87bcb65b9bc477
+    - 1bf46ff48c114134682ba5ced04e6dcb
+    - 736a442dcfb48c543bd88bfba9ee9527
+    - 9dce106a57e7f03439fd31e06a2db7c3
+    - 37c5ca1b6dd5dd54d93b2bf96a52b423
+    - d9d3912b098106d42bc7eafad05cb66e
+    - d241657e537bf2b4798246dc0dabe486
+    - 82e68716269df2d418b58a645e6b011a
+    - 9f1364844fff1a948a5e689815e901d0
+    - d1662645383c6a04cb4b7ab0f07ca7a2
+    - 3ddf3bd8592b3d843bbddda65caad6e6
+    - 2bfdb2100903cfd4d9d6a56d8b65bf11
+    - 77ec1bbdf5a4b22488b6c7ab1e70f4e8
+    - a2a2e741e1161724c894aa5748634bc3
+    - 74929c4b37aa4c645b221d0067d3c2b5
+    - 9a1e6c513ceb5f543a85bff910006944
+    - 6abd48b494dab774db74851d1f386ec6
+    - 2cd8d73b4c603e744a85114b3c643f98
+    - a2b90329d0d94b640abfccf8adba60fe
+    - f01656bf42f692e46b8e0489b8c5754a
+    - 37b539a370f7d5c45b35ae3f99b26b9d
+    - 06feab9c504db3e46b44095bd38006c3
+    - 194212c242c75884c957e9919322daea
+    - b35f342813bd2a942b96ab72086b27f0
+    - 10dbdd5e9499ed34387873c1ef028820
+    - 313987054fd2233489156268b18d79a5
+    - 8915380bd1518754f8a119134472c03c
+    - 926427fa8edf2494aa50740897a2cf6b
+    - 584bbeb3a78ab084382edbe387725214
+    - 09bf949fdbf38bc4f9f5dd276982a9af
+    - ef9044406c3081748a769661ea905f7b
+    - f47703b20e6c42547a008dbceedb405a
+    spriteTextureTimeStamps:
     - 1364315317.47193
     - 1364315317.51694
     - 1364315317.57294
@@ -1219,9 +1181,20 @@ MonoBehaviour:
     - 1364315319.86807
     - 1364315319.93007
     - 1364315319.99108
-    - 1361195050
-    - 1361195050
     managedSpriteCollection: 0
     loadable: 0
-    assetName: iphone_gameSet
+    assetName: 
+    version: 3
+  - name: bg1
+    spriteCollectionGUID: 40d18c8740309094588496da4f571ec5
+    spriteCollectionDataGUID: 152dc82b1493ee74e9de2388a339842e
+    spriteNames:
+    - bg_01
+    spriteTextureGUIDs:
+    - 95b40435f3a6d91438c155ad22d56776
+    spriteTextureTimeStamps:
+    - 1361195048
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
     version: 3

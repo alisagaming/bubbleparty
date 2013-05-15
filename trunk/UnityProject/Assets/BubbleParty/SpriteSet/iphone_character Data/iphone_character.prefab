@@ -1,0 +1,1702 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: iphone_character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: racoon_getBubble1
+    boundsData:
+    - {x: 0, y: .00156249851, z: 0}
+    - {x: .512499988, y: .496874988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .512499988, y: .5, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.256249994, y: -.246875003, z: 0}
+    - {x: .256249994, y: -.246875003, z: 0}
+    - {x: -.256249994, y: .25, z: 0}
+    - {x: .256249994, y: .25, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .834961414, y: .308105946}
+    - {x: .915038586, y: .308105946}
+    - {x: .834961414, y: .385741711}
+    - {x: .915038586, y: .385741711}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3e997495a7edff749887717b4c9d401b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_getBubble2
+    boundsData:
+    - {x: -.00156250596, y: .00156250596, z: 0}
+    - {x: .515625, y: .528124988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .518750012, y: .53125, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.259375006, y: -.262499988, z: 0}
+    - {x: .256249994, y: -.262499988, z: 0}
+    - {x: -.259375006, y: .265625, z: 0}
+    - {x: .256249994, y: .265625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .213379398, y: .505371571}
+    - {x: .213379398, y: .585937023}
+    - {x: .295897961, y: .505371571}
+    - {x: .295897961, y: .585937023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: d0cf68ef5c13334439514ba7b183ba44
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_getBubble3
+    boundsData:
+    - {x: -.00156249106, y: .00156250596, z: 0}
+    - {x: .446875036, y: .615625024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .450000018, y: .618750036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.225000009, y: -.306250006, z: 0}
+    - {x: .221875027, y: -.306250006, z: 0}
+    - {x: -.225000009, y: .309375018, z: 0}
+    - {x: .221875027, y: .309375018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .571289539, y: .368164539}
+    - {x: .571289539, y: .437987804}
+    - {x: .667479992, y: .368164539}
+    - {x: .667479992, y: .437987804}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: f98716f5da83e8c4ba5b74dd14ea6c0a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_getBubble4
+    boundsData:
+    - {x: -.00156250596, y: .00156250596, z: 0}
+    - {x: .571874976, y: .621874988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .574999988, y: .625, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.287499994, y: -.309374988, z: 0}
+    - {x: .284374982, y: -.309374988, z: 0}
+    - {x: -.287499994, y: .3125, z: 0}
+    - {x: .284374982, y: .3125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .316406727, y: .348145008}
+    - {x: .316406727, y: .437499523}
+    - {x: .413573742, y: .348145008}
+    - {x: .413573742, y: .437499523}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 75429b90552809e4cabb1e0917e0d946
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_getBubble5
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .450000018, y: .581250012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .450000018, y: .581250012, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.225000009, y: -.290625006, z: 0}
+    - {x: .225000009, y: -.290625006, z: 0}
+    - {x: -.225000009, y: .290625006, z: 0}
+    - {x: .225000009, y: .290625006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .569824696}
+    - {x: .000977050746, y: .640136242}
+    - {x: .0917963833, y: .569824696}
+    - {x: .0917963833, y: .640136242}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8b25fa96b1c41f2438d5136137606834
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_getBubble6
+    boundsData:
+    - {x: -.00156250596, y: .00156250596, z: 0}
+    - {x: .609375, y: .534375012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .612500012, y: .537500024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.306250006, y: -.265625, z: 0}
+    - {x: .303124994, y: -.265625, z: 0}
+    - {x: -.306250006, y: .268750012, z: 0}
+    - {x: .303124994, y: .268750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .484375477}
+    - {x: .0961909145, y: .484375477}
+    - {x: .000977050746, y: .567870617}
+    - {x: .0961909145, y: .567870617}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 27f4a6b1e5f80784bb3eec721982d176
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_getBubble7
+    boundsData:
+    - {x: -.00156249106, y: .00156250596, z: 0}
+    - {x: .634374976, y: .546875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .637499988, y: .550000012, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.318749994, y: -.271874994, z: 0}
+    - {x: .315625012, y: -.271874994, z: 0}
+    - {x: -.318749994, y: .275000006, z: 0}
+    - {x: .315625012, y: .275000006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .112305179, y: .472168446}
+    - {x: .21142529, y: .472168446}
+    - {x: .112305179, y: .557616711}
+    - {x: .21142529, y: .557616711}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 894bc883d126a914fbbf3acda1c77257
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_getBubble8
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .643750012, y: .600000024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .643750012, y: .600000024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.321875006, y: -.300000012, z: 0}
+    - {x: .321875006, y: -.300000012, z: 0}
+    - {x: -.321875006, y: .300000012, z: 0}
+    - {x: .321875006, y: .300000012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .352539539, y: .252441883}
+    - {x: .453124523, y: .252441883}
+    - {x: .352539539, y: .346190929}
+    - {x: .453124523, y: .346190929}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: c91018780badd32499e1495b014298be
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_normal1
+    boundsData:
+    - {x: -.00156249106, y: 0, z: 0}
+    - {x: .696874976, y: .600000024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .699999988, y: .600000024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.349999994, y: -.300000012, z: 0}
+    - {x: .346875012, y: -.300000012, z: 0}
+    - {x: -.349999994, y: .300000012, z: 0}
+    - {x: .346875012, y: .300000012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .644043446, y: .181641117}
+    - {x: .752929211, y: .181641117}
+    - {x: .644043446, y: .275390148}
+    - {x: .752929211, y: .275390148}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 166a7b135e5896f4d921156c5476e96a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_normal2
+    boundsData:
+    - {x: -.00156249106, y: 0, z: 0}
+    - {x: .696874976, y: .600000024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .699999988, y: .600000024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.349999994, y: -.300000012, z: 0}
+    - {x: .346875012, y: -.300000012, z: 0}
+    - {x: -.349999994, y: .300000012, z: 0}
+    - {x: .346875012, y: .300000012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .885742664, y: .130371585}
+    - {x: .994628429, y: .130371585}
+    - {x: .885742664, y: .224120602}
+    - {x: .994628429, y: .224120602}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 35ec1440f4478cf4abc3bad9c07f755b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_reload1
+    boundsData:
+    - {x: 0, y: .00156250596, z: 0}
+    - {x: .743750036, y: .578125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .743750036, y: .581250012, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.371875018, y: -.287499994, z: 0}
+    - {x: .371875018, y: -.287499994, z: 0}
+    - {x: -.371875018, y: .290625006, z: 0}
+    - {x: .371875018, y: .290625006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .644043446, y: .0893559605}
+    - {x: .760253429, y: .0893559605}
+    - {x: .644043446, y: .179687008}
+    - {x: .760253429, y: .179687008}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7c76c03694a909a4d884c61d466e0515
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_reload2
+    boundsData:
+    - {x: -.00156249106, y: 0, z: 0}
+    - {x: .828125, y: .587500036, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .831250012, y: .587500036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.415625006, y: -.293750018, z: 0}
+    - {x: .412500024, y: -.293750018, z: 0}
+    - {x: -.415625006, y: .293750018, z: 0}
+    - {x: .412500024, y: .293750018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .512695789, y: .0893559605}
+    - {x: .642089367, y: .0893559605}
+    - {x: .512695789, y: .181151852}
+    - {x: .642089367, y: .181151852}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: d4c0fbb7201a0164a946fa490e3b2ca5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_reload3
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .725000024, y: .5625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .725000024, y: .5625, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.362500012, y: -.28125, z: 0}
+    - {x: .362500012, y: -.28125, z: 0}
+    - {x: -.362500012, y: .28125, z: 0}
+    - {x: .362500012, y: .28125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .754883289, y: .199707523}
+    - {x: .868163586, y: .199707523}
+    - {x: .754883289, y: .287597179}
+    - {x: .868163586, y: .287597179}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7e305e6c996cfe041b87bcb65b9bc477
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatGetBubble1
+    boundsData:
+    - {x: -.00156250596, y: 0, z: 0}
+    - {x: .746874988, y: .5, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .75, y: .5, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.375, y: -.25, z: 0}
+    - {x: .371874988, y: -.25, z: 0}
+    - {x: -.375, y: .25, z: 0}
+    - {x: .371874988, y: .25, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .236328617, y: .281250477}
+    - {x: .236328617, y: .397948742}
+    - {x: .314452648, y: .281250477}
+    - {x: .314452648, y: .397948742}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1bf46ff48c114134682ba5ced04e6dcb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatGetBubble2
+    boundsData:
+    - {x: -.00156250596, y: 0, z: 0}
+    - {x: .515625, y: .53125, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .518750012, y: .53125, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.259375006, y: -.265625, z: 0}
+    - {x: .256249994, y: -.265625, z: 0}
+    - {x: -.259375006, y: .265625, z: 0}
+    - {x: .256249994, y: .265625, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .312012196, y: .439453602}
+    - {x: .312012196, y: .520019054}
+    - {x: .395019054, y: .439453602}
+    - {x: .395019054, y: .520019054}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 736a442dcfb48c543bd88bfba9ee9527
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatGetBubble3
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .443749994, y: .618750036, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .443749994, y: .618750036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.221874997, y: -.309375018, z: 0}
+    - {x: .221874997, y: -.309375018, z: 0}
+    - {x: -.221874997, y: .309375018, z: 0}
+    - {x: .221874997, y: .309375018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .415527821, y: .428223133}
+    - {x: .415527821, y: .497558117}
+    - {x: .512206554, y: .428223133}
+    - {x: .512206554, y: .497558117}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9dce106a57e7f03439fd31e06a2db7c3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatGetBubble4
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .568750024, y: .631250024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .568750024, y: .631250024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.284375012, y: -.315625012, z: 0}
+    - {x: .284375012, y: -.315625012, z: 0}
+    - {x: -.284375012, y: .315625012, z: 0}
+    - {x: .284375012, y: .315625012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .639648914, y: .277344227}
+    - {x: .639648914, y: .366210461}
+    - {x: .738280773, y: .277344227}
+    - {x: .738280773, y: .366210461}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 37c5ca1b6dd5dd54d93b2bf96a52b423
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatGetBubble5
+    boundsData:
+    - {x: -.00156249851, y: .00156250596, z: 0}
+    - {x: .396875024, y: .565625012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .400000006, y: .568750024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.200000003, y: -.28125, z: 0}
+    - {x: .196875006, y: -.28125, z: 0}
+    - {x: -.200000003, y: .284375012, z: 0}
+    - {x: .196875006, y: .284375012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .575684071, y: .269043446}
+    - {x: .637694836, y: .269043446}
+    - {x: .575684071, y: .357421398}
+    - {x: .637694836, y: .357421398}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: d9d3912b098106d42bc7eafad05cb66e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatGetBubble6
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .462500006, y: .581250012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .462500006, y: .581250012, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.231250003, y: -.290625006, z: 0}
+    - {x: .231250003, y: -.290625006, z: 0}
+    - {x: -.231250003, y: .290625006, z: 0}
+    - {x: .231250003, y: .290625006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .098145023, y: .559570789}
+    - {x: .098145023, y: .631835461}
+    - {x: .188964352, y: .559570789}
+    - {x: .188964352, y: .631835461}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: d241657e537bf2b4798246dc0dabe486
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatGetBubble7
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .493750006, y: .59375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .493750006, y: .59375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.246875003, y: -.296875, z: 0}
+    - {x: .246875003, y: -.296875, z: 0}
+    - {x: -.246875003, y: .296875, z: 0}
+    - {x: .246875003, y: .296875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .740234852, y: .289551258}
+    - {x: .740234852, y: .366698742}
+    - {x: .833007336, y: .289551258}
+    - {x: .833007336, y: .366698742}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 82e68716269df2d418b58a645e6b011a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatGetBubble8
+    boundsData:
+    - {x: 0, y: .00156250596, z: 0}
+    - {x: .8125, y: .553125024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .8125, y: .556250036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.40625, y: -.275000006, z: 0}
+    - {x: .40625, y: -.275000006, z: 0}
+    - {x: -.40625, y: .278125018, z: 0}
+    - {x: .40625, y: .278125018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .14794971, y: .262207508}
+    - {x: .14794971, y: .389159679}
+    - {x: .234374508, y: .262207508}
+    - {x: .234374508, y: .389159679}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9f1364844fff1a948a5e689815e901d0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatNormal1
+    boundsData:
+    - {x: -.00156249106, y: .00156250596, z: 0}
+    - {x: .928125024, y: .553125024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .931250036, y: .556250036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.465625018, y: -.275000006, z: 0}
+    - {x: .462500036, y: -.275000006, z: 0}
+    - {x: -.465625018, y: .278125018, z: 0}
+    - {x: .462500036, y: .278125018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .244141117, y: .0913090855}
+    - {x: .389159679, y: .0913090855}
+    - {x: .244141117, y: .177733883}
+    - {x: .389159679, y: .177733883}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: d1662645383c6a04cb4b7ab0f07ca7a2
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatNormal2
+    boundsData:
+    - {x: -.00156249106, y: .00156250596, z: 0}
+    - {x: .928125024, y: .553125024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .931250036, y: .556250036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.465625018, y: -.275000006, z: 0}
+    - {x: .462500036, y: -.275000006, z: 0}
+    - {x: -.465625018, y: .278125018, z: 0}
+    - {x: .462500036, y: .278125018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .115234867}
+    - {x: .145995602, y: .115234867}
+    - {x: .000977050746, y: .201659665}
+    - {x: .145995602, y: .201659665}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3ddf3bd8592b3d843bbddda65caad6e6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatNormal3
+    boundsData:
+    - {x: -.00156249106, y: .00156250596, z: 0}
+    - {x: .928125024, y: .553125024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .931250036, y: .556250036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.465625018, y: -.275000006, z: 0}
+    - {x: .462500036, y: -.275000006, z: 0}
+    - {x: -.465625018, y: .278125018, z: 0}
+    - {x: .462500036, y: .278125018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .14794971, y: .115234867}
+    - {x: .14794971, y: .260253429}
+    - {x: .234374508, y: .115234867}
+    - {x: .234374508, y: .260253429}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2bfdb2100903cfd4d9d6a56d8b65bf11
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatNormal4
+    boundsData:
+    - {x: -.00156249106, y: .00156250596, z: 0}
+    - {x: .928125024, y: .553125024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .931250036, y: .556250036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.465625018, y: -.275000006, z: 0}
+    - {x: .462500036, y: -.275000006, z: 0}
+    - {x: -.465625018, y: .278125018, z: 0}
+    - {x: .462500036, y: .278125018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .203613773}
+    - {x: .145995602, y: .203613773}
+    - {x: .000977050746, y: .290038586}
+    - {x: .145995602, y: .290038586}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 77ec1bbdf5a4b22488b6c7ab1e70f4e8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatNormal5
+    boundsData:
+    - {x: -.00156249106, y: .00156250596, z: 0}
+    - {x: .928125024, y: .553125024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .931250036, y: .556250036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.465625018, y: -.275000006, z: 0}
+    - {x: .462500036, y: -.275000006, z: 0}
+    - {x: -.465625018, y: .278125018, z: 0}
+    - {x: .462500036, y: .278125018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .512695789, y: .000977050746}
+    - {x: .657714367, y: .000977050746}
+    - {x: .512695789, y: .087401852}
+    - {x: .657714367, y: .087401852}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: a2a2e741e1161724c894aa5748634bc3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatNormal6
+    boundsData:
+    - {x: -.00156249106, y: .00156250596, z: 0}
+    - {x: .928125024, y: .553125024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .931250036, y: .556250036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.465625018, y: -.275000006, z: 0}
+    - {x: .462500036, y: -.275000006, z: 0}
+    - {x: -.465625018, y: .278125018, z: 0}
+    - {x: .462500036, y: .278125018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .659668446, y: .000977050746}
+    - {x: .804687023, y: .000977050746}
+    - {x: .659668446, y: .087401852}
+    - {x: .804687023, y: .087401852}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 74929c4b37aa4c645b221d0067d3c2b5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatReload1
+    boundsData:
+    - {x: 0, y: .00156250596, z: 0}
+    - {x: .962500036, y: .565625012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .962500036, y: .568750024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.481250018, y: -.28125, z: 0}
+    - {x: .481250018, y: -.28125, z: 0}
+    - {x: -.481250018, y: .284375012, z: 0}
+    - {x: .481250018, y: .284375012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .244141117, y: .000977050746}
+    - {x: .394530773, y: .000977050746}
+    - {x: .244141117, y: .089354977}
+    - {x: .394530773, y: .089354977}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9a1e6c513ceb5f543a85bff910006944
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatReload2
+    boundsData:
+    - {x: -.00156250596, y: 0, z: 0}
+    - {x: .865625024, y: .550000012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .868750036, y: .550000012, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.434375018, y: -.275000006, z: 0}
+    - {x: .431250006, y: -.275000006, z: 0}
+    - {x: -.434375018, y: .275000006, z: 0}
+    - {x: .431250006, y: .275000006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .391113758, y: .115234867}
+    - {x: .391113758, y: .250487804}
+    - {x: .477050304, y: .115234867}
+    - {x: .477050304, y: .250487804}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6abd48b494dab774db74851d1f386ec6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_sweatReload3
+    boundsData:
+    - {x: -.00156249106, y: .00156249851, z: 0}
+    - {x: .815625072, y: .484375, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .818750024, y: .487500012, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.409375012, y: -.240625009, z: 0}
+    - {x: .40625003, y: -.240625009, z: 0}
+    - {x: -.409375012, y: .243750006, z: 0}
+    - {x: .40625003, y: .243750006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .920410633, y: .000977050746}
+    - {x: .920410633, y: .128417477}
+    - {x: .996093273, y: .000977050746}
+    - {x: .996093273, y: .128417477}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2cd8d73b4c603e744a85114b3c643f98
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win1
+    boundsData:
+    - {x: -.00156250596, y: 0, z: 0}
+    - {x: .778124988, y: .543749988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .78125, y: .543749988, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.390625, y: -.271874994, z: 0}
+    - {x: .387499988, y: -.271874994, z: 0}
+    - {x: -.390625, y: .271874994, z: 0}
+    - {x: .387499988, y: .271874994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .762207508, y: .11279346}
+    - {x: .883788586, y: .11279346}
+    - {x: .762207508, y: .197753415}
+    - {x: .883788586, y: .197753415}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: a2b90329d0d94b640abfccf8adba60fe
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win10
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .731249988, y: .637499988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .731249988, y: .637499988, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.365624994, y: -.318749994, z: 0}
+    - {x: .365624994, y: -.318749994, z: 0}
+    - {x: -.365624994, y: .318749994, z: 0}
+    - {x: .365624994, y: .318749994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .236328617, y: .179687992}
+    - {x: .350585461, y: .179687992}
+    - {x: .236328617, y: .279296398}
+    - {x: .350585461, y: .279296398}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: f01656bf42f692e46b8e0489b8c5754a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win11
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .731249988, y: .537500024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .731249988, y: .537500024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.365624994, y: -.268750012, z: 0}
+    - {x: .365624994, y: -.268750012, z: 0}
+    - {x: -.365624994, y: .268750012, z: 0}
+    - {x: .365624994, y: .268750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .479004383, y: .18310596}
+    - {x: .593261242, y: .18310596}
+    - {x: .479004383, y: .267089367}
+    - {x: .593261242, y: .267089367}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 37b539a370f7d5c45b35ae3f99b26b9d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win12
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .737500012, y: .506250024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .737500012, y: .506250024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.368750006, y: -.253125012, z: 0}
+    - {x: .368750006, y: -.253125012, z: 0}
+    - {x: -.368750006, y: .253125012, z: 0}
+    - {x: .368750006, y: .253125012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .112305179, y: .391113758}
+    - {x: .227538571, y: .391113758}
+    - {x: .112305179, y: .470214367}
+    - {x: .227538571, y: .470214367}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 06feab9c504db3e46b44095bd38006c3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win13
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .787500024, y: .512499988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .787500024, y: .512499988, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.393750012, y: -.256249994, z: 0}
+    - {x: .393750012, y: -.256249994, z: 0}
+    - {x: -.393750012, y: .256249994, z: 0}
+    - {x: .393750012, y: .256249994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .870117664, y: .22607471}
+    - {x: .993163586, y: .22607471}
+    - {x: .870117664, y: .306151867}
+    - {x: .993163586, y: .306151867}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 194212c242c75884c957e9919322daea
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win14
+    boundsData:
+    - {x: -.00156250596, y: .00156250596, z: 0}
+    - {x: .740625024, y: .590624988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .743750036, y: .59375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.371875018, y: -.293749988, z: 0}
+    - {x: .368750006, y: -.293749988, z: 0}
+    - {x: -.371875018, y: .296875, z: 0}
+    - {x: .368750006, y: .296875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .291992664}
+    - {x: .116698727, y: .291992664}
+    - {x: .000977050746, y: .384276867}
+    - {x: .116698727, y: .384276867}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: b35f342813bd2a942b96ab72086b27f0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win2
+    boundsData:
+    - {x: -.00156249106, y: 0, z: 0}
+    - {x: .759374976, y: .487500012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .762499988, y: .487500012, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.381249994, y: -.243750006, z: 0}
+    - {x: .378125012, y: -.243750006, z: 0}
+    - {x: -.381249994, y: .243750006, z: 0}
+    - {x: .378125012, y: .243750006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .455078602, y: .269043446}
+    - {x: .573729992, y: .269043446}
+    - {x: .455078602, y: .345214367}
+    - {x: .573729992, y: .345214367}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 10dbdd5e9499ed34387873c1ef028820
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win3
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .731249988, y: .506250024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .731249988, y: .506250024, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.365624994, y: -.253125012, z: 0}
+    - {x: .365624994, y: -.253125012, z: 0}
+    - {x: -.365624994, y: .253125012, z: 0}
+    - {x: .365624994, y: .253125012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .455078602, y: .347168446}
+    - {x: .569335461, y: .347168446}
+    - {x: .455078602, y: .426269054}
+    - {x: .569335461, y: .426269054}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 313987054fd2233489156268b18d79a5
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win4
+    boundsData:
+    - {x: 0, y: .00156250596, z: 0}
+    - {x: .662500024, y: .515625, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .662500024, y: .518750012, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.331250012, y: -.256249994, z: 0}
+    - {x: .331250012, y: -.256249994, z: 0}
+    - {x: -.331250012, y: .259375006, z: 0}
+    - {x: .331250012, y: .259375006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .229492679, y: .399902821}
+    - {x: .229492679, y: .503417492}
+    - {x: .310058117, y: .399902821}
+    - {x: .310058117, y: .503417492}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8915380bd1518754f8a119134472c03c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win5
+    boundsData:
+    - {x: 0, y: .00156250596, z: 0}
+    - {x: .699999988, y: .615625024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .699999988, y: .618750036, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.349999994, y: -.306250006, z: 0}
+    - {x: .349999994, y: -.306250006, z: 0}
+    - {x: -.349999994, y: .309375018, z: 0}
+    - {x: .349999994, y: .309375018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .386230946}
+    - {x: .110351071, y: .386230946}
+    - {x: .000977050746, y: .482421398}
+    - {x: .110351071, y: .482421398}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 926427fa8edf2494aa50740897a2cf6b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win6
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .731249988, y: .71875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .731249988, y: .71875, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.365624994, y: -.359375, z: 0}
+    - {x: .365624994, y: -.359375, z: 0}
+    - {x: -.365624994, y: .359375, z: 0}
+    - {x: .365624994, y: .359375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .396484852, y: .000977050746}
+    - {x: .510741711, y: .000977050746}
+    - {x: .396484852, y: .113280758}
+    - {x: .510741711, y: .113280758}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 584bbeb3a78ab084382edbe387725214
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win7
+    boundsData:
+    - {x: -.00156250596, y: 0, z: 0}
+    - {x: .765625, y: .71875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .768750012, y: .71875, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.384375006, y: -.359375, z: 0}
+    - {x: .381249994, y: -.359375, z: 0}
+    - {x: -.384375006, y: .359375, z: 0}
+    - {x: .381249994, y: .359375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .000977050746, y: .000977050746}
+    - {x: .120604977, y: .000977050746}
+    - {x: .000977050746, y: .113280758}
+    - {x: .120604977, y: .113280758}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 09bf949fdbf38bc4f9f5dd276982a9af
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win8
+    boundsData:
+    - {x: -.00156249106, y: .00156250596, z: 0}
+    - {x: .703125, y: .715624988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .706250012, y: .71875, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.353125006, y: -.356249988, z: 0}
+    - {x: .350000024, y: -.356249988, z: 0}
+    - {x: -.353125006, y: .359375, z: 0}
+    - {x: .350000024, y: .359375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .806641102, y: .000977050746}
+    - {x: .806641102, y: .110839352}
+    - {x: .918456554, y: .000977050746}
+    - {x: .918456554, y: .110839352}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: ef9044406c3081748a769661ea905f7b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: racoon_win9
+    boundsData:
+    - {x: -.00156250596, y: 0, z: 0}
+    - {x: .765625, y: .71875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: .768750012, y: .71875, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.384375006, y: -.359375, z: 0}
+    - {x: .381249994, y: -.359375, z: 0}
+    - {x: -.384375006, y: .359375, z: 0}
+    - {x: .381249994, y: .359375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .122559085, y: .000977050746}
+    - {x: .242187008, y: .000977050746}
+    - {x: .122559085, y: .113280758}
+    - {x: .242187008, y: .113280758}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+    materialId: 0
+    sourceTextureGUID: f47703b20e6c42547a008dbceedb405a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 0
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: e317be47ec7b53743ad7b693e9c89fe8, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 49968d7f49b950e4fafcbfbadd1ace06, type: 3}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: ac99ab67476b44244a85681a6f4af5ac
+  spriteCollectionName: iphone_character
+  assetName: 
+  loadable: 0
+  invOrthoSize: 1
+  halfTargetHeight: 320
+  buildKey: 111261586
+  dataGuid: c036ae72e37ad5d45a14bbd59eb93087
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

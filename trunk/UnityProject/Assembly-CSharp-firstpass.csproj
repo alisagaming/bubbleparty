@@ -146,6 +146,7 @@
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
      <None Include="Assets\Plugins\Android\res\layout\com_facebook_picker_title_bar.xml" />
+     <None Include="Assets\demo\Resources\bubble_definitions.xml" />
      <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
  <Reference Include="P31RestKit">
  <HintPath>Assets\Plugins\P31RestKit.dll</HintPath>

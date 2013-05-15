@@ -106,6 +106,7 @@ GameObject:
   - 4: {fileID: 400012}
   - 114: {fileID: 11400012}
   - 65: {fileID: 6500000}
+  - 114: {fileID: 11400026}
   m_Layer: 0
   m_Name: btn_add
   m_TagString: Untagged
@@ -187,6 +188,7 @@ GameObject:
   - 4: {fileID: 400022}
   - 114: {fileID: 11400022}
   - 65: {fileID: 6500002}
+  - 114: {fileID: 11400028}
   m_Layer: 0
   m_Name: btn_info
   m_TagString: Untagged
@@ -239,7 +241,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 20.2374268, z: -.000244140625}
+  m_LocalPosition: {x: 0, y: 149.132935, z: -.000122070312}
   m_LocalScale: {x: 1.00024796, y: 1.00024796, z: 1.00024796}
   m_Children:
   - {fileID: 400008}
@@ -271,7 +273,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -201.925522, y: 0, z: 0}
+  m_LocalPosition: {x: -202, y: 0, z: 0}
   m_LocalScale: {x: 110, y: 108, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -387,8 +389,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 42.0071602, y: 41.9985046, z: 0}
-  m_Center: {x: -1.48000002, y: -214.990097, z: -.5}
+  m_Size: {x: 173.830002, y: 109.5, z: 0}
+  m_Center: {x: -55, y: -232.899994, z: -.5}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -399,7 +401,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 763b538e60404e84c89ead44357ef5f0, type: 3}
   m_Name: 
-  boostType: 0
+  boostType: 1
   boostIcon: {fileID: 11400006}
   bonus_bg_1: {fileID: 11400016}
   bonus_bg_2: {fileID: 11400008}
@@ -641,6 +643,34 @@ MonoBehaviour:
   mEffectDistance: {x: 0, y: 10}
   mLineWidth: 0
   mMultiline: 1
+--- !u!114 &11400026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c4ff40739c7904ca26c14ffbdc4176, type: 3}
+  m_Name: 
+  target: {fileID: 100004}
+  functionName: OnButtonAdd
+  trigger: 0
+  includeChildren: 0
+--- !u!114 &11400028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c4ff40739c7904ca26c14ffbdc4176, type: 3}
+  m_Name: 
+  target: {fileID: 100004}
+  functionName: OnButtonInfo
+  trigger: 0
+  includeChildren: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

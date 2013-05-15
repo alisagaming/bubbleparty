@@ -83,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -531.829041, y: 0, z: 0}
+  m_LocalPosition: {x: -590.753418, y: -58.9689636, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -184,9 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e0e0c37ef9d7b34292486e754b48bd5, type: 3}
   m_Name: 
   collection: {fileID: 11400000, guid: 18c721689fbc1364e8914399d2232425, type: 2}
-  _color: {r: .136500329, g: .136907309, b: .141791046, a: .592156887}
+  _color: {r: .849598289, g: 1, b: .022388041, a: .592156887}
   _scale: {x: 320, y: 320, z: 320}
-  _spriteId: 76
+  _spriteId: 71
   pixelPerfect: 0
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}

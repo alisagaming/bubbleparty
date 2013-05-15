@@ -3,7 +3,7 @@ using System.Collections;
 
 public class InGameScriptRefrences : MonoBehaviour 
 {
-    internal static GameUIController gameUIController;
+    //internal static GameUIController gameUIController;
     internal static GameVariables gameVariables;
     internal static PlayingObjectManager playingObjectManager;
     internal static PlayingObjectGeneration playingObjectGeneration;
@@ -24,7 +24,7 @@ public class InGameScriptRefrences : MonoBehaviour
     void Awake()
     {
 		onFireManager = GameObject.Find("panel_frame").GetComponent<OnFireManager>();
-        gameUIController = GameObject.Find("GUI Stuffs").GetComponent<GameUIController>();
+        //gameUIController = GameObject.Find("GUI Stuffs").GetComponent<GameUIController>();
         gameVariables = GameObject.Find("Game Variables").GetComponent<GameVariables>();
         playingObjectManager = GameObject.Find("Playing Object Manager").GetComponent<PlayingObjectManager>();
         playingObjectGeneration = GameObject.Find("Playing Object Generation").GetComponent<PlayingObjectGeneration>();
