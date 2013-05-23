@@ -28,7 +28,7 @@ public class MainGameManager : MonoBehaviour {
 	
 	public void Restart(){
 		GameVariables.score = 0;
-		GameVariables.levelBonus = 0;
+		//GameVariables.levelBonus = 0;
 		GameVariables.time = 60;
 		
 		onFireManager.Restart();

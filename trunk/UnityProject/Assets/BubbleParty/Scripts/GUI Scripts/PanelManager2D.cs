@@ -8,10 +8,17 @@ public class PanelManager2D : MonoBehaviour {
 		STATE_GAME_BEGIN,
 		STATE_INVITE_FREND,
 		STATE_SEND_FREND,
-		STATE_TIME_UP_STATICTICS
+		STATE_TIME_UP_STATICTICS,
+		STATE_HELP_STAR,
+		STATE_HELP_TIME,
+		STATE_HELP_FIREBALL,
+		STATE_HELP_PLAZMA,
+		STATE_BUY_COINS,
+		STATE_BUY_DIAMOND
 	};
 	
 	State currentState;
+	State predState;
 	State newState;
 	public static float TIME_SWITCH = 0.25f;
 	
@@ -28,6 +35,14 @@ public class PanelManager2D : MonoBehaviour {
 	
 	public GameObject anchorStatistics;
 	public GameObject anchorTimeLeft;
+	
+	public GameObject anchorHelpStar;
+	public GameObject anchorHelpTime;
+	public GameObject anchorHelpFireball;
+	public GameObject anchorHelpPlazma;
+	
+	public GameObject anchorBuyCoins;
+	public GameObject anchorBuyDiamond;
 	
 	public GameObject panelAllBG;
 	public MainGameManager gameManager;
@@ -50,6 +65,13 @@ public class PanelManager2D : MonoBehaviour {
 		AddAnimations(anchorSendFriend);
 		AddAnimations(anchorStartGame);
 		AddAnimations(anchorStatistics);
+		AddAnimations(anchorHelpStar);
+		AddAnimations(anchorHelpTime);
+		AddAnimations(anchorHelpFireball);
+		AddAnimations(anchorHelpPlazma);
+		
+		AddAnimations(anchorBuyCoins);
+		AddAnimations(anchorBuyDiamond);
 		
 		StartLogin();		
 	}
@@ -147,8 +169,47 @@ public class PanelManager2D : MonoBehaviour {
 			
 			
 			break;
+		case State.STATE_HELP_STAR:
+		case State.STATE_HELP_FIREBALL:
+		case State.STATE_HELP_PLAZMA:
+		case State.STATE_HELP_TIME:
+			panelTop.RemoveAll();	
+			//panelDown.RemoveAll();
+			yield return new WaitForSeconds(AnimOut(currentObject));
+			panelDown.StartBack("Okay");			
+			if(currentObject != null) currentObject.SetActive(false);
+			switch(state){
+			case State.STATE_HELP_STAR:
+				AnimIn(anchorHelpStar);	
+				break;
+			case State.STATE_HELP_FIREBALL:
+				AnimIn(anchorHelpFireball);	
+				break;
+			case State.STATE_HELP_PLAZMA:
+				AnimIn(anchorHelpPlazma);	
+				break;
+			case State.STATE_HELP_TIME:
+				AnimIn(anchorHelpTime);	
+				break;
+			}
+		break;	
+		case State.STATE_BUY_COINS:
+			panelTop.RemoveAll();
+			panelDown.RemoveAll();
+			yield return new WaitForSeconds(AnimOut(currentObject));
+			//panelDown.StartBack("Okay");
+			AnimIn(anchorBuyCoins);
+			break;			
+		case State.STATE_BUY_DIAMOND:
+			panelTop.RemoveAll();
+			panelDown.RemoveAll();
+			yield return new WaitForSeconds(AnimOut(currentObject));
+			//panelDown.StartBack("Okay");
+			AnimIn(anchorBuyDiamond);
+			break;
 		}
 		
+		predState = currentState;
 		currentState = state;
 		yield return new WaitForSeconds(0);
 	}
@@ -179,6 +240,11 @@ public class PanelManager2D : MonoBehaviour {
 	}
 	
 	public void OnDownButton(){
+		//string str = SystemInfo.deviceUniqueIdentifier;
+		//str = "";
+		
+		StartCoroutine(ClientServer.Sync());
+		
 		switch(currentState){
 		case State.STATE_GAME:
 			StartCoroutine(SetNewState(State.STATE_GAME_BEGIN));
@@ -189,6 +255,14 @@ public class PanelManager2D : MonoBehaviour {
 		case State.STATE_TIME_UP_STATICTICS:
 			StartCoroutine(SetNewState(State.STATE_LOGIN));
 			break;
+		case State.STATE_HELP_STAR:
+		case State.STATE_HELP_TIME:
+		case State.STATE_HELP_FIREBALL:
+		case State.STATE_HELP_PLAZMA:
+		case State.STATE_BUY_COINS:
+		case State.STATE_BUY_DIAMOND:
+			StartCoroutine(SetNewState(State.STATE_GAME));
+			break;	
 		}
 		/*if(currentState == State.STATE_GAME)
 			StartCoroutine(SetNewState(State.STATE_GAME_BEGIN));
@@ -213,5 +287,29 @@ public class PanelManager2D : MonoBehaviour {
 	
 	public void StartTimeUpStatistic(){
 		StartCoroutine(SetNewState(State.STATE_TIME_UP_STATICTICS));
+	}
+	
+	public void StartHelpStar(){
+		StartCoroutine(SetNewState(State.STATE_HELP_STAR));
+	}
+	
+	public void StartHelpTime(){
+		StartCoroutine(SetNewState(State.STATE_HELP_TIME));
+	}
+	
+	public void StartHelpFireball(){
+		StartCoroutine(SetNewState(State.STATE_HELP_FIREBALL));
+	}
+	
+	public void StartHelpPlazma(){
+		StartCoroutine(SetNewState(State.STATE_HELP_PLAZMA));
+	}
+	
+	public void StartBuyCoins(){
+		StartCoroutine(SetNewState(State.STATE_BUY_COINS));
+	}
+	
+	public void StartBuyDiamond(){
+		StartCoroutine(SetNewState(State.STATE_BUY_DIAMOND));
 	}
 }

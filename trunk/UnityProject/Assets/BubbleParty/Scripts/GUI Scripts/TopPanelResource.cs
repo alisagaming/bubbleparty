@@ -17,10 +17,17 @@ public class TopPanelResource : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		txt_resource_count.text = type == Type.TYPE_COINS ? GameVariables.coins.ToString() : GameVariables.diamond.ToString();
+		txt_resource_count.text = type == Type.TYPE_COINS ? GameVariables.playerParameters.coins_total.ToString() : GameVariables.playerParameters.diamond_total.ToString();
 	}
 	
 	void OnEnable(){
-		txt_resource_count.text = type == Type.TYPE_COINS ? GameVariables.coins.ToString() : GameVariables.diamond.ToString();
+		txt_resource_count.text = type == Type.TYPE_COINS ? GameVariables.playerParameters.coins_total.ToString() : GameVariables.playerParameters.diamond_total.ToString();
+	}
+	
+	public void OnButtonDown(){
+		if(type == Type.TYPE_COINS)
+			InGameScriptRefrences.panelManager2D.StartBuyCoins();
+		else
+			InGameScriptRefrences.panelManager2D.StartBuyDiamond();
 	}
 }

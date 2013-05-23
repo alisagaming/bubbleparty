@@ -1,0 +1,12 @@
+{
+  "jdbc" : {
+    "driverName" : "com.mysql.jdbc.Driver",
+    "login" : "awsuser",
+    "maxPoolSize" : 40,
+    "minPoolSize" : 4,
+    "password" : "9H876nfQ",
+    "url" : "jdbc:mysql://bubshoot.cnci7wugcjof.us-east-1.rds.amazonaws.com:3306/bubshoot"
+  },
+  
+ "secret": "vPKTqsHjJPWXmhD7CeZNdZAuY33jv2Y64dd3TAEJ7RJ4Jj4KXY"
+}

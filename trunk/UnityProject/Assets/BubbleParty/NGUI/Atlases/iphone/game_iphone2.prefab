@@ -37,8 +37,278 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
   m_Name: 
-  material: {fileID: 0}
-  sprites: []
+  material: {fileID: 2100000, guid: 632ada40323cd62478076ab9081f4570, type: 2}
+  sprites:
+  - name: infoGoldTimeBoost@2x
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1435
+      width: 520
+      height: 306
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1435
+      width: 520
+      height: 306
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: infoPlasmaBoost@2x
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1742
+      width: 520
+      height: 306
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1742
+      width: 520
+      height: 306
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: racoonBoostInfo@2x
+    outer:
+      serializedVersion: 2
+      x: 521
+      y: 1834
+      width: 239
+      height: 214
+    inner:
+      serializedVersion: 2
+      x: 521
+      y: 1834
+      width: 239
+      height: 214
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: infoGoldStarBoost@2x
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 1128
+      width: 520
+      height: 306
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 1128
+      width: 520
+      height: 306
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: infoFireball@2x
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 821
+      width: 520
+      height: 306
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 821
+      width: 520
+      height: 306
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostFireballActive@2x
+    outer:
+      serializedVersion: 2
+      x: 610
+      y: 1745
+      width: 88
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 610
+      y: 1745
+      width: 88
+      height: 88
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostGoldStarActive@2x
+    outer:
+      serializedVersion: 2
+      x: 894
+      y: 1827
+      width: 88
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 894
+      y: 1827
+      width: 88
+      height: 88
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostPlasmaActive@2x
+    outer:
+      serializedVersion: 2
+      x: 521
+      y: 1536
+      width: 86
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 521
+      y: 1536
+      width: 86
+      height: 88
+    rotated: 0
+    paddingLeft: .0116279069
+    paddingRight: .0116279069
+    paddingTop: 0
+    paddingBottom: 0
+  - name: boostGoldTimeActive@2x
+    outer:
+      serializedVersion: 2
+      x: 521
+      y: 1745
+      width: 88
+      height: 88
+    inner:
+      serializedVersion: 2
+      x: 521
+      y: 1745
+      width: 88
+      height: 88
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_addBoostDown@2x
+    outer:
+      serializedVersion: 2
+      x: 894
+      y: 1750
+      width: 76
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 894
+      y: 1750
+      width: 76
+      height: 76
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: timerFillGolden
+    outer:
+      serializedVersion: 2
+      x: 521
+      y: 1625
+      width: 294
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 521
+      y: 1625
+      width: 294
+      height: 54
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: frame_bronze@2x
+    outer:
+      serializedVersion: 2
+      x: 894
+      y: 1955
+      width: 93
+      height: 93
+    inner:
+      serializedVersion: 2
+      x: 894
+      y: 1955
+      width: 93
+      height: 93
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: timeBarFrame
+    outer:
+      serializedVersion: 2
+      x: 521
+      y: 1680
+      width: 313
+      height: 61
+    inner:
+      serializedVersion: 2
+      x: 521
+      y: 1680
+      width: 313
+      height: 61
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fakeFriend_05@2x
+    outer:
+      serializedVersion: 2
+      x: 761
+      y: 1916
+      width: 132
+      height: 132
+    inner:
+      serializedVersion: 2
+      x: 761
+      y: 1916
+      width: 132
+      height: 132
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fakeFriend_04@2x
+    outer:
+      serializedVersion: 2
+      x: 761
+      y: 1783
+      width: 132
+      height: 132
+    inner:
+      serializedVersion: 2
+      x: 761
+      y: 1783
+      width: 132
+      height: 132
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   mCoordinates: 0
   mPixelSize: 1
   mReplacement: {fileID: 0}

@@ -11,7 +11,8 @@ public class PanelDown : MonoBehaviour {
 		STATE_NONE,
 		STATE_LOGIN,
 		STATE_START_GAME,
-		STATE_BACK_TO_MAIN
+		STATE_BACK_TO_MAIN,
+		STATE_BACK
 	};
 	
 	Vector3 pos1 = new Vector3(0,166,0);
@@ -76,6 +77,16 @@ public class PanelDown : MonoBehaviour {
 			panel1Visible = true;
 			panel2Visible = false;
 			break;
+		case State.STATE_BACK:
+			if(panel2Visible){
+				AnimStart(panel_btn,pos1,pos2);
+				AnimStart(down_panel_menu,pos4,pos5);
+			}else if(!panel1Visible){
+				AnimStart(panel_btn,pos3,pos2);
+			}
+			panel1Visible = true;
+			panel2Visible = false;
+			break;
 		}
 		currentState = state;
 		yield return new WaitForSeconds(0);		
@@ -104,6 +115,11 @@ public class PanelDown : MonoBehaviour {
 	public void StartBackToMain(string btnCaption){
 		btn_text.text = btnCaption;
 		StartCoroutine(SetNewState(State.STATE_START_GAME));
+	}
+	
+	public void StartBack(string btnCaption){
+		btn_text.text = btnCaption;
+		StartCoroutine(SetNewState(State.STATE_BACK));
 	}
 	
 	public void RemoveAll(){

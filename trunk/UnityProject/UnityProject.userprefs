@@ -1,13 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\BubbleParty\Scripts\GUI Scripts\ItemBoost.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\BubbleParty\Scripts\Game\GameVariables.cs">
     <Files>
-      <File FileName="Assets\BubbleParty\Scripts\Game\GameVariables.cs" Line="1" Column="1" />
-      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\TopPanelLevel.cs" Line="11" Column="35" />
-      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\PanelInGameGo.cs" Line="1" Column="1" />
-      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\TopPanelResource.cs" Line="12" Column="2" />
-      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\PanelManager2D.cs" Line="4" Column="28" />
-      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\ItemBoost.cs" Line="133" Column="1" />
+      <File FileName="Assets\BubbleParty\Scripts\Game\GameVariables.cs" Line="109" Column="26" />
+      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\PanelManager2D.cs" Line="246" Column="36" />
+      <File FileName="Assets\BubbleParty\Scripts\Model\Level.cs" Line="1" Column="1" />
+      <File FileName="Assets\BubbleParty\Scripts\Server\ClientServer.cs" Line="44" Column="39" />
+      <File FileName="Assets\BubbleParty\Scripts\JsonFX\JsonWriter.cs" Line="730" Column="28" />
+      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\ItemBoost.cs" Line="151" Column="51" />
+      <File FileName="Assets\BubbleParty\Scripts\GUI Scripts\TopPanelResource.cs" Line="24" Column="155" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

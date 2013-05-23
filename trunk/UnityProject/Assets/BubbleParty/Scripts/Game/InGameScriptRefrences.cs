@@ -15,6 +15,7 @@ public class InGameScriptRefrences : MonoBehaviour
     internal static ParticleAudioManager scoreParticleAudioManager;
     internal static SoundFxManager soundFxManager;
 	internal static OnFireManager onFireManager;
+	internal static PanelManager2D panelManager2D;
 
 
     internal static Transform coinCollectionPosition;
@@ -36,6 +37,8 @@ public class InGameScriptRefrences : MonoBehaviour
         scoreParticleAudioManager = GameObject.Find("Score Sounds").GetComponent<ParticleAudioManager>();
 
         soundFxManager = GameObject.Find("Sound Fx Manager").GetComponent<SoundFxManager>();
+		
+		panelManager2D = GameObject.Find("Camera 2D").GetComponent<PanelManager2D>();
 
     }
 }

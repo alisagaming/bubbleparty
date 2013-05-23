@@ -133,31 +133,48 @@ public class ItemBoost : MonoBehaviour {
 		switch(boostType){
 		case BoostType.TYPE_STAR:
 		case BoostType.TYPE_TIME:
-			if(cost <= GameVariables.coins){
-				GameVariables.coins -= cost;
+			if(cost <= GameVariables.playerParameters.coins_total){
+				GameVariables.playerParameters.coins_total -= cost;
+				GameVariables.playerParameters.coins_spent += cost;
 				if(boostType == BoostType.TYPE_STAR)
-					GameVariables.bonus_star++;
+					GameVariables.playerParameters.bonus_star++;
 				else
-					GameVariables.bonus_time++;
+					GameVariables.playerParameters.bonus_time++;
+				GameVariables.Save();
 				Start();
-			}
+			}else InGameScriptRefrences.panelManager2D.StartBuyCoins();
 			break;
 		case BoostType.TYPE_FIREBALL:
 		case BoostType.TYPE_PLAZMA:
-			if(cost <= GameVariables.diamond){
-				GameVariables.diamond -= cost;
+			if(cost <= GameVariables.playerParameters.diamond_total){
+				GameVariables.playerParameters.diamond_total -= cost;
+				GameVariables.playerParameters.diamond_spent += cost;
 				if(boostType == BoostType.TYPE_FIREBALL)
-					GameVariables.bonus_fireball++;
+					GameVariables.playerParameters.bonus_fireball++;
 				else
-					GameVariables.bonus_plazma++;
+					GameVariables.playerParameters.bonus_plazma++;
+				GameVariables.Save();
 				Start();
-			}
+			}else InGameScriptRefrences.panelManager2D.StartBuyDiamond();
 			break;
 		}
 	}
 	
 	public void OnButtonInfo(){
-		
+		switch(boostType){
+		case BoostType.TYPE_STAR:
+			InGameScriptRefrences.panelManager2D.StartHelpStar();
+			break;
+		case BoostType.TYPE_TIME:
+			InGameScriptRefrences.panelManager2D.StartHelpTime();
+			break;
+		case BoostType.TYPE_FIREBALL:
+			InGameScriptRefrences.panelManager2D.StartHelpFireball();
+			break;
+		case BoostType.TYPE_PLAZMA:
+			InGameScriptRefrences.panelManager2D.StartHelpPlazma();
+			break;
+		}
 	}
 	
 	// Update is called once per frame

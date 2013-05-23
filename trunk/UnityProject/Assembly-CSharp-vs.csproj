@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;UNITY_ANDROID_API;ENABLE_CLOTH;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;UNITY_4_1_2;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;UNITY_ANDROID_API;ENABLE_CLOTH;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;UNITY_4_1_2;UNITY_4_1;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -58,6 +58,8 @@
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelManager2D.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelStatistic.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\PanelTop.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\Shop.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\ShopItem.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\TopPanelLevel.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\GUI Scripts\TopPanelResource.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\Core\PlayingObject.cs" />
@@ -73,6 +75,30 @@
      <Compile Include="Assets\BubbleParty\Scripts\Game\MainGameManager.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\OnFireManager.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Game\SoundFxManager.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\About.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\DataReaderProvider.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\DataWriterProvider.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\EcmaScriptIdentifier.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\EcmaScriptWriter.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\IDataReader.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\IDataWriter.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\IJsonSerializable.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonDataReader.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonDataWriter.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonIgnoreAttribute.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonMemberAttribute.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonNameAttribute.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonOptInAttribute.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonReader.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonReaderSettings.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonSerializationException.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonSpecifiedPropertyAttribute.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonToken.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonWriter.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\JsonWriterSettings.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\TypeCoercionUtility.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\XmlDataReader.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\JsonFX\XmlDataWriter.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Misc Script\MainCameraScript.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Misc Script\iTween.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Model\BonusCoins.cs" />
@@ -84,6 +110,7 @@
      <Compile Include="Assets\BubbleParty\Scripts\Model\LevelsPak.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Model\Row.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Model\ScoreConfig.cs" />
+     <Compile Include="Assets\BubbleParty\Scripts\Server\ClientServer.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Utils\DestroyOnStart.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Utils\RotationScript.cs" />
      <Compile Include="Assets\BubbleParty\Scripts\Utils\UnParentScript.cs" />
@@ -265,6 +292,7 @@
      <None Include="Assets\TK2DROOT\tk2d\Shaders\goodies\PackedTextMesh.shader" />
      <None Include="Assets\Plugins\Android\res\drawable\com_facebook_picker_list_selector_background_transition.xml" />
      <None Include="Assets\Plugins\SocialNetworking\Manifest.xml" />
+     <None Include="Assets\BubbleParty\Scripts\JsonFX\Readme.txt" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
      <None Include="Assets\Plugins\Android\res\layout\com_facebook_picker_activity_circle_row.xml" />
      <None Include="Assets\Plugins\Android\res\layout\main.xml" />
@@ -307,6 +335,7 @@
      <None Include="Assets\demo\Resources\time_boost_ruleset.xml" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\BubbleParty\Scripts\JsonFX\License.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth.shader" />
      <None Include="Assets\Plugins\Android\res\layout\com_facebook_picker_list_row.xml" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
